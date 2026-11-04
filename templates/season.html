@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+{% block title %}Season odds · NFL Predictor{% endblock %}
+{% macro pct(p) -%}
+  {%- if p >= 0.995 %}&gt;99%{% elif p == 0 %}0%{% elif p < 0.005 %}&lt;1%{% else %}{{ '%.0f' % (p * 100) }}%{% endif -%}
+{%- endmacro %}
+{% macro cell(t, key) %}
+<td data-value="{{ t[key] }}">
+  <span class="odds-num">{{ pct(t[key]) }}</span>
+  <span class="mini" aria-hidden="true"><i style="width:{{ '%.1f' % (t[key] * 100) }}%; background:{{ colors[t.team] }}"></i></span>
+</td>
+{% endmacro %}
+{% block content %}
+<section class="section" style="padding-top:56px">
+  <div class="head-row">
+    <div>
+      <span class="tag">// Season</span>
+      <h2>{{ season }} season odds</h2>
+      <p class="lead" style="margin-bottom:0">
+        {% if teams %}{{ '{:,}'.format(n_sims) }} simulated seasons from the current standings, {{ games_left }} regular-season games left.
+        Tap a column to sort.{% else %}The {{ '{:,}'.format(n_sims) }}-season simulation is running in the background after a data refresh. Reload in a minute.{% endif %}
+      </p>
+    </div>
+    <a class="btn" href="{{ url_for('simulate_page') }}">Simulate one season</a>
+  </div>
+  {% if teams %}
+  {% if stale %}<p class="legend small">Showing the previous run; an update with the latest results is computing.</p>{% endif %}
+
+  <table class="odds" id="odds">
+    <thead>
+      <tr>
+        <th scope="col" aria-sort="none"><button type="button" data-sort="text">Team</button></th>
+        <th scope="col" class="hide-sm" aria-sort="none"><button type="button" data-sort="num">Proj. W</button></th>
+        <th scope="col" aria-sort="none"><button type="button" data-sort="num">Playoffs</button></th>
+        <th scope="col" aria-sort="none"><button type="button" data-sort="num">Division</button></th>
+        <th scope="col" aria-sort="descending"><button type="button" data-sort="num">Win SB</button></th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for t in teams %}
+      <tr>
+        <td data-value="{{ t.team }}">
+          <b class="abbr" style="color:{{ colors[t.team] }}">{{ t.team }}</b>
+          <span class="rec">{{ t.wins }}&ndash;{{ t.losses }}{% if t.ties %}&ndash;{{ t.ties }}{% endif %}</span>
+          <span class="team-name">{{ t.name }}</span>
+        </td>
+        <td class="hide-sm" data-value="{{ t.proj_wins }}">{{ '%.1f' % t.proj_wins }}</td>
+        {{ cell(t, 'p_playoffs') }}
+        {{ cell(t, 'p_division') }}
+        {{ cell(t, 'p_sb') }}
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
+  <p class="muted small" style="margin-top:16px">
+    Played games keep their real results. Each remaining game is a weighted coin flip with the model's probability,
+    and Elo and form update after every simulated game. Ties on record are broken by head-to-head, division record,
+    conference record, then at random: a simplified version of the official NFL tiebreakers.
+  </p>
+  {% endif %}
+</section>
+
+{% if teams %}
+{% include "partials/playoffs.html" %}
+<section class="section" id="average-champion">
+  <span class="tag">// Champion</span>
+  {% include "partials/champion.html" %}
+  <p class="muted small" style="margin-top:16px">
+    <a href="{{ url_for('simulate_page', mode='average') }}">Average standings and bracket on one page</a> ·
+    <a href="{{ url_for('simulate_page', mode='chalk') }}">Chalk bracket</a> (every favorite wins)
+  </p>
+</section>
+{% endif %}
+{% endblock %}

@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>{% block title %}NFL Predictor{% endblock %}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <script src="{{ url_for('static', filename='app.js') }}" defer></script>
+</head>
+<body>
+  <header class="wrap">
+    <nav class="nav" aria-label="Main">
+      <a class="wordmark" href="{{ url_for('home') }}">NFL Predict</a>
+      <div class="nav-links">
+        {% for endpoint, label, ic in [('home', 'Home', 'home'), ('week', 'This week', 'calendar'), ('season', 'Season', 'trophy'), ('simulate_page', 'Simulate', 'dice'), ('about', 'About', 'info')] %}
+        <a href="{{ url_for(endpoint) }}" {{ 'aria-current=page' if request.endpoint == endpoint }}>{{ icon(ic, 12) }}{{ label }}</a>
+        {% endfor %}
+      </div>
+      <a class="pill-white" href="{{ url_for('about') }}#results">Results</a>
+    </nav>
+  </header>
+
+  <main class="wrap">{% block content %}{% endblock %}</main>
+
+  <footer class="footer">
+    <div class="wrap footer-mark">
+      <strong>NFL Predict</strong>
+      <span>Home win probability · nflverse data · 2002&ndash;{{ current_season }}</span>
+    </div>
+    <div class="wrap-wide">
+      <div class="footer-cols">
+        <div><h4>Pages</h4><ul>
+          <li><a href="{{ url_for('home') }}">Home</a></li>
+          <li><a href="{{ url_for('week') }}">This week</a></li>
+          <li><a href="{{ url_for('season') }}">Season odds</a></li>
+          <li><a href="{{ url_for('simulate_page') }}">Simulate a season</a></li>
+          <li><a href="{{ url_for('about') }}">About</a></li>
+        </ul></div>
+        <div><h4>Model</h4><ul>
+          <li><a href="{{ url_for('home') }}#how">How it works</a></li>
+          <li><a href="{{ url_for('about') }}#results">Results</a></li>
+          <li><a href="{{ url_for('about') }}#calibration">Calibration</a></li>
+          <li><a href="{{ url_for('about') }}#features">Feature importance</a></li>
+        </ul></div>
+        <div><h4>Data</h4><ul>
+          <li><a href="https://github.com/nflverse" rel="noopener">nflverse</a></li>
+          <li><a href="https://github.com/nflverse/nflreadpy" rel="noopener">nflreadpy</a></li>
+          <li><a href="{{ url_for('health') }}">Refresh status</a></li>
+        </ul></div>
+        <div><h4>Repo</h4><ul>
+          {% if repo_url %}
+          <li><a href="{{ repo_url }}" rel="noopener">Source code</a></li>
+          <li><a href="{{ repo_url }}#readme" rel="noopener">README</a></li>
+          {% else %}
+          <li class="muted">Source not yet public</li>
+          {% endif %}
+        </ul></div>
+      </div>
+      <div class="footer-bottom">
+        <span>Model {{ model_version }} · Data refreshed {{ refreshed }}</span>
+        <span>Not betting advice.</span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

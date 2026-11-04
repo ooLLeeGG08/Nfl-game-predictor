@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: nfl-predictor
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    # One worker with 4 threads: the app holds ~300 MB of data, so a second
+    # worker would exceed the 512 MB free tier. No --preload: forking after
+    # numpy/polars/pyarrow have started their thread pools can crash or hang.
+    # --timeout 120 leaves room for the first 2026 download on a cold start.
+    startCommand: gunicorn app:app --bind 0.0.0.0:$PORT --workers 1 --threads 4 --timeout 120
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.14.2

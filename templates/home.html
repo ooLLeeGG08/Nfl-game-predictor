@@ -1,0 +1,112 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="hero">
+  <div>
+    <span class="tag">// NFL win probability</span>
+    <h1>Who will win on Sunday?</h1>
+    <p class="lead">A logistic regression on Elo ratings and last-5-game form, rebuilt from nflverse data every few hours. Tested once on a full season it never saw.</p>
+    <a class="btn" href="#matchup">Predict a game</a>
+  </div>
+  {% if next_game %}
+  {% set g = next_game %}
+  {% set ph = g.p_home * 100 %}
+  <a class="hero-card" href="{{ url_for('game', game_id=g.game_id) }}">
+    <span class="lbl">Next kickoff · {% if g.kickoff_iso %}<time datetime="{{ g.kickoff_iso }}" data-kickoff>{{ g.kickoff_et }}</time>{% else %}{{ g.kickoff_et }}{% endif %}</span>
+    <div class="result-teams" style="margin:16px 0 12px">
+      <div>
+        <span class="abbr" style="color:{{ colors[g.away] }}">{{ g.away }}</span>
+        <span class="muted small">{{ g.away_name }}</span>
+        <span class="pct">{{ '%.0f' % (100 - ph) }}%</span>
+      </div>
+      <div>
+        <span class="muted small">{{ g.home_name }}{{ '' if g.neutral else ' · home' }}</span>
+        <span class="abbr" style="color:{{ colors[g.home] }}">{{ g.home }}</span>
+        <span class="pct">{{ '%.0f' % ph }}%</span>
+      </div>
+    </div>
+    <div class="bar" role="img" aria-label="{{ g.away }} {{ '%.0f' % (100 - ph) }} percent, {{ g.home }} {{ '%.0f' % ph }} percent">
+      <div class="seg" style="flex-basis:{{ 100 - ph }}%; background:{{ colors[g.away] }}"></div>
+      <div class="seg" style="flex-basis:{{ ph }}%; background:{{ colors[g.home] }}"></div>
+    </div>
+    <div class="hero-card-meta">
+      <span><span class="lbl">Model</span>{{ g.model_team }} {{ '%.0f' % (g.model_p * 100) }}%</span>
+      <span><span class="lbl">Vegas</span>{{ g.spread }}{% if g.vegas_team %} · {{ g.vegas_team }} {{ '%.0f' % (g.vegas_p * 100) }}%{% endif %}</span>
+    </div>
+    <span class="pill-white" style="margin-top:18px">Game details</span>
+  </a>
+  {% endif %}
+</section>
+
+<div class="stats">
+  <div class="stat">{{ icon('target', 20) }}<b>{{ '%.1f' % (stats.accuracy * 100) }}%</b><span>Test accuracy, 2025</span></div>
+  <div class="stat">{{ icon('chart', 20) }}<b>{{ '%.3f' % stats.log_loss }}</b><span>Log loss · Vegas {{ '%.3f' % stats.vegas_log_loss }}</span></div>
+  <div class="stat">{{ icon('stack', 20) }}<b>{{ '{:,}'.format(stats.games) }}</b><span>Games modeled since 2006</span></div>
+  <div class="stat">{{ icon('clock', 20) }}<b>{{ stats.refresh_time }}</b><span>Last refresh, {{ stats.refresh_date }}</span></div>
+</div>
+
+<section class="section" id="how" style="margin-top:24px">
+  <div class="split">
+    <div>
+      <span class="tag">// How it works</span>
+      <h2>What does the model do?</h2>
+    </div>
+    <div>
+      <p>Every team carries an Elo rating that moves after each game and drifts a third of the way back to average each off-season. Add each team's last five games &mdash; point differential and turnover margin &mdash; plus rest, division and neutral-site flags. A logistic regression trained on 2006&ndash;2023 turns those into a home-win probability.</p>
+      <a class="btn" href="{{ url_for('about') }}#results">See results</a>
+    </div>
+  </div>
+  {% include "partials/field.svg" %}
+</section>
+
+<section class="section">
+  <div class="center">
+    <span class="tag">// Inputs</span>
+    <h2>What the model sees</h2>
+    <p class="lead">Six numbers per game, all known before kickoff, all home minus away.</p>
+  </div>
+  <div class="features">
+    <div class="feat"><h3>{{ icon('chart', 14) }}Elo rating</h3><p>Strength from every past result, weighted by margin of victory.</p></div>
+    <div class="feat"><h3>{{ icon('plusminus', 14) }}Point differential</h3><p>Average margin over the last five games.</p></div>
+    <div class="feat"><h3>{{ icon('swap', 14) }}Turnover margin</h3><p>Takeaways minus giveaways, last five games.</p></div>
+    <div class="feat"><h3>{{ icon('moon', 14) }}Rest days</h3><p>Short weeks and byes, home minus away.</p></div>
+    <div class="feat"><h3>{{ icon('grid', 14) }}Division game</h3><p>Rivals know each other; home edge shrinks.</p></div>
+    <div class="feat"><h3>{{ icon('globe', 14) }}Neutral site</h3><p>International games and the Super Bowl.</p></div>
+    <div class="feat"><h3>{{ icon('target', 14) }}Calibrated</h3><p>A 70% pick should win about 70% of the time.</p></div>
+    <div class="feat"><h3>{{ icon('shield', 14) }}Leak-tested</h3><p>Tests prove no game sees its own future.</p></div>
+  </div>
+</section>
+
+<section class="section" id="matchup">
+  <div class="head-row">
+    <div>
+      <span class="tag">// Matchup</span>
+      <h2>Pick a game</h2>
+      <p class="lead" style="margin-bottom:0">Ratings and form as of {{ season }} week {{ week }}.</p>
+    </div>
+    <a class="btn" href="{{ url_for('week') }}">This week</a>
+  </div>
+
+  <form class="row form-row" method="get" action="{{ url_for('home') }}#matchup">
+    <div class="field">
+      <label for="home">Home</label>
+      <select id="home" name="home">
+        {% for t in teams %}<option value="{{ t }}" {{ 'selected' if t == home }}>{{ t }} · {{ names[t] }}</option>{% endfor %}
+      </select>
+    </div>
+    <div class="field">
+      <label for="away">Away</label>
+      <select id="away" name="away">
+        {% for t in teams %}<option value="{{ t }}" {{ 'selected' if t == away }}>{{ t }} · {{ names[t] }}</option>{% endfor %}
+      </select>
+    </div>
+    <label class="toggle"><input type="checkbox" name="neutral" value="1" {{ 'checked' if neutral }}><span class="track"></span>Neutral site</label>
+    <button class="btn" type="submit">Predict</button>
+  </form>
+
+  {% if error %}<p class="error">{{ error }}</p>{% endif %}
+
+  {% if result %}
+  {% with note="Assumes equal rest. No injuries, quarterback changes or weather." %}{% include "partials/result.html" %}{% endwith %}
+  {% endif %}
+</section>
+{% endblock %}

@@ -1,0 +1,36 @@
+{# Probability card. Expects `result` (home/away dicts, p_home, p_away, neutral, inputs), `colors`, optional `note`. #}
+{% set ph = result.p_home * 100 %}
+{% set pa = result.p_away * 100 %}
+{% set hc = colors[result.home.team] %}
+{% set ac = colors[result.away.team] %}
+<div class="result">
+  <div class="result-teams">
+    <div>
+      <span class="abbr" style="color:{{ hc }}">{{ result.home.team }}</span>
+      <span class="muted small">{{ result.home.name }}{{ '' if result.neutral else ' · home' }}</span>
+      <span class="pct">{{ '%.1f' % ph }}%</span>
+    </div>
+    <div>
+      <span class="muted small">{{ result.away.name }}</span>
+      <span class="abbr" style="color:{{ ac }}">{{ result.away.team }}</span>
+      <span class="pct">{{ '%.1f' % pa }}%</span>
+    </div>
+  </div>
+  <div class="bar" role="img" aria-label="{{ result.home.team }} {{ '%.1f' % ph }} percent, {{ result.away.team }} {{ '%.1f' % pa }} percent">
+    <div class="seg" style="flex-basis:{{ ph }}%; background:{{ hc }}"></div>
+    <div class="seg" style="flex-basis:{{ pa }}%; background:{{ ac }}"></div>
+  </div>
+  <table class="inputs">
+    <thead><tr><th>Model input</th><th>{{ result.home.team }}</th><th>{{ result.away.team }}</th></tr></thead>
+    <tbody>
+      <tr><td>Elo rating</td><td>{{ result.home.elo | round | int }}</td><td>{{ result.away.elo | round | int }}</td></tr>
+      <tr><td>Point diff / game, last 5</td><td>{{ '%+.1f' % result.home.pd5 }}</td><td>{{ '%+.1f' % result.away.pd5 }}</td></tr>
+      <tr><td>Turnover margin / game, last 5</td><td>{{ '%+.1f' % result.home.to5 }}</td><td>{{ '%+.1f' % result.away.to5 }}</td></tr>
+      {% if result.home.rest is defined %}
+      <tr><td>Days of rest</td><td>{{ result.home.rest | int }}</td><td>{{ result.away.rest | int }}</td></tr>
+      {% endif %}
+      <tr><td>Division game</td><td colspan="2">{{ 'yes' if result.inputs.div_game else 'no' }}</td></tr>
+    </tbody>
+  </table>
+  {% if note %}<p class="muted small" style="margin:14px 0 0">{{ note }}</p>{% endif %}
+</div>

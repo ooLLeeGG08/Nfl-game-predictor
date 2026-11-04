@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% block title %}This week · NFL Predictor{% endblock %}
+{% block content %}
+<section class="section" style="padding-top:56px">
+  <div class="head-row">
+    <div>
+      <span class="tag">// This week</span>
+      <h2>{{ season }} {{ w.title }}</h2>
+      <p class="lead" style="margin-bottom:0">
+        Model pick next to the Vegas line for every game. Kickoffs in your local time.
+        {% if w.n_final %}So far: model {{ w.model_right }}/{{ w.n_final }}, Vegas {{ w.vegas_right }}/{{ w.n_final }}.{% endif %}
+      </p>
+    </div>
+    <a class="btn" href="{{ url_for('home') }}#matchup">Any matchup</a>
+  </div>
+
+  <p class="legend small"><span class="swatch"></span>Model and Vegas differ by more than 10 points</p>
+
+  <div class="rows">
+    {% for g in w.games %}
+    <a class="game-row{{ ' hot' if g.disagree }}" href="{{ url_for('game', game_id=g.game_id) }}"
+       aria-label="{{ g.away }} at {{ g.home }}: model {{ g.model_team }} {{ '%.0f' % (g.model_p * 100) }}%{% if g.vegas_team %}, Vegas {{ g.vegas_team }} {{ '%.0f' % (g.vegas_p * 100) }}%{% endif %}{{ ', final' if g.played }}">
+      <span class="gr-dot {{ 'final' if g.played }}" aria-hidden="true"></span>
+      <span class="gr-teams">
+        <b style="color:{{ colors[g.away] }}">{{ g.away }}</b> <span class="at">{{ 'vs' if g.neutral else '@' }}</span> <b style="color:{{ colors[g.home] }}">{{ g.home }}</b>
+      </span>
+      <span class="gr-meta">
+        <span class="gr-time">
+          {% if g.played %}Final {{ g.away_score }}&ndash;{{ g.home_score }}
+          {% else %}<time {% if g.kickoff_iso %}datetime="{{ g.kickoff_iso }}" data-kickoff{% endif %}>{{ g.kickoff_et }}</time>{% endif %}
+        </span>
+        <span class="gr-model"><span class="lbl">Model</span>{{ g.model_team }} {{ '%.0f' % (g.model_p * 100) }}%
+          {% if g.model_right is not none %}<span class="verdict">{{ '✓ right' if g.model_right else '✗ wrong' }}</span>{% endif %}
+        </span>
+        <span class="gr-vegas"><span class="lbl">Vegas</span>{{ g.spread }}{% if g.vegas_team %} · {{ g.vegas_team }} {{ '%.0f' % (g.vegas_p * 100) }}%{% endif %}</span>
+      </span>
+      <span class="round" aria-hidden="true">{{ icon('arrow', 12) }}</span>
+    </a>
+    {% endfor %}
+  </div>
+  <p class="muted small" style="margin-top:16px">
+    Percentages are win probability for the picked team. Vegas = moneyline probability with the bookmaker margin removed.
+    The model knows nothing about injuries or weather; big disagreements usually mean the market knows something it doesn't.
+  </p>
+</section>
+{% endblock %}

@@ -1,0 +1,19 @@
+{
+  "season": 2024,
+  "ties_excluded": 0,
+  "missing_lines": 0,
+  "pickem_games": 0,
+  "vegas_from_moneyline": 285,
+  "spread_sigma": 11.67,
+  "elo": {
+    "k": 25.0,
+    "hfa": 0.0,
+    "mov": true,
+    "regress": 0.3333333333333333,
+    "mean": 1500.0
+  },
+  "train_seasons": [
+    2006,
+    2023
+  ]
+}

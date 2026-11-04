@@ -1,0 +1,10 @@
+{# Champion block. Expects `s`, `names`, `n_sims`, `champ_odds`. #}
+<div class="champion">
+  <span class="champ-abbr">{{ s.champion }}</span>
+  <strong>{{ names[s.champion] }}</strong>
+  <span>{{ s.super_bowl }} champion{% if s.chalk %} (chalk){% elif s.average %} (average bracket){% endif %}</span>
+  <span class="champ-odds">
+    {% if champ_odds is not none %}Won {{ '%.1f' % (champ_odds * 100) }}% of {{ '{:,}'.format(n_sims) }} simulated seasons in the Monte Carlo{% if s.average %}; this exact final happened in {{ '%.1f' % (s.p_matchup * 100) }}%{% endif %}.
+    {% else %}Monte Carlo odds are still being computed.{% endif %}
+  </span>
+</div>

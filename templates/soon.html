@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="hero">
+  <div>
+    <span class="tag">// {{ tag }}</span>
+    <h1>{{ heading }}</h1>
+    <p class="lead">Coming soon. {{ note }}</p>
+    <a class="btn" href="{{ url_for('home') }}#matchup">Predict a game</a>
+  </div>
+  <div class="hero-block" aria-hidden="true"></div>
+</section>
+{% endblock %}

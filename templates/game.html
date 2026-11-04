@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block title %}{{ g.away.team }} @ {{ g.home.team }} · NFL Predictor{% endblock %}
+{% block content %}
+<section class="section" style="padding-top:56px">
+  <div class="head-row">
+    <div>
+      <span class="tag">// {{ g.season }} week {{ g.week }}</span>
+      <h2>{{ g.away.name }} {{ 'vs' if g.neutral else 'at' }} {{ g.home.name }}</h2>
+      <p class="lead" style="margin-bottom:0">
+        {% if g.played %}Final: {{ g.score }}.{% else %}Kickoff <time {% if g.kickoff_iso %}datetime="{{ g.kickoff_iso }}" data-kickoff="long"{% endif %}>{{ g.kickoff_et }}</time>.{% endif %}
+        Vegas: {{ g.spread }}{% if g.p_vegas is not none %}, {{ g.home.team }} {{ '%.0f' % (g.p_vegas * 100) }}%{% endif %}.
+      </p>
+    </div>
+    <a class="btn" href="{{ url_for('week') }}">Back to this week</a>
+  </div>
+  {% with result=g, note="These are the inputs the model had before kickoff." %}{% include "partials/result.html" %}{% endwith %}
+</section>
+{% endblock %}

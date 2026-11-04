@@ -1,0 +1,8 @@
+.venv/
+__pycache__/
+.pytest_cache/
+# Historical raw data (2002-2025) is committed so Render only downloads the
+# current season. Current-season files change weekly and are fetched at runtime.
+data/raw/*_2026.parquet
+data/*.parquet
+data/cache/

@@ -1,0 +1,28 @@
+{# Standings by division. Expects `s` (single_season or average_season), `colors`, `names`, `n_sims`. #}
+<section class="section" id="regular-season">
+  <span class="tag">// Regular season</span>
+  <h2 style="margin-bottom:8px">{{ 'Average standings' if s.average else 'Final standings' }}</h2>
+  <p class="legend small" style="margin-bottom:24px">{% if s.average %}Average record over {{ '{:,}'.format(n_sims) }} simulated seasons, ordered by average wins. Seeds from the average bracket. {% endif %}z = top seed (bye) · y = division winner · x = wild card</p>
+  <div class="grid-2">
+    {% for conf in ('AFC', 'NFC') %}
+    <div>
+      <h3 style="margin-bottom:12px">{{ conf }}</h3>
+      {% for div in s.standings[conf] %}
+      <table class="stand">
+        <thead><tr><th>{{ div.division }}</th><th>W&ndash;L</th><th>Div</th><th>Seed</th></tr></thead>
+        <tbody>
+          {% for t in div.teams %}
+          <tr class="{{ 'in' if t.seed else 'out' }}">
+            <td><b style="color:{{ colors[t.team] }}">{{ t.team }}</b><span class="team-name">{{ names[t.team].rsplit(' ', 1)[-1] }}</span></td>
+            <td>{{ t.record }}</td>
+            <td>{{ t.div_record }}</td>
+            <td>{% if t.seed %}<span class="badge">{{ t.badge }}&middot;{{ t.seed }}</span>{% endif %}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+      {% endfor %}
+    </div>
+    {% endfor %}
+  </div>
+</section>

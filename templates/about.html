@@ -1,0 +1,131 @@
+{% extends "base.html" %}
+{% block title %}About · NFL Predictor{% endblock %}
+{% block content %}
+<section class="hero">
+  <div>
+    <span class="tag">// About</span>
+    <h1>How good is it?</h1>
+    <p class="lead">Evaluated once on the 2025 season, after all tuning was done on 2024. Compared with always picking the home team and with the Vegas line.</p>
+  </div>
+  {% set rows = r.test | selectattr('method', 'in', ['Model', 'Always home', 'Vegas']) | list %}
+  {% set model = rows | selectattr('method', 'equalto', 'Model') | first %}
+  {% set vegas = rows | selectattr('method', 'equalto', 'Vegas') | first %}
+  <a class="hero-card" href="#results">
+    <span class="lbl">Test season 2025 · {{ model.n }} games · evaluated once</span>
+    <div class="result-teams" style="margin:16px 0 14px">
+      <div><span class="muted small">Model accuracy</span><span class="pct">{{ '%.1f' % (model.accuracy * 100) }}%</span></div>
+      <div><span class="muted small">Vegas accuracy</span><span class="pct">{{ '%.1f' % (vegas.accuracy * 100) }}%</span></div>
+    </div>
+    <table class="hero-card-table">
+      <thead><tr><th>Method</th><th>Accuracy</th><th>Log loss</th></tr></thead>
+      <tbody>
+        {% for m in rows %}
+        <tr class="{{ 'hl' if m.method == 'Model' }}"><td>{{ m.method }}</td><td>{{ '%.1f' % (m.accuracy * 100) }}%</td><td>{{ '%.3f' % m.log_loss }}</td></tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    <span class="pill-white" style="margin-top:18px">Full results</span>
+  </a>
+</section>
+
+{% macro metrics_table(rows) %}
+<table class="table">
+  <thead><tr><th>Method</th><th>Games</th><th>Accuracy</th><th>Log loss</th><th>Brier</th></tr></thead>
+  <tbody>
+    {% for r in rows if r.method in ('Model', 'Always home', 'Vegas') %}
+    <tr class="{{ 'hl' if r.method == 'Model' }}">
+      <td>{{ r.method }}</td><td>{{ r.n }}</td><td>{{ '%.1f' % (r.accuracy * 100) }}%</td>
+      <td>{{ '%.3f' % r.log_loss }}</td><td>{{ '%.3f' % r.brier }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endmacro %}
+
+<section class="section" id="results">
+  <div class="section-head">
+    <span class="tag">// Results · test 2025</span>
+    <h2>Beats home field, trails Vegas.</h2>
+  </div>
+  {{ metrics_table(r.test) }}
+  <p class="muted small" style="margin-top:14px">
+    Regular season + playoffs, {{ r.test_info.ties_excluded }} tie excluded. Lower log loss and Brier are better.
+    Vegas = moneyline probability with the bookmaker margin removed. The market knows about injuries,
+    quarterback changes and weather; this model does not.
+  </p>
+  <h3 style="margin:40px 0 8px">Validation, 2024</h3>
+  {{ metrics_table(r.validation) }}
+</section>
+
+<section class="section" id="calibration">
+  <div class="section-head">
+    <span class="tag">// Calibration</span>
+    <h2>When it says 70%, does it happen 70% of the time?</h2>
+  </div>
+  <div class="grid-2">
+    <figure class="figure">
+      <img src="{{ url_for('static', filename='plots/calibration_test_dark.png') }}" alt="Calibration curve for 2025: model and Vegas both track the diagonal above 0.5; below 0.4 the model underrates home underdogs." loading="lazy">
+      <figcaption>Test, 2025. 10 equal-width bins.</figcaption>
+    </figure>
+    <figure class="figure">
+      <img src="{{ url_for('static', filename='plots/calibration_validation_dark.png') }}" alt="Calibration curve for 2024 validation season, model and Vegas." loading="lazy">
+      <figcaption>Validation, 2024.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="section" id="features">
+  <div class="section-head">
+    <span class="tag">// Feature importance</span>
+    <h2>Elo does most of the work.</h2>
+  </div>
+  <div class="grid-2">
+    <figure class="figure">
+      <img src="{{ url_for('static', filename='plots/feature_importance_dark.png') }}" alt="Standardized coefficients: elo_diff +0.62, pd_diff +0.18, rest_diff +0.08, neutral_site -0.05, to_diff -0.06, div_game -0.06." loading="lazy">
+      <figcaption>Log-odds change per 1 standard deviation of each home-minus-away feature.</figcaption>
+    </figure>
+    <div>
+      <p class="muted">Turnover margin is slightly <em>negative</em>: turnovers are mostly luck, so among teams with the same Elo and point differential, the one with the better turnover margin is a little overrated.</p>
+      <h3 style="margin:24px 0 8px">Elo settings</h3>
+      <table class="table">
+        <tbody>
+          <tr><td>K (update size)</td><td>{{ r.config.elo.k | int }}</td></tr>
+          <tr><td>Home-field in Elo update</td><td>{{ r.config.elo.hfa | int }}</td></tr>
+          <tr><td>Margin-of-victory multiplier</td><td>{{ 'on' if r.config.elo.mov else 'off' }}</td></tr>
+          <tr><td>Off-season regression</td><td>1/3</td></tr>
+          <tr><td>Training seasons</td><td>{{ r.config.train_seasons[0] }}&ndash;{{ r.config.train_seasons[1] }}</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="experiments">
+  <div class="section-head">
+    <span class="tag">// Experiments · validation 2024</span>
+    <h2>What we tried.</h2>
+  </div>
+  <table class="table">
+    <thead><tr><th>Setting</th><th>Accuracy</th><th>Log loss</th><th>Brier</th></tr></thead>
+    <tbody>
+      {% for e in r.experiments %}
+      <tr><td>{{ e.experiment }}: {{ e.setting }}</td><td>{{ '%.1f' % (e.accuracy * 100) }}%</td><td>{{ '%.3f' % e.log_loss }}</td><td>{{ '%.3f' % e.brier }}</td></tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  <p class="muted small" style="margin-top:14px">The 10-season window scored slightly better, but within the noise of one season, so the planned 2006&ndash;2023 window was kept.</p>
+</section>
+
+<section class="section" id="limitations">
+  <div class="section-head">
+    <span class="tag">// Limitations</span>
+    <h2>What it can't see.</h2>
+  </div>
+  <ul class="list">
+    <li>No injuries, quarterback changes or weather.</li>
+    <li>Small playoff sample: about 13 games a season.</li>
+    <li>Season simulator uses simplified tiebreakers and does not simulate turnovers.</li>
+    <li>Only ~5 neutral-site games a season, so the neutral-site effect is poorly estimated. Neutral games are averaged over both home/away labelings so neither team is favored by the label.</li>
+  </ul>
+</section>
+{% endblock %}

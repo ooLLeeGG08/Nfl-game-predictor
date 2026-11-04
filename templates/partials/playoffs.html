@@ -1,0 +1,31 @@
+{# Bracket in round columns. Expects `s`, `colors`, `n_sims`. #}
+{% macro side(team, seed, p, winner, margin=None) -%}
+<div class="mu-side{{ ' won' if team == winner else '' }}">
+  <span class="bk-seed">{{ seed or '' }}</span>
+  <b {% if team == winner %}style="color:{{ colors[team] }}"{% endif %}>{{ team }}</b>
+  <span class="mu-p">{{ '%.0f' % (p * 100) }}%</span>
+  {% if team == winner and margin %}<span class="mu-by">by {{ margin }}</span>{% endif %}
+</div>
+{%- endmacro %}
+<section class="section" id="playoffs">
+  <span class="tag">// Playoffs</span>
+  <h2 style="margin-bottom:24px">{{ 'Average bracket' if s.average else 'Bracket' }}</h2>
+  <div class="bracket">
+    {% for name, games in s.rounds %}
+    <div class="bracket-col">
+      <span class="lbl bk-round" style="margin-top:0">{{ name }}</span>
+      {% for g in games %}
+      {% if loop.first or g.conf != loop.previtem.conf %}<span class="mu-conf">{{ 'Neutral site' if g.conf == 'SB' else g.conf }}</span>{% endif %}
+      <div class="matchup">
+        {{ side(g.away, g.away_seed, g.p_away, g.winner, g.margin) }}
+        {{ side(g.home, g.home_seed, g.p_home, g.winner, g.margin) }}
+      </div>
+      {% endfor %}
+    </div>
+    {% endfor %}
+  </div>
+  <p class="muted small" style="margin-top:16px">
+    {% if s.average %}Percentages are the share of the {{ '{:,}'.format(n_sims) }} simulations in which each team reached the next round. They count every path to that round, so a game's two numbers don't add up to 100%. The team that advanced more often moves on; the higher seed hosts (listed second).
+    {% else %}Percentages are the win probability the simulation used for each game; the higher seed hosts (listed second).{% endif %}
+  </p>
+</section>
