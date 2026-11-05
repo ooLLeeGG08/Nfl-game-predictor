@@ -101,26 +101,29 @@ MAX_SEED = 999_999
 
 @app.route("/simulate")
 def simulate_page():
+    """Average of 10,000 seasons by default; ?mode=chalk; ?seed=N (or ?mode=random) for one random season."""
     mode = request.args.get("mode")
-    if mode == "average":
-        odds = live.season_odds()  # cached Monte Carlo; never computed in the request
+    new_seed = secrets.randbelow(MAX_SEED + 1)
+    if mode == "chalk":
+        s = live.single_season(0, chalk=True)
+    elif mode == "random" or "seed" in request.args:
+        seed = request.args.get("seed", type=int)
+        if seed is None or not 0 <= seed <= MAX_SEED:
+            return redirect(url_for("simulate_page", seed=new_seed))
+        s = live.single_season(seed, chalk=False)
+    else:
+        odds = live.season_odds()  # cached Monte Carlo
         if odds is None:
             return render_template("soon.html", tag="Simulate", heading="The average season",
                                    note=f"The {simulate.N_SIMS:,}-season simulation is still running. Reload in a minute.")
         s = simulate.average_season(odds)
         return render_template("simulate.html", s=s, colors=TEAM_COLORS, names=NAMES, season=CURRENT_SEASON,
-                               champ_odds=s["p_champion"], n_sims=simulate.N_SIMS,
-                               new_seed=secrets.randbelow(MAX_SEED + 1))
-    chalk = mode == "chalk"
-    seed = request.args.get("seed", type=int)
-    if not chalk and (seed is None or not 0 <= seed <= MAX_SEED):
-        return redirect(url_for("simulate_page", seed=secrets.randbelow(MAX_SEED + 1)))
-    s = live.single_season(0 if chalk else seed, chalk)
+                               champ_odds=s["p_champion"], n_sims=simulate.N_SIMS, new_seed=new_seed)
     odds = live.season_odds()
     champ_odds = None if odds is None else float(odds.set_index("team").loc[s["champion"], "p_sb"])
     return render_template(
         "simulate.html", s=s, colors=TEAM_COLORS, names=NAMES, season=CURRENT_SEASON,
-        champ_odds=champ_odds, n_sims=simulate.N_SIMS, new_seed=secrets.randbelow(MAX_SEED + 1),
+        champ_odds=champ_odds, n_sims=simulate.N_SIMS, new_seed=new_seed,
     )
 
 

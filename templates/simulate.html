@@ -13,9 +13,9 @@
   <div class="sim-controls">
     <a class="btn" href="{{ url_for('simulate_page', seed=new_seed) }}">Simulate season</a>
     <nav class="mode-switch" aria-label="Simulation mode">
-      <a href="{{ url_for('simulate_page', seed=new_seed) }}" {{ 'aria-current=page' if not s.chalk and not s.average }}>Random</a>
+      <a href="{{ url_for('simulate_page') }}" {{ 'aria-current=page' if s.average }}>Average</a>
       <a href="{{ url_for('simulate_page', mode='chalk') }}" {{ 'aria-current=page' if s.chalk }}>Chalk</a>
-      <a href="{{ url_for('simulate_page', mode='average') }}" {{ 'aria-current=page' if s.average }}>Average</a>
+      <a href="{{ url_for('simulate_page', seed=new_seed) }}" {{ 'aria-current=page' if not s.chalk and not s.average }}>Random</a>
     </nav>
     <span class="seed-tag">{% if s.average %}{{ '{:,}'.format(n_sims) }} seasons{% elif s.chalk %}chalk · no randomness{% else %}seed {{ s.seed }}{% endif %}</span>
     {% if not s.chalk and not s.average %}<a class="pill-ghost" href="{{ url_for('simulate_page', seed=new_seed) }}">Re-run</a>{% endif %}

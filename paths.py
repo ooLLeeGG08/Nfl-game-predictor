@@ -13,5 +13,22 @@ CONFIG_PATH = ROOT / "models" / "config.json"
 REPORTS = ROOT / "reports"
 STATIC_DIR = ROOT / "public" / "static"            # Vercel serves public/** from its CDN
 
-ON_VERCEL = bool(os.environ.get("VERCEL"))
-WRITABLE_DIR = Path("/tmp/nfl-predictor") if ON_VERCEL else ROOT / "data"
+# Vercel sets VERCEL=1 (and VERCEL_REGION at runtime) when "Enable access to
+# System Environment Variables" is on in the project settings.
+ON_VERCEL = bool(os.environ.get("VERCEL") or os.environ.get("VERCEL_REGION"))
+
+
+def _writable(path: Path) -> bool:
+    """True if we can actually create files there (catches read-only deployments too)."""
+    try:
+        path.mkdir(parents=True, exist_ok=True)
+        probe = path / ".write-test"
+        probe.write_text("ok")
+        probe.unlink()
+        return True
+    except OSError:
+        return False
+
+
+# Even if the variables above are missing, never try to write into a read-only project folder.
+WRITABLE_DIR = ROOT / "data" if not ON_VERCEL and _writable(ROOT / "data") else Path("/tmp/nfl-predictor")
