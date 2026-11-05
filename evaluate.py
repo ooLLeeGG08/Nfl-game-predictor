@@ -34,12 +34,13 @@ from sklearn.metrics import brier_score_loss, log_loss
 import market
 from data.fetch import TEST_SEASON, VALID_SEASON
 from features import MODEL_FEATURES, EloParams, build_features
-from train import CONFIG_PATH, MODEL_PATH, REPORTS, TRAIN_SEASONS, fit, load_raw, model_rows, valid_logloss
+from paths import CONFIG_PATH, MODEL_PATH, REPORTS, STATIC_DIR
+from train import TRAIN_SEASONS, fit, load_raw, model_rows, valid_logloss
 
 log = logging.getLogger(__name__)
 
 TEST_MARKER = REPORTS / ".test_run_done"
-STATIC_PLOTS = REPORTS.parent / "static" / "plots"
+STATIC_PLOTS = STATIC_DIR / "plots"
 PRED_COLS = ["game_id", "season", "game_type", "home_win", "p_model", "p_home", "p_vegas"]
 
 # Light: reference palette from the dataviz skill (README). Dark: the app's

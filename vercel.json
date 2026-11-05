@@ -1,0 +1,9 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "functions": {
+    "app.py": {
+      "maxDuration": 60,
+      "excludeFiles": "{tests/**,scripts/**,public/**,models/pipeline.joblib,reports/*.png,reports/predictions_*.csv,reports/elo_tuning.csv,README.md,render.yaml,runtime.txt,requirements-dev.txt}"
+    }
+  }
+}

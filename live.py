@@ -26,13 +26,19 @@ import joblib
 import numpy as np
 import pandas as pd
 
-from data.fetch import BURN_IN_START, CURRENT_SEASON, CURRENT_TTL_SECONDS, FIRST_SEASON, load_schedules, load_team_stats
+from data.fetch import (BURN_IN_START, CURRENT_SEASON, CURRENT_TTL_SECONDS, FIRST_SEASON, TRAIN_SEASONS,
+                        load_schedules, load_team_stats)
 import market
 from features import MODEL_FEATURES, EloParams, TeamState, build_features
 from teams import NAMES, same_division
-from train import CONFIG_PATH, MODEL_PATH, TRAIN_SEASONS
+from paths import CONFIG_PATH, MODEL_JSON, ON_VERCEL, WRITABLE_DIR
 
-PIPE = joblib.load(MODEL_PATH)
+# The saved model as plain numbers (exported by train.py from models/pipeline.joblib),
+# so the web app needs neither scikit-learn nor joblib's pickle of it.
+_MODEL = json.loads(MODEL_JSON.read_text())
+assert _MODEL["features"] == MODEL_FEATURES, "models/model.json is out of date: run python train.py --export-json"
+_MEAN, _SCALE, _COEF = (np.array(_MODEL[k]) for k in ("mean", "scale", "coef"))
+_INTERCEPT = float(_MODEL["intercept"])
 ELO = EloParams(**json.loads(CONFIG_PATH.read_text())["elo"])
 
 
@@ -111,14 +117,7 @@ def home_win_prob(X: pd.DataFrame) -> np.ndarray:
     which makes equal teams exactly 50% and the answer independent of which
     team is listed first. Non-neutral rows use the model unchanged.
     """
-    X = X[MODEL_FEATURES]
-    p = PIPE.predict_proba(X)[:, 1]
-    neutral = X["neutral_site"].to_numpy() == 1
-    if neutral.any():
-        swapped = X[neutral].copy()
-        swapped[ANTISYMMETRIC] = -swapped[ANTISYMMETRIC]
-        p[neutral] = (p[neutral] + 1 - PIPE.predict_proba(swapped)[:, 1]) / 2
-    return p
+    return home_win_prob_array(X[MODEL_FEATURES].to_numpy(float))
 
 
 def team_summary(team: str) -> dict:
@@ -283,19 +282,17 @@ def next_game() -> dict | None:
 # pages keep showing the previous result.
 
 log = logging.getLogger(__name__)
-ODDS_CACHE_DIR = Path(__file__).resolve().parent / "data" / "cache"
+ODDS_CACHE_DIR = WRITABLE_DIR / "cache"
 
-_scale = PIPE.named_steps["scale"]
-_logreg = PIPE.named_steps["logreg"]
 _ANTI_COLS = [MODEL_FEATURES.index(c) for c in ANTISYMMETRIC]
 _NEUTRAL_COL = MODEL_FEATURES.index("neutral_site")
 
 
 def home_win_prob_array(X: np.ndarray) -> np.ndarray:
-    """Same as home_win_prob for a plain array in MODEL_FEATURES order, without
-    pandas/scikit-learn overhead (the simulator calls it ~150 times per run)."""
+    """home_win_prob for a plain array in MODEL_FEATURES order (no pandas overhead;
+    the simulator calls it ~150 times per run)."""
     def raw(M):
-        z = ((M - _scale.mean_) / _scale.scale_) @ _logreg.coef_[0] + _logreg.intercept_[0]
+        z = ((M - _MEAN) / _SCALE) @ _COEF + _INTERCEPT
         return 1 / (1 + np.exp(-z))
 
     X = np.asarray(X, float)
@@ -332,6 +329,7 @@ def compute_season_odds(snap: Snapshot | None = None) -> pd.DataFrame:
 
 
 _odds_lock = threading.Lock()
+_compute_lock = threading.Lock()
 _odds: dict = {"fp": None, "odds": None, "computing": None}
 
 
@@ -358,11 +356,13 @@ def _compute_in_background(snap: Snapshot, fp: str) -> None:
 
 
 def season_odds() -> pd.DataFrame | None:
-    """Latest Monte Carlo odds without ever computing in the request.
+    """Latest Monte Carlo odds.
 
     Returns the cached result for the current data if it exists (memory, then
-    disk). Otherwise starts a background computation and returns the previous
-    result, or None if there is none yet.
+    disk). Otherwise, on a long-running server, starts a background
+    computation and returns the previous result (None on a cold start). On
+    Vercel it computes inside the request instead, once per instance per data
+    version; concurrent requests wait for that single computation.
     """
     snap = snapshot()
     fp = _fingerprint(snap)
@@ -375,10 +375,23 @@ def season_odds() -> pd.DataFrame | None:
             odds.attrs.update(attrs)
             _odds.update(fp=fp, odds=odds)
             return odds
-        if _odds["computing"] != fp:
+        if ON_VERCEL:
+            # Serverless: work started after the response may be frozen, so compute
+            # now (a few seconds, once per instance per data version) and cache it.
+            _odds["computing"] = fp
+        elif _odds["computing"] != fp:
             _odds["computing"] = fp
             threading.Thread(target=_compute_in_background, args=(snap, fp), daemon=True).start()
-        return _odds["odds"]  # previous (stale) result, or None on a cold start
+            return _odds["odds"]  # previous (stale) result, or None on a cold start
+        else:
+            return _odds["odds"]
+    with _compute_lock:  # Vercel: one computation; other requests wait, then reuse it
+        with _odds_lock:
+            if _odds["fp"] == fp:
+                return _odds["odds"]
+        _compute_in_background(snap, fp)
+    with _odds_lock:
+        return _odds["odds"]
 
 
 def season_odds_ready() -> bool:

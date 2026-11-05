@@ -12,8 +12,8 @@ from __future__ import annotations
 
 import numpy as np
 import pandas as pd
-from scipy.optimize import minimize_scalar
-from scipy.stats import norm
+
+from mathx import minimize_bounded, norm_cdf
 
 
 def moneyline_prob(ml) -> np.ndarray:
@@ -34,8 +34,8 @@ def fit_spread_sigma(df: pd.DataFrame, seasons) -> float:
     """Pick sigma so Phi(spread / sigma) best matches moneyline probabilities."""
     d = df[df.season.isin(list(seasons))].dropna(subset=["spread_line", "home_moneyline", "away_moneyline"])
     target = vigfree(d)
-    res = minimize_scalar(lambda s: np.mean((norm.cdf(d.spread_line / s) - target) ** 2), bounds=(5, 25), method="bounded")
-    return float(res.x)
+    spread = d.spread_line.to_numpy(float)
+    return minimize_bounded(lambda s: float(np.mean((norm_cdf(spread / s) - target) ** 2)), 5, 25)
 
 
 def vegas_prob(df: pd.DataFrame, sigma: float) -> pd.Series:
@@ -44,6 +44,6 @@ def vegas_prob(df: pd.DataFrame, sigma: float) -> pd.Series:
     has_ml = df.home_moneyline.notna() & df.away_moneyline.notna()
     p[has_ml] = vigfree(df[has_ml])
     spread_only = ~has_ml & df.spread_line.notna()
-    p[spread_only] = norm.cdf(df.spread_line[spread_only] / sigma)
+    p[spread_only] = norm_cdf(df.spread_line[spread_only].to_numpy(float) / sigma)
     p[df.spread_line == 0] = 0.5  # pick'em
     return p

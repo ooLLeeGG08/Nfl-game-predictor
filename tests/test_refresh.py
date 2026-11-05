@@ -46,6 +46,7 @@ def test_failed_refresh_falls_back_to_stale_cache(tmp_path, monkeypatch):
     import data.fetch as fetch
 
     monkeypatch.setattr(fetch, "CACHE_DIR", tmp_path)
+    monkeypatch.setattr(fetch, "RUNTIME_DIR", tmp_path)
     stale = pd.DataFrame({"game_id": ["g1"], "home_team": ["KC"], "away_team": ["BUF"], "gameday": ["2026-09-10"]})
     path = tmp_path / f"schedules_{CURRENT_SEASON}.parquet"
     stale.to_parquet(path, index=False)
@@ -61,10 +62,52 @@ def test_failed_refresh_falls_back_to_stale_cache(tmp_path, monkeypatch):
 
 
 def test_failed_download_without_cache_raises(tmp_path, monkeypatch):
+    # No cached copy and no committed seed: nothing to fall back on, so the error surfaces.
     import data.fetch as fetch
     import pytest
 
     monkeypatch.setattr(fetch, "CACHE_DIR", tmp_path)
+    monkeypatch.setattr(fetch, "RUNTIME_DIR", tmp_path)
+    monkeypatch.setattr(fetch, "SEED_DIR", tmp_path / "no-seed")
     monkeypatch.setattr(fetch, "_download", lambda kind, season: (_ for _ in ()).throw(ConnectionError("down")))
     with pytest.raises(ConnectionError):
         fetch.load_schedules([CURRENT_SEASON])
+
+
+def test_empty_cache_and_no_network_falls_back_to_committed_seed(tmp_path, monkeypatch):
+    # A fresh serverless instance (empty /tmp) while GitHub is unreachable.
+    import data.fetch as fetch
+
+    seed_dir = tmp_path / "seed"
+    seed_dir.mkdir()
+    pd.DataFrame({"game_id": ["s1"], "home_team": ["KC"], "away_team": ["BUF"], "gameday": ["2026-09-10"]}) \
+        .to_parquet(seed_dir / f"schedules_{CURRENT_SEASON}.parquet", index=False)
+    monkeypatch.setattr(fetch, "RUNTIME_DIR", tmp_path / "empty")
+    monkeypatch.setattr(fetch, "SEED_DIR", seed_dir)
+    monkeypatch.setattr(fetch, "_download", lambda kind, season: (_ for _ in ()).throw(ConnectionError("down")))
+    assert list(fetch.load_schedules([CURRENT_SEASON]).game_id) == ["s1"]
+
+
+def test_download_retries_transient_errors(monkeypatch):
+    import urllib.request
+
+    import data.fetch as fetch
+
+    calls = {"n": 0}
+    good = __import__("io").BytesIO()
+    pd.DataFrame({"season": [CURRENT_SEASON], "game_id": ["g"]}).to_parquet(good, index=False)
+
+    class Resp:
+        def __enter__(self): return self
+        def __exit__(self, *a): return False
+        def read(self): return good.getvalue()
+
+    def flaky(req, timeout):
+        calls["n"] += 1
+        if calls["n"] < 3:
+            raise ConnectionResetError(54, "Connection reset by peer")
+        return Resp()
+
+    monkeypatch.setattr(urllib.request, "urlopen", flaky)
+    monkeypatch.setattr(fetch.time, "sleep", lambda s: None)
+    assert list(fetch._download("schedules", CURRENT_SEASON).game_id) == ["g"] and calls["n"] == 3

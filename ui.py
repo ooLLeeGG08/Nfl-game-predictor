@@ -8,7 +8,7 @@ from functools import lru_cache
 import pandas as pd
 from markupsafe import Markup
 
-from train import CONFIG_PATH, MODEL_PATH, REPORTS
+from paths import CONFIG_PATH, MODEL_JSON, REPORTS
 
 # 8x8 pixel icons, drawn in the same style as the field scene.
 _ICONS = {
@@ -46,7 +46,7 @@ def icon(name: str, size: int = 16) -> Markup:
 
 @lru_cache(maxsize=1)
 def model_version() -> str:
-    return "v1-" + hashlib.sha256(MODEL_PATH.read_bytes()).hexdigest()[:7]
+    return "v1-" + hashlib.sha256(MODEL_JSON.read_bytes()).hexdigest()[:7]
 
 
 @lru_cache(maxsize=1)

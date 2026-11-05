@@ -15,9 +15,12 @@ import live
 import simulate
 import ui
 from data.fetch import CURRENT_SEASON
+from paths import ON_VERCEL
 from teams import NAMES, TEAM_COLORS
 
-app = Flask(__name__)
+# Static files live in public/static: on Vercel the CDN serves public/** directly;
+# locally Flask serves the same folder at the same /static URLs.
+app = Flask(__name__, static_folder="public/static", static_url_path="/static")
 
 TEAM_CHOICES = sorted(NAMES)
 
@@ -131,7 +134,9 @@ def health():
     return {"ok": True, "as_of_week": live.snapshot().as_of_week, "model": ui.model_version()}
 
 
-# Build the snapshot at import so the first visitor doesn't wait for it, and
-# start the first Monte Carlo in the background (never inside a request).
-live.snapshot()
-live.season_odds()
+# On a long-running server (local, Render): build the snapshot at import and
+# start the first Monte Carlo in the background. On Vercel each instance is a
+# short-lived function, so work starts lazily on the first request instead.
+if not ON_VERCEL:
+    live.snapshot()
+    live.season_odds()

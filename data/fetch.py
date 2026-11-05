@@ -7,8 +7,13 @@ Design notes
 * The in-progress season *does* change week to week, so its cache file gets a
   time-to-live (TTL). This matters on Render, where the disk is wiped on every
   deploy/restart: the app simply re-fetches the current season when needed.
-* nflreadpy returns Polars DataFrames. We convert to pandas right here, at the
-  load boundary, so the rest of the project only ever sees pandas.
+* Files come straight from the nflverse-data GitHub releases -- the same files
+  the nflreadpy package downloads -- read with pandas. Skipping nflreadpy
+  (and the polars library it needs) keeps the web app small enough for
+  Vercel's 500 MB function limit.
+* Historical files live in the repo (data/raw). Files the app downloads at
+  runtime go to paths.WRITABLE_DIR, which is /tmp on Vercel (the only
+  writable place there).
 * Test-season guard: the 2025 test season must not be touched while we are
   developing. Loading it requires an explicit ``allow_test=True``.
 
@@ -17,15 +22,23 @@ Run ``python -m data.fetch --help`` to pre-populate the cache.
 from __future__ import annotations
 
 import argparse
+import io
 import logging
 import time
+import urllib.request
 from pathlib import Path
 
 import pandas as pd
 
+from paths import WRITABLE_DIR
+
 log = logging.getLogger(__name__)
 
-CACHE_DIR = Path(__file__).resolve().parent / "raw"
+CACHE_DIR = Path(__file__).resolve().parent / "raw"   # committed historical files (read-only on Vercel)
+RUNTIME_DIR = WRITABLE_DIR / "raw"                     # where downloads are written
+SEED_DIR = Path(__file__).resolve().parent / "seed"    # committed copy of the current season: last-resort fallback
+DOWNLOAD_RETRIES = 3
+NFLVERSE = "https://github.com/nflverse/nflverse-data/releases/download/"
 
 FIRST_SEASON = 2006       # first season used for training
 BURN_IN_START = 2002      # extra seasons used only to warm up Elo / prior stats
@@ -33,12 +46,13 @@ VALID_SEASON = 2024
 TEST_SEASON = 2025
 CURRENT_SEASON = 2026
 CURRENT_TTL_SECONDS = 6 * 60 * 60
+TRAIN_SEASONS = range(FIRST_SEASON, VALID_SEASON)  # 2006-2023
 
 # Old team codes -> current franchise codes, so Elo follows a franchise
 # through relocations (Rams STL->LA, Chargers SD->LAC, Raiders OAK->LV).
 TEAM_MAP = {"STL": "LA", "SD": "LAC", "OAK": "LV"}
 
-TURNOVER_SOURCE = "nflreadpy.load_team_stats(summary_level='week')"
+TURNOVER_SOURCE = "nflverse-data stats_team_week (what nflreadpy.load_team_stats(summary_level='week') loads)"
 
 
 class HeldOutSeasonError(RuntimeError):
@@ -64,43 +78,52 @@ def _is_fresh(path: Path, season: int) -> bool:
 
 
 def _download(kind: str, season: int) -> pd.DataFrame:
-    """Fetch one season from nflreadpy, falling back to nfl_data_py."""
-    try:
-        import nflreadpy as nfl
-
-        if kind == "schedules":
-            df = nfl.load_schedules([season])
-        else:
-            df = nfl.load_team_stats([season], summary_level="week")
-        return df.to_pandas()
-    except Exception as exc:  # network error, API change, missing package...
-        log.warning("nflreadpy failed for %s %s (%s); trying nfl_data_py", kind, season, exc)
-        if kind != "schedules":
-            # nfl_data_py has no team-level weekly stats; turnovers would have
-            # to be derived from play-by-play. Not needed so far, so fail loudly.
-            raise
+    """Fetch one season from the nflverse-data releases."""
+    path = "schedules/games.parquet" if kind == "schedules" else f"stats_team/stats_team_week_{season}.parquet"
+    req = urllib.request.Request(NFLVERSE + path, headers={"User-Agent": "nfl-predictor"})
+    for attempt in range(1, DOWNLOAD_RETRIES + 1):
         try:
-            import nfl_data_py as ndp  # optional fallback dependency, not installed by default
-        except ImportError:
-            raise exc from None
-        return ndp.import_schedules([season])
+            with urllib.request.urlopen(req, timeout=60) as resp:
+                df = pd.read_parquet(io.BytesIO(resp.read()))
+            break
+        except OSError as exc:  # connection reset, timeout, DNS... (URLError is an OSError)
+            if attempt == DOWNLOAD_RETRIES:
+                raise
+            log.warning("download of %s failed (%s), retry %d/%d", path, exc, attempt, DOWNLOAD_RETRIES - 1)
+            time.sleep(attempt)
+    if kind == "schedules":  # one file holds every season
+        df = df[df.season == season].reset_index(drop=True)
+    return df
+
+
+def _cache_path(kind: str, season: int) -> Path:
+    committed = CACHE_DIR / f"{kind}_{season}.parquet"
+    if season < CURRENT_SEASON and committed.exists():
+        return committed
+    return RUNTIME_DIR / f"{kind}_{season}.parquet"
 
 
 def _load(kind: str, seasons, refresh: bool, allow_test: bool) -> pd.DataFrame:
     seasons = _guard(seasons, allow_test)
-    CACHE_DIR.mkdir(parents=True, exist_ok=True)
     frames = []
     for season in seasons:
-        path = CACHE_DIR / f"{kind}_{season}.parquet"
+        path = _cache_path(kind, season)
+        path.parent.mkdir(parents=True, exist_ok=True)
         if refresh or not _is_fresh(path, season):
             log.info("downloading %s %s", kind, season)
             try:
                 df = _download(kind, season)
             except Exception as exc:
-                if not path.exists():
+                seed = SEED_DIR / path.name
+                if path.exists():
+                    # Serving slightly stale data beats crashing; the next TTL check retries.
+                    log.warning("refresh of %s %s failed (%s); using cached copy", kind, season, exc)
+                elif seed.exists():
+                    # Fresh serverless instance with an empty /tmp: fall back to the committed copy.
+                    log.warning("download of %s %s failed (%s); using committed copy %s", kind, season, exc, seed)
+                    path = seed
+                else:
                     raise
-                # Serving slightly stale data beats crashing; the next TTL check retries.
-                log.warning("refresh of %s %s failed (%s); using cached copy", kind, season, exc)
             else:
                 # Write then rename: a crash mid-write can never leave a half-written cache file.
                 tmp = path.with_suffix(".tmp")
@@ -131,7 +154,16 @@ def main() -> None:
     p.add_argument("--end", type=int, default=VALID_SEASON)
     p.add_argument("--refresh", action="store_true", help="re-download even if cached")
     p.add_argument("--allow-test", action="store_true", help=f"permit loading {TEST_SEASON}")
+    p.add_argument("--seed", action="store_true",
+                   help=f"download {CURRENT_SEASON} and save it to data/seed/ (the committed fallback copy)")
     a = p.parse_args()
+    if a.seed:
+        SEED_DIR.mkdir(exist_ok=True)
+        for kind in ("schedules", "team_stats"):
+            df = _download(kind, CURRENT_SEASON)
+            df.to_parquet(SEED_DIR / f"{kind}_{CURRENT_SEASON}.parquet", index=False)
+            print(f"seed: {kind} {CURRENT_SEASON}: {len(df)} rows")
+        return
     seasons = range(a.start, a.end + 1)
     s = load_schedules(seasons, a.refresh, a.allow_test)
     t = load_team_stats(seasons, a.refresh, a.allow_test)

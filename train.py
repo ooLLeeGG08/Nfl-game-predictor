@@ -14,7 +14,6 @@ import json
 import logging
 from dataclasses import asdict
 from itertools import product
-from pathlib import Path
 
 import joblib
 import pandas as pd
@@ -23,18 +22,13 @@ from sklearn.metrics import log_loss
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import StandardScaler
 
-from data.fetch import BURN_IN_START, FIRST_SEASON, VALID_SEASON, load_schedules, load_team_stats
+from data.fetch import BURN_IN_START, TRAIN_SEASONS, VALID_SEASON, load_schedules, load_team_stats
 from features import MODEL_FEATURES, EloParams, build_features
+from paths import CONFIG_PATH, MODEL_JSON, MODEL_PATH, REPORTS
 
 log = logging.getLogger(__name__)
 
-ROOT = Path(__file__).resolve().parent
-MODEL_PATH = ROOT / "models" / "pipeline.joblib"
-CONFIG_PATH = ROOT / "models" / "config.json"
-REPORTS = ROOT / "reports"
-
 SEED = 42
-TRAIN_SEASONS = range(FIRST_SEASON, VALID_SEASON)  # 2006-2023
 
 ELO_GRID = {
     "k": [10, 15, 20, 25, 30, 40],
@@ -90,9 +84,26 @@ def tune_elo(sched, stats, regress: float = 1 / 3) -> pd.DataFrame:
     return pd.DataFrame(results).sort_values("val_log_loss").reset_index(drop=True)
 
 
+def export_model_json(pipe: Pipeline) -> None:
+    """Write the fitted pipeline as plain numbers so the web app needs no scikit-learn.
+
+    A logistic regression after standard scaling is just
+        p = 1 / (1 + exp(-(((x - mean) / scale) . coef + intercept)))
+    """
+    scale, logreg = pipe.named_steps["scale"], pipe.named_steps["logreg"]
+    MODEL_JSON.write_text(json.dumps({
+        "features": MODEL_FEATURES,
+        "mean": scale.mean_.tolist(),
+        "scale": scale.scale_.tolist(),
+        "coef": logreg.coef_[0].tolist(),
+        "intercept": float(logreg.intercept_[0]),
+    }, indent=2))
+
+
 def save(pipe: Pipeline, params: EloParams, train_seasons) -> None:
     MODEL_PATH.parent.mkdir(exist_ok=True)
     joblib.dump(pipe, MODEL_PATH)
+    export_model_json(pipe)
     CONFIG_PATH.write_text(json.dumps({
         "elo": asdict(params),
         "features": MODEL_FEATURES,
@@ -117,6 +128,9 @@ def main() -> None:
     log.info("saved %s", MODEL_PATH)
 
 
-if __name__ == "__main__":
+if __name__ == "__main__" and "--export-json" in __import__("sys").argv:
+    export_model_json(joblib.load(MODEL_PATH))  # re-export without retraining
+    print(f"wrote {MODEL_JSON}")
+elif __name__ == "__main__":
     logging.basicConfig(level=logging.INFO, format="%(levelname)s %(message)s")
     main()

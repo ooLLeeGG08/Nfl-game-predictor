@@ -4,7 +4,12 @@ import pandas as pd
 import pytest
 
 from features import MODEL_FEATURES
-from live import PIPE, home_win_prob
+import joblib
+
+from live import home_win_prob
+from paths import MODEL_PATH
+
+PIPE = joblib.load(MODEL_PATH)  # the scikit-learn pipeline the app's model.json was exported from
 
 
 def _rows(**overrides):
@@ -34,3 +39,13 @@ def test_fast_array_probability_matches_dataframe_version():
     X = np.column_stack([rng.normal(0, 150, 300), rng.normal(0, 8, 300), rng.normal(0, 1, 300),
                          rng.integers(-7, 8, 300), rng.integers(0, 2, 300), rng.integers(0, 2, 300)]).astype(float)
     np.testing.assert_allclose(home_win_prob_array(X), home_win_prob(pd.DataFrame(X, columns=MODEL_FEATURES)), atol=1e-12)
+
+
+def test_app_model_json_matches_the_saved_pipeline_exactly():
+    # The web app uses models/model.json (plain numbers); it must reproduce the
+    # scikit-learn pipeline that was trained and evaluated.
+    rng = np.random.default_rng(1)
+    X = pd.DataFrame(np.column_stack([rng.normal(0, 150, 500), rng.normal(0, 8, 500), rng.normal(0, 1, 500),
+                                      rng.integers(-7, 8, 500), rng.integers(0, 2, 500), np.zeros(500)]),
+                     columns=MODEL_FEATURES)
+    np.testing.assert_allclose(home_win_prob(X), PIPE.predict_proba(X)[:, 1], rtol=0, atol=1e-12)

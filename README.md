@@ -80,7 +80,9 @@ ratings follow teams through relocations.
 
 Last 5 games. In weeks 1-4 the value is blended with last season's final
 value: `w * current + (1 - w) * prior_final`, `w = games_played / 5`.
-Turnovers come from `nflreadpy.load_team_stats(summary_level="week")`:
+Turnovers come from the nflverse weekly team stats (the file
+`nflreadpy.load_team_stats(summary_level="week")` loads; the app downloads it
+directly from the nflverse-data releases):
 giveaways = interceptions thrown + fumbles lost; takeaways = the opponent's
 giveaways in the same game.
 
@@ -119,7 +121,7 @@ tune further on validation.
 ## Usage
 
 ```bash
-python -m venv .venv && .venv/bin/pip install -r requirements.txt
+python -m venv .venv && .venv/bin/pip install -r requirements-dev.txt   # app + training/eval/tests
 python -m data.fetch          # cache 2002-2024 in data/raw/ (--refresh to re-download)
 python features.py            # data/features.parquet
 python -m pytest              # leakage + feature tests
@@ -208,6 +210,34 @@ favorite wins" bracket is the chalk mode of `/simulate`.
 schedule (`live.snapshot`). If a refresh fails (e.g. GitHub is unreachable)
 the last cached copy is served instead of crashing. `tests/test_refresh.py`
 covers these rules.
+
+## Deployment
+
+The app runs on **Vercel** (serverless) or **Render** (a long-running server).
+
+**Vercel.** Import the GitHub repo in Vercel; it detects the Flask `app` in
+`app.py` and needs no build settings. `vercel.json` sets a 60-second limit and
+excludes files the function does not need. What makes it fit:
+
+- **Bundle size.** `requirements.txt` holds only what the website needs
+  (~336 MB installed on Linux, limit 500 MB). Training, evaluation and tests
+  use `requirements-dev.txt` (scikit-learn, scipy, matplotlib, nflreadpy,
+  pytest). The app predicts from `models/model.json`, the trained pipeline's
+  scaler and coefficients exported by `train.py` (a test checks it matches
+  the pipeline exactly), and `mathx.py` replaces the few scipy functions it
+  used (tested against scipy).
+- **Read-only disk.** Downloads and the Monte Carlo cache go to `/tmp` on
+  Vercel (`paths.WRITABLE_DIR`).
+- **Static files** are in `public/static`, served by Vercel's CDN.
+- **No background work.** A serverless function may be frozen after it
+  responds, so on Vercel the Monte Carlo runs inside the first request that
+  needs it (about a second) and is cached per instance; elsewhere it runs in a
+  background thread.
+- **Network hiccups.** Downloads retry 3 times. A fresh instance whose
+  download still fails falls back to `data/seed/`, a committed copy of the
+  current season (refresh it with `python -m data.fetch --seed`).
+
+**Render.** `render.yaml`: one gunicorn worker with 4 threads, no `--preload`.
 
 ## Limitations
 

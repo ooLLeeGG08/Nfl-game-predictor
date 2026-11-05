@@ -38,10 +38,10 @@ from typing import Callable
 
 import numpy as np
 import pandas as pd
-from scipy.special import ndtri
 
 from data.fetch import CURRENT_SEASON
 from features import MODEL_FEATURES, EloParams
+from mathx import best_assignment, norm_ppf
 from teams import CONFERENCE_OF, DIVISIONS, NAMES
 
 log = logging.getLogger(__name__)
@@ -122,7 +122,7 @@ def _play(st: _State, inp: SeasonInputs, home, away, rest_diff, neutral: int, rn
     X = np.column_stack([np.broadcast_to(np.asarray(cols[c], float), (len(r),)) for c in MODEL_FEATURES])
     p = inp.prob(X)
 
-    expected_margin = inp.sigma * ndtri(np.clip(p, 1e-9, 1 - 1e-9))
+    expected_margin = inp.sigma * norm_ppf(np.clip(p, 1e-9, 1 - 1e-9))
     margin = expected_margin if chalk else expected_margin + inp.sigma * rng.standard_normal(len(r))
     pts = np.rint(margin)
     pts = np.where(pts == 0, np.where(margin < 0, -1.0, 1.0), pts)  # no ties
@@ -389,8 +389,6 @@ def average_bracket(odds: pd.DataFrame) -> dict:
     advances. Percentages are those shares, so the two teams in a game do not
     sum to 100%: each counts every path, not just this matchup.
     """
-    from scipy.optimize import linear_sum_assignment
-
     o = odds.set_index("team")
 
     def record(t):
@@ -399,8 +397,7 @@ def average_bracket(odds: pd.DataFrame) -> dict:
 
     def assign(teams, seeds):
         share = o.loc[teams, [f"p_seed_{k}" for k in seeds]].to_numpy()
-        rows, cols = linear_sum_assignment(-share)
-        return {seeds[c]: teams[r] for r, c in zip(rows, cols)}
+        return {seeds[c]: teams[r] for r, c in best_assignment(share)}
 
     def game(home, away, seed_of, key):
         winner = home if o.loc[home, key] >= o.loc[away, key] else away
