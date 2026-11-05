@@ -186,14 +186,7 @@ select {
 
 /* ---- footer ---- */
 .footer { margin-top: 40px; }
-.footer-mark { position: relative; isolation: isolate; text-align: center; padding: 150px 0 40px; }
-.footer-mark::before {
-  content: ""; position: absolute; left: 50%; top: 0; width: min(560px, 100%); height: 190px; transform: translateX(-50%); z-index: -1;
-  background-image: radial-gradient(#9a9a9a 1px, transparent 1.3px);
-  background-size: 5px 5px;
-  -webkit-mask-image: radial-gradient(ellipse 50% 70% at 50% 100%, #000 0%, rgba(0,0,0,.35) 45%, transparent 75%);
-          mask-image: radial-gradient(ellipse 50% 70% at 50% 100%, #000 0%, rgba(0,0,0,.35) 45%, transparent 75%);
-}
+.footer-mark { text-align: center; padding: 72px 0 40px; }
 .footer-mark strong { display: block; font: 400 28px/1.1 var(--head); }
 .footer-mark span { display: block; color: var(--muted); font-size: 10px; letter-spacing: .06em; text-transform: uppercase; margin-top: 10px; }
 .footer-cols { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 28px 40px; padding: 28px 0; border-top: 1px solid var(--border); font-size: 11px; }
