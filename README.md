@@ -4,6 +4,164 @@ Home-team win probability for NFL games from a logistic regression on
 pre-kickoff features (Elo + last-5-game form), evaluated honestly against
 "always pick home" and the Vegas line.
 
+## How the model calculates a probability
+
+Every number in this section is read from the frozen `models/pipeline.joblib`
+or computed by `scripts/explain_model.py` (saved to `reports/model_explained.json`).
+Nothing is refitted. `log` is the natural log throughout.
+
+### 1. The idea
+
+A game is a win (1) or a loss (0). A straight line through those points would
+predict values below 0 and above 1, which are not probabilities.
+
+Logistic regression fits the straight line in **log-odds** space instead, then
+maps it back to an S-shaped curve that stays between 0 and 1:
+
+$$\operatorname{logit}(p) = \log\frac{p}{1-p}$$
+
+As $p$ goes from 0 to 1, the log-odds go from $-\infty$ to $+\infty$, and
+$p = 0.5$ maps to $\log 1 = 0$.
+
+### 2. The model equation
+
+The line, in log-odds space:
+
+$$z = \log\frac{p}{1-p} = b_0 + w_1x_1 + w_2x_2 + \dots + w_6x_6$$
+
+Each $x_j$ is a home-minus-away feature, standardized with the 2006-2023
+training mean and SD stored in the scaler: $x_j = (\text{raw}_j - \text{mean}_j)/\text{SD}_j$.
+
+From log-odds back to a probability:
+
+$$\frac{p}{1-p} = e^{z} \;\Rightarrow\; p = e^{z} - p\,e^{z} \;\Rightarrow\; p\,(1+e^{z}) = e^{z} \;\Rightarrow\; p = \frac{e^{z}}{1+e^{z}} = \frac{1}{1+e^{-z}}$$
+
+| Term | Meaning | Coefficient $w$ | Odds ratio $e^w$ | SE | $z = w/\text{SE}$ | p-value |
+|---|---|---|---|---|---|---|
+| `intercept` | $b_0$: log-odds with every feature at its training mean | 0.262 | 1.300 | 0.031 | 8.342 | $7.3\times10^{-17}$ |
+| `elo_diff` | Elo rating difference (1 SD = 152.496 points) | 0.625 | 1.868 | 0.053 | 11.786 | $4.6\times10^{-32}$ |
+| `pd_diff` | last-5 point differential difference (1 SD = 10.840) | 0.178 | 1.195 | 0.058 | 3.064 | 0.002 |
+| `to_diff` | last-5 turnover margin difference (1 SD = 1.231) | -0.061 | 0.941 | 0.039 | -1.531 | 0.126 |
+| `rest_diff` | days of rest difference (1 SD = 2.472) | 0.080 | 1.084 | 0.032 | 2.555 | 0.011 |
+| `div_game` | division game, 0/1 (1 SD = 0.483) | -0.062 | 0.940 | 0.031 | -1.963 | 0.050 |
+| `neutral_site` | neutral site, 0/1 (1 SD = 0.104) | -0.051 | 0.950 | 0.032 | -1.627 | 0.104 |
+
+$w$ is the change in log-odds per 1 SD of the feature. $e^w$ is what the home
+team's odds are multiplied by: 152.496 more Elo points than the opponent
+multiplies the odds by 1.868.
+
+The coefficients are the model's (scikit-learn). SE, $z$ and p come from an
+unpenalized statsmodels `Logit` on the same standardized data, because
+scikit-learn's fit has a small L2 penalty (C = 1.0) and reports no standard
+errors; the two sets of coefficients differ by less than 0.001.
+
+Elo, recent point differential and rest are clearly real effects. Division
+games are borderline (p = 0.0496). Turnover margin (p = 0.126) and neutral site
+(p = 0.104, only 51 neutral games in training) could be noise.
+
+**Intercept.** Because the features are standardized, $b_0$ is the log-odds
+when every feature is at its *training mean*: $1/(1+e^{-0.262}) = 0.565$.
+For truly equal teams at a non-neutral site (every raw difference 0, not a
+division game), $z = 0.336$ and $p = 0.583$: home field is worth about
+8 points of probability over a coin flip.
+
+![Predicted probability vs linear score, 2025 test games](reports/logit_curve.png)
+
+Every test game sits on the same S-curve. What moves a game left or right is
+only its score $z$; the dots at 0 and 1 are the actual results.
+
+### 3. Worked example: LV @ DEN, 2025 week 10
+
+The first game of week 10 of the 2025 test season (Thursday, 6 Nov 2025).
+Before kickoff: Elo DEN 1655.092, LV 1355.488; last-5 point differential
+DEN +6.0, LV -11.4; last-5 turnover margin DEN -0.2, LV -0.8; both teams on
+4 days of rest; division game; not neutral.
+
+| Feature | Raw (home − away) | Train mean | Train SD | Scaled $x$ | $w$ | $w \cdot x$ |
+|---|---|---|---|---|---|---|
+| `elo_diff` | 299.604 | -3.098 | 152.496 | 1.985 | 0.625 | 1.240 |
+| `pd_diff` | 17.400 | -0.359 | 10.840 | 1.638 | 0.178 | 0.291 |
+| `to_diff` | 0.600 | -0.011 | 1.231 | 0.496 | -0.061 | -0.030 |
+| `rest_diff` | 0.000 | -0.095 | 2.472 | 0.038 | 0.080 | 0.003 |
+| `div_game` | 1.000 | 0.371 | 0.483 | 1.303 | -0.062 | -0.080 |
+| `neutral_site` | 0.000 | 0.011 | 0.104 | -0.105 | -0.051 | 0.005 |
+
+$$z = 0.262 + 1.240 + 0.291 - 0.030 + 0.003 - 0.080 + 0.005 = 1.692$$
+
+(The rounded terms add to 1.691; the unrounded sum is 1.692.)
+
+$$p = \frac{1}{1+e^{-1.692}} = 0.844$$
+
+The app shows **DEN 84.4%** for this game (`/game/2025_10_LV_DEN`); the script
+asserts that its $p$ equals the app's `live.home_win_prob` exactly. Elo alone
+contributes 1.240 of the 1.692; being a division game costs Denver 0.080.
+
+Vegas: moneyline DEN -500 / LV +380 gives 0.833 and 0.208; with the vig
+removed, $0.833/(0.833+0.208) = 0.800$. Actual result: **DEN won 10-7.** Both
+picked Denver; the model was more confident.
+
+### 4. How the coefficients were found: maximum likelihood
+
+In log-odds space a win sits at $+\infty$ and a loss at $-\infty$, so the
+residuals are infinite and least squares cannot be used.
+
+Instead, each candidate line gives every training game a probability $p_i$
+through the S-curve, and the line is scored by how likely it makes the results
+that actually happened:
+
+$$\text{LL} = \sum_{\text{home wins}} \log p_i \;+\; \sum_{\text{home losses}} \log(1-p_i)$$
+
+The fit picks the coefficients with the highest log-likelihood. It does not
+rotate lines by trial and error: an iterative optimizer (scikit-learn's
+`lbfgs`) follows the slope of LL uphill until it stops improving. Strictly,
+scikit-learn maximizes LL minus the small L2 penalty.
+
+On the 4,642 training games (2006-2023 regular season): **LL(fit) = -2912.230.**
+The unpenalized maximum is the same to three decimals, so the penalty barely
+matters here.
+
+### 5. Goodness of fit
+
+**LL(null)** is the intercept-only model: every game gets the training home-win
+rate, $2591/4642 = 0.558$.
+
+$$\text{LL(null)} = 4642\,\big[\,0.558\log 0.558 + 0.442\log 0.442\,\big] = -3186.109$$
+
+**McFadden $R^2$** compares the two, the way linear-regression $R^2$ compares
+$SS(\text{mean})$ and $SS(\text{fit})$:
+
+$$R^2_{\text{McFadden}} = \frac{\text{LL(null)} - \text{LL(fit)}}{\text{LL(null)}} = \frac{-3186.109 - (-2912.230)}{-3186.109} = 0.086$$
+
+McFadden $R^2$ values of 0.1-0.3 are often quoted as normal for noisy outcomes;
+0.086 is a little below that, which is what single NFL games look like. Even the market is
+low: on the 2025 test season, with "always home" as the null, the model's
+McFadden $R^2$ is 0.098 and Vegas's is 0.123. McFadden $R^2$ is not the share of
+variance explained, so it is not comparable to a linear-regression $R^2$.
+
+**Likelihood-ratio test** (are the features, together, better than nothing?):
+
+$$\chi^2 = 2\,\big(\text{LL(fit)} - \text{LL(null)}\big) = 2\,(-2912.230 + 3186.109) = 547.758$$
+
+with df = 6 (the six features the fit adds to the intercept-only model).
+p-value: $4.3\times10^{-115}$, so the relationship is not a fluke.
+
+**Single coefficient** (Wald test): $z^2 = \chi^2$ with df = 1. For `elo_diff`,
+$11.786^2 = 138.900$. For `div_game`, $(-1.963)^2 = 3.854$, just above 3.841,
+the 5% cut-off for $\chi^2$ with 1 df, hence p = 0.0496.
+
+### 6. Neutral sites
+
+At a neutral site "home" is only a label, so the app averages both labelings,
+$p = \big(p(A\text{ home}) + 1 - p(B\text{ home})\big)/2$ (see [Model](#model));
+LV @ DEN was not neutral, so this did not apply.
+
+### 7. Why this matters for the Vegas comparison
+
+The results below score the model three ways: accuracy (right picks), Brier
+score (mean squared error of $p$) and log loss, which is the same
+log-likelihood, sign-flipped and averaged per game on the test season:
+$-\text{LL}/n = 177.278/284 = 0.624$.
+
 ## Results: 2025 test season (evaluated once)
 
 284 games (regular season + playoffs; 1 tie excluded; every game had a line).
@@ -129,6 +287,7 @@ python train.py               # tune Elo on 2024, fit, save models/pipeline.jobl
 python evaluate.py            # validation report + experiments -> reports/
 python evaluate.py --replot   # redraw light (README) and dark (app) plots
 python simulate.py            # season odds -> reports/season_odds_2026.csv
+python scripts/explain_model.py   # numbers + plot for "How the model calculates a probability"
 gunicorn app:app --workers 1 --threads 4   # site on http://127.0.0.1:8000
 ```
 

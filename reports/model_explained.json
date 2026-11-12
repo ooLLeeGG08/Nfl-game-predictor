@@ -1,0 +1,220 @@
+{
+  "source": "models/pipeline.joblib (frozen; not refitted)",
+  "train": {
+    "seasons": [
+      2006,
+      2023
+    ],
+    "games": 4642,
+    "home_wins": 2591,
+    "home_win_rate": 0.558164584230935
+  },
+  "sklearn": {
+    "C": 1.0,
+    "penalty": "l2",
+    "solver": "lbfgs"
+  },
+  "intercept": 0.2622744885486487,
+  "intercept_prob": 0.5651953290401239,
+  "equal_teams": {
+    "z": 0.33607863928799914,
+    "p": 0.5832376641781519,
+    "note": "all raw diffs 0, not a division game, not neutral"
+  },
+  "coefficients": [
+    {
+      "term": "intercept",
+      "meaning": "baseline log-odds (all features at their training mean)",
+      "one_sd": null,
+      "train_mean": null,
+      "coef_sklearn": 0.2622744885486487,
+      "odds_ratio": 1.2998832965441633,
+      "coef_unpenalized": 0.26248709433150985,
+      "se": 0.031466744281715524,
+      "z": 8.341730303634685,
+      "p_value": 7.321127546279562e-17,
+      "wald_chi2": 69.58446445857722
+    },
+    {
+      "term": "elo_diff",
+      "meaning": "Elo rating difference",
+      "one_sd": 152.49592952319168,
+      "train_mean": -3.098165963790243,
+      "coef_sklearn": 0.624757254643951,
+      "odds_ratio": 1.867792504441129,
+      "coef_unpenalized": 0.6253241523391342,
+      "se": 0.05305834565998158,
+      "z": 11.785594604597238,
+      "p_value": 4.6314006065353316e-32,
+      "wald_chi2": 138.9002401839115
+    },
+    {
+      "term": "pd_diff",
+      "meaning": "last-5 point differential difference",
+      "one_sd": 10.839788191304764,
+      "train_mean": -0.3586299009047825,
+      "coef_sklearn": 0.17780699381633916,
+      "odds_ratio": 1.1945947348124264,
+      "coef_unpenalized": 0.17723634171261127,
+      "se": 0.05784320047857696,
+      "z": 3.0640825584720752,
+      "p_value": 0.0021833864752825553,
+      "wald_chi2": 9.388601925132779
+    },
+    {
+      "term": "to_diff",
+      "meaning": "last-5 turnover margin difference",
+      "one_sd": 1.2313863493694426,
+      "train_mean": -0.01130547177940543,
+      "coef_sklearn": -0.06081446352324922,
+      "odds_ratio": 0.9409978129995127,
+      "coef_unpenalized": -0.06044380177715367,
+      "se": 0.03948556877437694,
+      "z": -1.5307820971893151,
+      "p_value": 0.12582325566701275,
+      "wald_chi2": 2.343293829075318
+    },
+    {
+      "term": "rest_diff",
+      "meaning": "days of rest difference",
+      "one_sd": 2.471513884460514,
+      "train_mean": -0.09500215424386041,
+      "coef_sklearn": 0.08041883904882052,
+      "odds_ratio": 1.0837408856316895,
+      "coef_unpenalized": 0.08062617126869566,
+      "se": 0.03156151032232527,
+      "z": 2.5545726565456577,
+      "p_value": 0.010631823822191844,
+      "wald_chi2": 6.525841457570738
+    },
+    {
+      "term": "div_game",
+      "meaning": "division game (0/1)",
+      "one_sd": 0.48300438942484425,
+      "train_mean": 0.3707453683757001,
+      "coef_sklearn": -0.06161171969215237,
+      "odds_ratio": 0.9402478956660063,
+      "coef_unpenalized": -0.061734149632512864,
+      "se": 0.03144690074294633,
+      "z": -1.9631234930634647,
+      "p_value": 0.049631826359487444,
+      "wald_chi2": 3.8538538490176992
+    },
+    {
+      "term": "neutral_site",
+      "meaning": "neutral site (0/1)",
+      "one_sd": 0.10423980692872076,
+      "train_mean": 0.010986643688065489,
+      "coef_sklearn": -0.05127027929037321,
+      "odds_ratio": 0.9500218645939253,
+      "coef_unpenalized": -0.05139185798068792,
+      "se": 0.031596229556707205,
+      "z": -1.626518692315885,
+      "p_value": 0.10383936022735218,
+      "wald_chi2": 2.6455630564529766
+    }
+  ],
+  "fit": {
+    "ll_fit": -2912.23008481963,
+    "ll_null": -3186.109110442323,
+    "ll_null_check": -3186.1091104423235,
+    "ll_fit_unpenalized": -2912.2299310984217,
+    "mcfadden_r2": 0.08596034100811782,
+    "lr_chi2": 547.758051245386,
+    "df": 6,
+    "lr_p_value": 4.29644662100593e-115
+  },
+  "example": {
+    "game_id": "2025_10_LV_DEN",
+    "gameday": "2025-11-06 00:00:00",
+    "home": "DEN",
+    "away": "LV",
+    "home_score": 10,
+    "away_score": 7,
+    "home_win": 1,
+    "neutral_site": 0,
+    "inputs": {
+      "home_elo": 1655.091816482414,
+      "away_elo": 1355.4880811821977,
+      "home_pd5": 6.0,
+      "away_pd5": -11.4,
+      "home_to5": -0.2,
+      "away_to5": -0.8,
+      "home_rest": 4.0,
+      "away_rest": 4.0
+    },
+    "features": [
+      {
+        "feature": "elo_diff",
+        "raw": 299.6037353002164,
+        "mean": -3.098165963790243,
+        "sd": 152.49592952319168,
+        "scaled": 1.9849834825786055,
+        "coef": 0.624757254643951,
+        "contribution": 1.2401328310893986
+      },
+      {
+        "feature": "pd_diff",
+        "raw": 17.4,
+        "mean": -0.3586299009047825,
+        "sd": 10.839788191304764,
+        "scaled": 1.638282002147425,
+        "coef": 0.17780699381633916,
+        "contribution": 0.2912979978252469
+      },
+      {
+        "feature": "to_diff",
+        "raw": 0.6000000000000001,
+        "mean": -0.01130547177940543,
+        "sd": 1.2313863493694426,
+        "scaled": 0.4964367780205111,
+        "coef": -0.06081446352324922,
+        "contribution": -0.030190536328527744
+      },
+      {
+        "feature": "rest_diff",
+        "raw": 0.0,
+        "mean": -0.09500215424386041,
+        "sd": 2.471513884460514,
+        "scaled": 0.038438851119219034,
+        "coef": 0.08041883904882052,
+        "contribution": 0.0030912077813780503
+      },
+      {
+        "feature": "div_game",
+        "raw": 1.0,
+        "mean": 0.3707453683757001,
+        "sd": 0.48300438942484425,
+        "scaled": 1.30279278077288,
+        "coef": -0.06161171969215237,
+        "contribution": -0.08026730362593841
+      },
+      {
+        "feature": "neutral_site",
+        "raw": 0.0,
+        "mean": 0.010986643688065489,
+        "sd": 0.10423980692872076,
+        "scaled": -0.10539777472514088,
+        "coef": -0.05127027929037321,
+        "contribution": 0.005403773346741811
+      }
+    ],
+    "intercept": 0.2622744885486487,
+    "z": 1.691742458636948,
+    "p_home": 0.844453172718214,
+    "p_app": 0.844453172718214,
+    "spread_line": 9.5,
+    "home_moneyline": -500.0,
+    "away_moneyline": 380.0,
+    "p_vegas": 0.7999999999999999
+  },
+  "test": {
+    "games": 284,
+    "ll": -177.27816124373126,
+    "log_loss": 0.624218877618772,
+    "ll_null": -196.45136714996963,
+    "ll_vegas": -172.38485843474785,
+    "mcfadden_r2_model": 0.09759772194205027,
+    "mcfadden_r2_vegas": 0.12250619104548946
+  }
+}
