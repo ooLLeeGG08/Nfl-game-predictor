@@ -1,0 +1,8 @@
+# Not needed by the deployed app (kept out of the upload entirely).
+# vercel.json's functions.excludeFiles is limited to 256 characters, so files
+# the site never uses go here instead.
+/.github/
+/data/qb_raw/
+/data/injury_snapshots/
+/data/qb/v2_log.csv
+/models/v2/pipeline.joblib
