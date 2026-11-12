@@ -327,3 +327,26 @@ select {
 .mode-switch a + a { border-left: 1px solid var(--border); }
 .mode-switch a:hover { color: var(--text); }
 .mode-switch a[aria-current="page"] { background: var(--text); color: #000; }
+
+/* ---- QB context (no probabilities; v1 sets those) ---- */
+.qb-line { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 16px; font-size: 11px; color: var(--muted-card); min-width: 0; }
+.qb-line .lbl { color: var(--muted-card); text-transform: uppercase; font-size: 9px; letter-spacing: .06em; }
+.qb-side { overflow-wrap: anywhere; }
+.qb-side b { font-weight: 500; color: var(--text); margin-right: 2px; }
+.qb-rt { white-space: nowrap; }
+.qb-st { display: inline-block; margin-left: 5px; padding: 0 4px; border: 1px solid currentColor; font-size: 9px; line-height: 14px; color: var(--muted-card); }
+.qb-backup { color: var(--accent); white-space: nowrap; }
+.qb-low { color: var(--muted-card); white-space: nowrap; }
+.game-row .qb-line { grid-column: 2 / 4; }
+.game-row.hot .qb-line, .game-row.hot .qb-line .lbl, .game-row.hot .qb-side b, .game-row.hot .qb-low,
+.game-row.hot .qb-st { color: var(--on-accent); border-color: var(--on-accent); }
+.game-row.hot .qb-backup { color: var(--on-accent); font-weight: 700; text-decoration: underline; }
+.hero-qb { margin-top: 12px; }
+.qb-card { background: var(--card); padding: 18px 20px; margin-top: 16px; }
+.qb-card > .lbl { display: block; color: var(--muted-card); font-size: 10px; text-transform: uppercase; letter-spacing: .06em; }
+.qb-list { list-style: none; margin: 10px 0; padding: 0; display: grid; gap: 6px; font-size: 12px; color: var(--muted-card); }
+@media (max-width: 760px) {
+  .game-row .qb-line { grid-column: 2 / 4; grid-row: 3; }
+  .qb-line { display: grid; grid-template-columns: auto minmax(0, 1fr); column-gap: 10px; }
+  .qb-line > :not(.lbl) { grid-column: 2; justify-self: start; }
+}

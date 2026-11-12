@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% import "partials/qb.html" as qbm %}
 {% block title %}This week · NFL Predictor{% endblock %}
 {% block content %}
 <section class="section" style="padding-top:56px">
@@ -34,6 +35,7 @@
         </span>
         <span class="gr-vegas"><span class="lbl">Vegas</span>{{ g.spread }}{% if g.vegas_team %} · {{ g.vegas_team }} {{ '%.0f' % (g.vegas_p * 100) }}%{% endif %}</span>
       </span>
+      {{ qbm.line(g.qb, g.away, g.home) }}
       <span class="round" aria-hidden="true">{{ icon('arrow', 12) }}</span>
     </a>
     {% endfor %}
@@ -41,6 +43,8 @@
   <p class="muted small" style="margin-top:16px">
     Percentages are win probability for the picked team. Vegas = moneyline probability with the bookmaker margin removed.
     The model knows nothing about injuries or weather; big disagreements usually mean the market knows something it doesn't.
+    QB lines show each team's expected starter, his status on the latest injury report and his rating (EPA per play, shrunk to the league average).
+    The model's probabilities do not use them.
   </p>
 </section>
 {% endblock %}

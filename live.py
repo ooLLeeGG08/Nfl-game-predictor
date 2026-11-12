@@ -31,7 +31,7 @@ from data.fetch import (BURN_IN_START, CURRENT_SEASON, CURRENT_TTL_SECONDS, FIRS
 import market
 from features import MODEL_FEATURES, EloParams, TeamState, build_features
 from teams import NAMES, same_division
-from paths import CONFIG_PATH, MODEL_JSON, ON_VERCEL, WRITABLE_DIR
+from paths import CONFIG_PATH, MODEL_JSON, ON_VERCEL, ROOT, WRITABLE_DIR
 
 # The saved model as plain numbers (exported by train.py from models/pipeline.joblib),
 # so the web app needs neither scikit-learn nor joblib's pickle of it.
@@ -221,6 +221,7 @@ def week_games(week: int | None = None) -> dict:
             "vegas_team": vegas_team, "vegas_p": vegas_p, "spread": _spread_text(g),
             "disagree": has_line and abs(g.p_model - g.p_vegas) > DISAGREE,
             "model_right": None if winner is None else model_team == winner,
+            "qb": qb_context(g),
             "vegas_right": None if (winner is None or not has_line) else vegas_team == winner,
         })
 
@@ -256,6 +257,7 @@ def game_detail(game_id: str) -> dict | None:
         "p_vegas": None if math.isnan(g.p_vegas) else float(g.p_vegas), "spread": _spread_text(g),
         "neutral": bool(g.neutral_site), "inputs": {"div_game": int(g.div_game)},
         "played": bool(g.played),
+        "qb": qb_context(g),
         "score": f"{g.away_team} {int(g.away_score)} \u2013 {int(g.home_score)} {g.home_team}" if g.played else None,
         "kickoff_iso": kickoff.isoformat() if kickoff else None,
         "kickoff_et": f"{kickoff:%a %b %-d, %H:%M} ET" if kickoff else "TBD",
@@ -410,3 +412,102 @@ def _single(fp: str, seed: int, chalk: bool) -> dict:
 def single_season(seed: int, chalk: bool = False) -> dict:
     """One simulated season (cheap: a single run). Cached per data version and seed."""
     return _single(_fingerprint(snapshot()), seed, chalk)
+
+
+# ------------------------------------------------------------- QB context --
+#
+# v1 sets every probability shown on the site. Pages show QB context only:
+# each team's expected starter, his status, rating, and whether he is a backup.
+# The experimental v2 (v1 + QB rating) runs in shadow mode: scripts/build_qb.py
+# logs it before every kickoff for the end-of-2026 evaluation; no page shows it.
+# Everything QB-related is precomputed into data/qb/upcoming.json; the app only reads it.
+
+QB_JSON = ROOT / "data" / "qb" / "upcoming.json"
+V2_JSON = ROOT / "models" / "v2" / "model.json"
+QB_STALE_DAYS = 4           # injury report / depth chart older than this before kickoff -> unavailable
+LOW_SAMPLE_STARTS = 8       # fewer career starts than this -> "(low sample)"
+
+_V2 = json.loads(V2_JSON.read_text())
+_V2_FEATURES = _V2["features"]
+_V2_MEAN, _V2_SCALE, _V2_COEF = (np.array(_V2[k]) for k in ("mean", "scale", "coef"))
+_V2_INTERCEPT = float(_V2["intercept"])
+V2_VERSION = "v2-" + hashlib.sha256(V2_JSON.read_bytes()).hexdigest()[:7]
+_V2_ANTI = [_V2_FEATURES.index(c) for c in ANTISYMMETRIC + ["qb_rating_diff"]]
+_V2_NEUTRAL = _V2_FEATURES.index("neutral_site")
+
+
+def home_win_prob_v2(X: pd.DataFrame) -> np.ndarray:
+    """Shadow-mode v2 probability (v1 features + qb_rating_diff), same neutral-site rule as v1.
+    Used by scripts/build_qb.py for the pre-kickoff log; never shown on a page."""
+    M = X[_V2_FEATURES].to_numpy(float)
+
+    def raw(A):
+        return 1 / (1 + np.exp(-(((A - _V2_MEAN) / _V2_SCALE) @ _V2_COEF + _V2_INTERCEPT)))
+
+    p = raw(M)
+    neutral = M[:, _V2_NEUTRAL] == 1
+    if neutral.any():
+        sw = M[neutral].copy()
+        sw[:, _V2_ANTI] = -sw[:, _V2_ANTI]
+        p[neutral] = (p[neutral] + 1 - raw(sw)) / 2
+    return p
+
+
+def qb_fresh(entry: dict | None) -> tuple[bool, str | None]:
+    """QB data is usable only if both the injury report and the depth chart were seen
+    before kickoff and no more than QB_STALE_DAYS before it."""
+    if not entry:
+        return False, "no QB data for this game"
+    kick = pd.Timestamp(entry["kickoff"])
+    oldest = kick - pd.Timedelta(days=QB_STALE_DAYS)
+    for key, what in (("report_as_of", "injury report"), ("depth_as_of", "depth chart")):
+        t = entry.get(key)
+        if not t:
+            return False, f"no {what} yet"
+        t = pd.Timestamp(t)
+        if t >= kick:
+            return False, f"{what} is from after kickoff"
+        if t < oldest:
+            return False, f"{what} is more than {QB_STALE_DAYS} days older than kickoff"
+    if not entry["home"].get("qb_id") or not entry["away"].get("qb_id"):
+        return False, "expected starter unknown"
+    return True, None
+
+
+_qb_cache: dict = {"mtime": None, "data": {"games": {}}}
+
+
+def qb_data() -> dict:
+    """data/qb/upcoming.json, re-read when the file changes (a new deploy)."""
+    try:
+        mtime = QB_JSON.stat().st_mtime
+    except OSError:
+        return {"games": {}}
+    if _qb_cache["mtime"] != mtime:
+        _qb_cache["data"], _qb_cache["mtime"] = json.loads(QB_JSON.read_text()), mtime
+    return _qb_cache["data"]
+
+
+STATUS_SHORT = {"Questionable": "Q", "Doubtful": "D"}   # badge only for these (Out never starts)
+
+
+def _qb_side(s: dict) -> dict:
+    n = s.get("career_starts")
+    usual = s.get("usual_starter")
+    return {
+        "name": s.get("name") or "unknown", "status": STATUS_SHORT.get(s.get("status")),
+        "rating": s.get("rating"),
+        "backup": bool(usual and s.get("qb_id") and s["qb_id"] != usual),
+        "low_sample": n is not None and n < LOW_SAMPLE_STARTS,
+    }
+
+
+def qb_context(row, entry: dict | None = None) -> dict:
+    """QB context for one game: no probabilities (v1 sets those; v2 is shadow-only)."""
+    if entry is None:
+        entry = qb_data().get("games", {}).get(row.game_id)
+    ok, reason = qb_fresh(entry)
+    if not ok:
+        return {"available": False, "reason": reason}
+    return {"available": True, "reason": None, "home": _qb_side(entry["home"]), "away": _qb_side(entry["away"]),
+            "report_as_of": entry["report_as_of"]}

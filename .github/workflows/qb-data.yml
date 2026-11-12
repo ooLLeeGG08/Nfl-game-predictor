@@ -1,0 +1,39 @@
+name: qb-data
+# Scheduled job: refresh the QB data, snapshot the injury report with a timestamp,
+# precompute data/qb/upcoming.json for the app and append to data/qb/v2_log.csv.
+# The app never downloads anything; it reads what this job commits.
+# GitHub runs schedules on the default branch only, and may start them late.
+on:
+  schedule:
+    - cron: "0 14 * * *"    # daily, 09:00/10:00 US Eastern
+    - cron: "0 22 * * *"    # daily, after Wednesday-Saturday final reports, before Thursday night games
+    - cron: "30 15 * * 0"   # Sunday, before the early games
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: qb-data
+  cancel-in-progress: false
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version-file: .python-version
+          cache: pip
+          cache-dependency-path: requirements-dev.txt
+      - run: pip install -r requirements-dev.txt
+      - run: python scripts/fetch_qb.py
+      - run: python scripts/build_qb.py
+      - run: python scripts/shadow_report.py   # running v2 vs v1 on finished logged games (watching only)
+      - run: python -m pytest -q tests/test_qb_leakage.py tests/test_qb_context.py
+      - name: Commit data changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/qb_raw data/qb data/injury_snapshots reports/v2_shadow.json
+          if git diff --cached --quiet; then echo "no changes"; exit 0; fi
+          git commit -m "QB data refresh $(date -u +%Y-%m-%dT%H:%MZ)"
+          git push

@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% import "partials/qb.html" as qbm %}
 {% block content %}
 <section class="hero">
   <div>
@@ -28,6 +29,7 @@
       <div class="seg" style="flex-basis:{{ 100 - ph }}%; background:{{ colors[g.away] }}"></div>
       <div class="seg" style="flex-basis:{{ ph }}%; background:{{ colors[g.home] }}"></div>
     </div>
+    <div class="hero-qb">{{ qbm.line(g.qb, g.away, g.home) }}</div>
     <div class="hero-card-meta">
       <span><span class="lbl">Model</span>{{ g.model_team }} {{ '%.0f' % (g.model_p * 100) }}%</span>
       <span><span class="lbl">Vegas</span>{{ g.spread }}{% if g.vegas_team %} · {{ g.vegas_team }} {{ '%.0f' % (g.vegas_p * 100) }}%{% endif %}</span>

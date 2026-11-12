@@ -25,6 +25,13 @@ app = Flask(__name__, static_folder="public/static", static_url_path="/static")
 TEAM_CHOICES = sorted(NAMES)
 
 
+@app.template_filter("utc_short")
+def utc_short(iso: str | None) -> str:
+    if not iso:
+        return "unknown"
+    return f"{datetime.fromisoformat(iso).astimezone(timezone.utc):%a %b %-d, %H:%M} UTC"
+
+
 @app.context_processor
 def site_globals():
     built = datetime.fromtimestamp(live.snapshot().built_at, tz=timezone.utc)

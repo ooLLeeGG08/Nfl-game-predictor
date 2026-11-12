@@ -1,0 +1,25 @@
+{# QB context macros. `q` is live.qb_context(): available, reason, home/away {name, status, rating, backup, low_sample}.
+   No probabilities here: v1 sets the headline and the bar; the QB-adjusted model runs in shadow mode only. #}
+
+{% macro badge(st) -%}
+  {%- if st %}<span class="qb-st">{{ st }}</span>{% endif -%}
+{%- endmacro %}
+
+{% macro side(team, s) -%}
+  <span class="qb-side"><b>{{ team }}</b> {{ s.name }}
+    {%- if s.backup %} <span class="qb-backup">Backup starting</span>{% endif %}{{ badge(s.status) }}
+    {%- if s.rating is not none %} <span class="qb-rt">{{ '%+.2f' % s.rating }} EPA/play</span>{% endif %}
+    {%- if s.low_sample %} <span class="qb-low">(low sample)</span>{% endif -%}
+  </span>
+{%- endmacro %}
+
+{# One line for rows and the next-kickoff card: away first, like "AWY @ HOM". #}
+{% macro line(q, away, home) -%}
+  <span class="qb-line">
+    {%- if q and q.available %}
+      <span class="lbl">QB</span>{{ side(away, q.away) }}{{ side(home, q.home) }}
+    {%- else %}
+      <span class="lbl">QB</span><span class="qb-na">QB data unavailable</span>
+    {%- endif %}
+  </span>
+{%- endmacro %}

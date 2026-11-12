@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% import "partials/qb.html" as qbm %}
 {% block title %}{{ g.away.team }} @ {{ g.home.team }} · NFL Predictor{% endblock %}
 {% block content %}
 <section class="section" style="padding-top:56px">
@@ -14,5 +15,19 @@
     <a class="btn" href="{{ url_for('week') }}">Back to this week</a>
   </div>
   {% with result=g, note="These are the inputs the model had before kickoff." %}{% include "partials/result.html" %}{% endwith %}
+  <div class="qb-card">
+    <span class="lbl">Quarterbacks</span>
+    {% if g.qb.available %}
+    <ul class="qb-list">
+      <li>{{ qbm.side(g.home.team, g.qb.home) }}</li>
+      <li>{{ qbm.side(g.away.team, g.qb.away) }}</li>
+    </ul>
+    <p class="muted small">Expected starter and status from the injury report as of
+      <time datetime="{{ g.qb.report_as_of }}" data-kickoff="long">{{ g.qb.report_as_of | utc_short }}</time>.
+      Rating = EPA per play over his recent games, shrunk to the league average.</p>
+    {% else %}
+    <p class="muted small" style="margin:8px 0 0">QB data unavailable ({{ g.qb.reason }}).</p>
+    {% endif %}
+  </div>
 </section>
 {% endblock %}

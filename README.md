@@ -288,6 +288,11 @@ python evaluate.py            # validation report + experiments -> reports/
 python evaluate.py --replot   # redraw light (README) and dark (app) plots
 python simulate.py            # season odds -> reports/season_odds_2026.csv
 python scripts/explain_model.py   # numbers + plot for "How the model calculates a probability"
+python scripts/fetch_qb.py --all  # QB stats, injuries, depth charts -> data/qb_raw/ (nflreadpy)
+python train_v2.py            # experimental v2 -> models/v2/
+python evaluate_v2.py --rolling   # rolling origin 2019-2024 -> reports/v2_rolling.json
+python scripts/build_qb.py    # data/qb/upcoming.json for the app + data/qb/v2_log.csv
+python scripts/shadow_report.py   # shadow v2 vs v1 on finished logged games -> reports/v2_shadow.json
 gunicorn app:app --workers 1 --threads 4   # site on http://127.0.0.1:8000
 ```
 
@@ -304,7 +309,8 @@ macOS and can hang on Linux).
   completed week, equal rest assumed).
 - **This week** (`/week`): the earliest 2026 week with an unplayed game. Each
   row shows the model's pick and probability next to the Vegas spread and its
-  implied probability (`market.py`, same method as the evaluation). Rows where
+  implied probability (`market.py`, same method as the evaluation), and a QB
+  line (see "Experimental: QB adjustment"; context only, no probabilities). Rows where
   the two differ by more than 10 points are highlighted. Finished games show
   the score and whether each pick was right. Kickoffs are stored in US Eastern
   and converted to the visitor's time zone in the browser.
@@ -313,6 +319,87 @@ macOS and can hang on Linux).
 - **Season** (`/season`): Monte Carlo season odds (below), sortable.
 - **Simulate** (`/simulate`): one simulated season (or chalk), with standings, bracket and champion.
 - **About** (`/about`): results, calibration, feature importance, experiments.
+
+## Experimental: QB adjustment
+
+**QB context shown; QB-adjusted model runs in shadow mode only.** v1 sets every
+probability on the site: the headline number, the bar and the pick. The
+Quarterbacks block (This week rows, game page, next-kickoff card) shows, per
+team, the expected starter and his rating (e.g. `+0.11 EPA/play`), with
+`Backup starting` when he did not start most of the team's last 4 games, a Q or
+D badge when he is Questionable or Doubtful on the latest injury report, and
+`(low sample)` when he has fewer than 8 career starts (counted from 2002, before
+kickoff). The block shows no probabilities. The experimental model **v2** is
+computed and logged before every kickoff for the evaluation below, and is not
+shown anywhere on the site.
+
+**v2** = v1's six features + `qb_rating_diff`, trained on 2009-2024 regular-season
+games (`train_v2.py`, frozen in `models/v2/` before the holdout ran).
+
+- **Expected starter** (point-in-time, `qb.py`): the QB with the most plays in the
+  team's previous game (depth-chart QB1 in week 1). If he is Out or Doubtful on
+  the final pre-game injury report, the next depth-chart QB who is not.
+  It matches the actual starter in 88-97% of team-games per season since 2009.
+- **QB rating**: EPA per play (pass attempts + sacks + carries) in games before
+  kickoff, this season and the two before, shrunk toward the league mean with
+  200 plays of prior: `(sum EPA + 200 * league mean) / (plays + 200)`.
+
+| Evaluation | Games | v1 log loss | v2 log loss | v2 − v1 log loss [95% CI] | v2 − v1 Brier [95% CI] |
+|---|---|---|---|---|---|
+| Rolling origin 2019-2024 (train < Y, score Y) | 1,670 | 0.6385 | 0.6326 | −0.0059 [−0.0097, −0.0020] | −0.0026 [−0.0043, −0.0008] |
+| 2025, previously seen (frozen models) | 284 | 0.6242 | 0.6345 | +0.0103 [−0.0017, +0.0221] | +0.0043 [−0.0012, +0.0098] |
+| 2026 weeks 1-9, holdout (frozen models, run once) | 135 | 0.6159 | 0.6158 | −0.0001 [−0.0169, +0.0170] | −0.0006 [−0.0083, +0.0070] |
+
+Paired bootstrap over games (10,000 resamples); resampling whole weeks gives the
+same conclusions. Negative = v2 better. Numbers: `reports/v2_rolling.json`,
+`reports/v2_holdout.json` (`evaluate_v2.py`).
+
+v2 was better in every one of the six rolling-origin seasons, was worse on 2025
+and is level on 2026 so far, so it is not the live model. In 2025 the loss
+came from about 15 games: v2 was over-confident about QBs whose rating did not
+match their 2025 play, mostly young or low-sample starters (Brosmer, McCarthy,
+Shough, Sanders, Mills) and QBs who improved (Bryce Young). Expected-starter
+misses were not the cause. Features tested and rejected by the same rule
+(CI must exclude 0): a starter-vs-backup gap, QB start counts, and injured
+non-QB starters (offensive line, skill positions, defense).
+
+**Post-hoc breakdown: QB change vs no change.** This explains where v2 differs
+from v1; it was done after the evaluation and does not change the
+pre-registered rule below. A game has a "QB change" when either team's expected
+starter is not the QB who led the team in most of its previous 4 games
+(`scripts/qb_change_split.py`, `reports/v2_qb_change_split.json`).
+
+| Games | 2019-2024 games | v2 − v1 log loss [95% CI] | 2025 games | v2 − v1 log loss [95% CI] |
+|---|---|---|---|---|
+| QB change (either team) | 402 | −0.0032 [−0.0122, +0.0060] | 72 | −0.0056 [−0.0326, +0.0222] |
+| No QB change | 1,268 | −0.0067 [−0.0110, −0.0026] | 212 | +0.0157 [+0.0029, +0.0284] |
+| v2 differs by >5 pts, QB change | 103 | −0.0117 [−0.0415, +0.0182] | 22 | −0.0411 [−0.1178, +0.0428] |
+| v2 differs by >5 pts, no QB change | 210 | −0.0288 [−0.0481, −0.0091] | 58 | +0.0494 [+0.0103, +0.0880] |
+
+In 2019-2024 most of v2's gain came from games *without* a QB change: Elo
+learns from team results and misses how much of a team's strength sits in its
+quarterback, so v2 mostly adds QB quality, not injury news. In 2025 the same
+kind of game is where v2 lost (QBs whose rating did not match their 2025 play),
+which is why v2 stays in shadow mode.
+
+**Data flow.** A scheduled GitHub Action (`.github/workflows/qb-data.yml`, twice a
+day plus Sunday morning) runs `scripts/fetch_qb.py` (nflverse QB data, plus a
+timestamped snapshot of the current injury report in `data/injury_snapshots/`)
+and `scripts/build_qb.py`, which writes `data/qb/upcoming.json`. The app only
+reads that file; it never calls nflverse. QB data is shown as **unavailable**
+when the injury report or depth chart is missing, from after
+kickoff, or more than **4 days** older than kickoff.
+
+**Pre-registered evaluation (end of 2026).** `scripts/build_qb.py` appends v1 and
+v2 to `data/qb/v2_log.csv` before every kickoff (append-only, committed; a new
+row only when the QB inputs, statuses, report or probabilities change). At the
+end of the 2026 season, for every game with fresh QB data, take its last row
+logged before kickoff, compute the per-game log-loss difference v2 − v1, and a
+paired-bootstrap 95% CI. If the whole interval is below 0, consider promoting
+v2. No change to v2 before then. `scripts/shadow_report.py` applies exactly this
+selection to the games finished so far (log-likelihood, log loss, Brier,
+accuracy, CI) and writes `reports/v2_shadow.json` after every scheduled run; it
+is for watching only, and the decision is made once, at the end of the season.
 
 ## Season simulation (`simulate.py`)
 
@@ -400,7 +487,22 @@ excludes files the function does not need. What makes it fit:
 
 ## Limitations
 
-- No injuries, quarterback changes or weather.
+- The live model (v1) uses no injuries, quarterback changes or weather. The
+  Quarterbacks block is context only; it does not change any probability.
+- Injury reports before our own snapshots (2009-2025 and 2026 weeks 1-9) come
+  from nflverse's weekly files: they are dated, not timestamped. 2009-2024 rows
+  carry a modification date (all before kickoff); 2025-2026 rows carry none.
+  Neither says when a report was published, so downgrades after the report and
+  later revisions of the data cannot be ruled out. From 2026 week 10 the
+  scheduled job stores each report with the time it was fetched.
+- Late scratches after the final injury report are missed, and Questionable
+  players are treated as playing. On 2019-2024 games where the expected starter
+  was not the actual starter (16%), v2 is no better than v1, while Vegas,
+  which sees late news, is much better (log loss 0.580 vs v2's 0.643 and v1's 0.637).
+- Weekly depth charts for 2009-2024 have no timestamp (they look stale, not
+  post-game); they are used only for week 1 and the backup order.
+- QBs with few plays are shrunk toward the league mean, which likely overrates
+  most backups and rookies and underrates the rare good one (see 2025 above).
 - Small playoff sample (13 games per season).
 - Simplified simulator tiebreakers; turnovers are not simulated.
 - Elo home-field and training-window choices are within validation noise.
