@@ -1,0 +1,43 @@
+{
+  "version": "v2",
+  "frozen": "2026-11-12",
+  "features": [
+    "elo_diff",
+    "pd_diff",
+    "to_diff",
+    "rest_diff",
+    "div_game",
+    "neutral_site",
+    "qb_rating_diff"
+  ],
+  "train_seasons": [
+    2009,
+    2024
+  ],
+  "train_games": 4147,
+  "game_types": "regular season only",
+  "elo": {
+    "k": 25.0,
+    "hfa": 0.0,
+    "mov": true,
+    "regress": 0.3333333333333333,
+    "mean": 1500.0
+  },
+  "seed": 42,
+  "logistic_regression": {
+    "C": 1.0,
+    "penalty": "l2",
+    "solver": "lbfgs"
+  },
+  "qb": {
+    "rating": "EPA per play (pass attempts + sacks + carries) in games before kickoff, current + previous 2 seasons, shrunk to the league mean of earlier seasons",
+    "k_shrink_plays": 200,
+    "window_seasons": 3,
+    "expected_starter": "week 1: depth-chart QB1; else the QB with most plays in the team's previous game; if he is Out/Doubtful on the final pre-game injury report, the next depth-chart QB who is not Out/Doubtful",
+    "injury_status_used": [
+      "Out",
+      "Doubtful"
+    ]
+  },
+  "selection": "rolling origin 2019-2024 (evaluate_v2.py --rolling); kept only features whose paired-bootstrap 95% CI of the log-loss difference vs v1 excludes 0"
+}
