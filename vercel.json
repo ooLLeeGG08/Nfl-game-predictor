@@ -3,7 +3,7 @@
   "functions": {
     "app.py": {
       "maxDuration": 60,
-      "excludeFiles": "{tests/**,scripts/**,public/**,models/pipeline.joblib,reports/*.png,reports/predictions_*.csv,reports/elo_tuning.csv,README.md,data/qb_raw/**,data/injury_snapshots/**,data/qb/v2_log.csv,models/v2/pipeline.joblib,.github/**,render.yaml,runtime.txt,requirements-dev.txt}"
+      "excludeFiles": "{tests/**,scripts/**,public/**,models/pipeline.joblib,reports/*.png,reports/predictions_*.csv,reports/elo_tuning.csv,README.md,render.yaml,runtime.txt,requirements-dev.txt}"
     }
   }
 }
