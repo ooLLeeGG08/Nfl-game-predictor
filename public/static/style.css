@@ -54,8 +54,9 @@ p { margin: 0 0 12px; }
 }
 
 /* ---- nav ---- */
-.nav { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 22px; padding: 14px 0; }
-.wordmark { font: 500 13px/1 var(--head); letter-spacing: .28em; text-transform: uppercase; text-decoration: none; margin-right: auto; }
+.nav { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 22px; padding: 20px 0; }
+.wordmark { font: 500 18px/1 var(--head); letter-spacing: .3em; text-transform: uppercase; text-decoration: none; margin-right: auto; }
+.nav .pill-white { height: 40px; padding: 0 16px; }
 .nav-links { display: flex; gap: 18px; font-size: 11px; }
 .nav-links a { display: inline-flex; align-items: center; gap: 6px; color: var(--muted); text-decoration: none; }
 .nav-links a:hover, .nav-links a[aria-current="page"] { color: var(--text); }
