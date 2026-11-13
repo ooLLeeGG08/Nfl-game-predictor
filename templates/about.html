@@ -53,6 +53,29 @@
     Vegas = moneyline probability with the bookmaker margin removed. The market knows about injuries,
     quarterback changes and weather; this model does not.
   </p>
+  {% set home = r.test | selectattr('method', 'equalto', 'Always home') | first %}
+  <div class="explain" id="metrics-explained">
+    <span class="lbl">How to read this table</span>
+    <div class="explain-grid">
+      <div>
+        <h4>Accuracy <span>higher is better</span></h4>
+        <p>Share of games where the side given more than 50% won. "Always home" picks the home team every time, so its {{ '%.1f' % (home.accuracy * 100) }}% is simply how often home teams won in {{ r.test_info.season }}.</p>
+        <p>It ignores confidence: a 51% pick and a 95% pick count the same.</p>
+      </div>
+      <div>
+        <h4>Log loss <span>lower is better</span></h4>
+        <p>Average over the {{ model.n }} games of <code>&minus;ln(probability given to what happened)</code>.</p>
+        <p>Home team at 84%: a home win costs 0.174, a home loss costs 1.833. A 50% guess always costs 0.693; a 99% pick that misses costs 4.605. Confident misses are punished hardest.</p>
+        <p>"Always home" gives every game 55.8%, the training (2006&ndash;2023) home-win rate.</p>
+      </div>
+      <div>
+        <h4>Brier <span>lower is better</span></h4>
+        <p>Average of <code>(p &minus; result)&sup2;</code>, where the result is 1 for a home win and 0 for a loss.</p>
+        <p>Home team at 84%: a home win costs 0.026, a home loss costs 0.706. A 50% guess always costs 0.250. Gentler on confident misses than log loss.</p>
+      </div>
+    </div>
+    <p class="explain-foot">Scale: a coin flip scores 0.693 log loss and Vegas {{ '%.3f' % vegas.log_loss }}, so all the skill fits in a gap of under 0.09. On this scale the model's {{ '%.3f' % (model.log_loss - vegas.log_loss) }} behind Vegas is a meaningful difference, not a rounding detail.</p>
+  </div>
   <h3 style="margin:40px 0 8px">Validation, 2024</h3>
   {{ metrics_table(r.validation) }}
 </section>
@@ -71,6 +94,19 @@
       <img src="{{ url_for('static', filename='plots/calibration_validation_dark.png') }}" alt="Calibration curve for 2024 validation season, model and Vegas." loading="lazy">
       <figcaption>Validation, 2024.</figcaption>
     </figure>
+  </div>
+  <div class="explain">
+    <span class="lbl">How to read these charts</span>
+    <div class="explain-grid explain-grid-2">
+      <div>
+        <p>Games are grouped by their predicted home-win probability into 10 bins (0.1&ndash;0.2, 0.2&ndash;0.3, &hellip;). Each point is one bin: <b>across</b> is the average prediction, <b>up</b> is how often the home team actually won.</p>
+        <p>The dotted diagonal is perfect calibration: 70% predictions win 70% of the time.</p>
+      </div>
+      <div>
+        <p><b>Above the line</b>: the home team won more often than predicted (the forecast was too low). <b>Below</b>: it won less often (too high).</p>
+        <p>In 2025 both lines follow the diagonal from about 0.5 up. Under 0.3 the model's points sit above it: the home teams it rated least likely to win (17&ndash;25%) actually won about a third of the time. Between 0.3 and 0.5 its points sit a little below. The end bins hold few games, so single points there are noisy.</p>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -96,6 +132,19 @@
           <tr><td>Training seasons</td><td>{{ r.config.train_seasons[0] }}&ndash;{{ r.config.train_seasons[1] }}</td></tr>
         </tbody>
       </table>
+    </div>
+  </div>
+  <div class="explain">
+    <span class="lbl">How to read this chart</span>
+    <div class="explain-grid explain-grid-2">
+      <div>
+        <p>Each bar is a feature's coefficient after scaling every feature to standard deviations, so the bars can be compared. It is the change in the home team's <b>log-odds</b> when that home-minus-away difference grows by one standard deviation, with the other features held fixed.</p>
+        <p><b>Right</b> of zero helps the home team, <b>left</b> hurts it. Longer bar = more influence.</p>
+      </div>
+      <div>
+        <p>Example: in an average matchup the model gives the home team 56.5%. Give the home team a one-SD edge in Elo (about 152 points) and the log-odds rise by 0.625 (odds &times;1.87), so the probability goes to 70.8%. A one-SD edge in recent point differential (about 10.8 points per game) moves it only to 60.8%.</p>
+        <p>The small bars (rest, turnovers, division, neutral site) each move the probability by only 1&ndash;2 percentage points per standard deviation.</p>
+      </div>
     </div>
   </div>
 </section>

@@ -350,3 +350,17 @@ select {
   .qb-line { display: grid; grid-template-columns: auto minmax(0, 1fr); column-gap: 10px; }
   .qb-line > :not(.lbl) { grid-column: 2; justify-self: start; }
 }
+
+/* About page: how to read the metrics table */
+.explain { background: var(--card); padding: 20px; margin-top: 24px; }
+.explain > .lbl { color: var(--muted-card); }
+.explain-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; margin-top: 14px; }
+.explain h4 { margin: 0 0 8px; font: 500 13px var(--head); color: var(--text); }
+.explain h4 span { margin-left: 6px; font: 400 10px var(--mono); color: var(--muted-card); text-transform: uppercase; letter-spacing: .06em; }
+.explain p { margin: 0 0 8px; font-size: 12px; line-height: 1.55; color: var(--muted-card); }
+.explain code { font: 400 11px var(--mono); color: var(--text); overflow-wrap: anywhere; }
+.explain .explain-foot { margin: 14px 0 0; padding-top: 14px; border-top: 1px solid var(--border); }
+@media (max-width: 760px) { .explain-grid { grid-template-columns: 1fr; gap: 16px; } }
+.explain-grid-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.explain p b { color: var(--text); font-weight: 500; }
+@media (max-width: 760px) { .explain-grid-2 { grid-template-columns: 1fr; } }
