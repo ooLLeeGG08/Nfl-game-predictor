@@ -1,5 +1,5 @@
 {
- "built_at": "2026-11-12T20:55:41.324943+00:00",
+ "built_at": "2026-11-13T02:30:13.228254+00:00",
  "season": 2026,
  "stale_days": 4,
  "model_v2": "v2-c1ea20c",
@@ -34,7 +34,7 @@
    "report_as_of": "2026-11-12T19:59:34.173023+00:00",
    "depth_as_of": "2026-11-12T15:57:12+00:00",
    "qb_rating_diff": -0.1736,
-   "frozen": false,
+   "frozen": true,
    "available": true,
    "reason": null,
    "p_v1": 0.671406,
