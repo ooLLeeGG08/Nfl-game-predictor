@@ -1,5 +1,5 @@
 {
- "built_at": "2026-11-13T02:30:13.228254+00:00",
+ "built_at": "2026-11-13T20:44:33.079653+00:00",
  "season": 2026,
  "stale_days": 4,
  "model_v2": "v2-c1ea20c",
@@ -53,7 +53,7 @@
     "career_starts": 168,
     "usual_starter": "00-0033106",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "NE",
@@ -65,10 +65,10 @@
     "career_starts": 41,
     "usual_starter": "00-0039851",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
-   "report_as_of": "2026-11-12T19:59:34.173023+00:00",
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "report_as_of": "2026-11-13T20:44:31.931211+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": 0.0568,
    "frozen": false,
    "available": true,
@@ -89,7 +89,7 @@
     "career_starts": 108,
     "usual_starter": "00-0030565",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "BUF",
@@ -101,10 +101,10 @@
     "career_starts": 147,
     "usual_starter": "00-0034857",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
-   "report_as_of": "2026-11-12T19:59:34.173023+00:00",
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "report_as_of": "2026-11-13T20:44:31.931211+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": -0.2417,
    "frozen": false,
    "available": true,
@@ -125,7 +125,7 @@
     "career_starts": 17,
     "usual_starter": "00-0040743",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "CAR",
@@ -137,10 +137,10 @@
     "career_starts": 50,
     "usual_starter": "00-0039150",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
-   "report_as_of": "2026-11-12T19:59:34.173023+00:00",
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "report_as_of": "2026-11-13T20:44:31.931211+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": 0.0259,
    "frozen": false,
    "available": true,
@@ -161,7 +161,7 @@
     "career_starts": 8,
     "usual_starter": "00-0033537",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "HOU",
@@ -173,10 +173,10 @@
     "career_starts": 59,
     "usual_starter": "00-0039163",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
-   "report_as_of": "2026-11-12T19:59:34.173023+00:00",
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "report_as_of": "2026-11-13T20:44:31.931211+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": -0.138,
    "frozen": false,
    "available": true,
@@ -197,7 +197,7 @@
     "career_starts": 25,
     "usual_starter": "00-0040676",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "JAX",
@@ -209,10 +209,10 @@
     "career_starts": 88,
     "usual_starter": "00-0036971",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
-   "report_as_of": "2026-11-12T19:59:34.173023+00:00",
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "report_as_of": "2026-11-13T20:44:31.931211+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": -0.199,
    "frozen": false,
    "available": true,
@@ -233,7 +233,7 @@
     "career_starts": 19,
     "usual_starter": "00-0039917",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "KC",
@@ -245,10 +245,10 @@
     "career_starts": 155,
     "usual_starter": "00-0033873",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
-   "report_as_of": "2026-11-12T19:59:34.173023+00:00",
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "report_as_of": "2026-11-13T20:44:31.931211+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": -0.0826,
    "frozen": false,
    "available": true,
@@ -269,7 +269,7 @@
     "career_starts": 93,
     "usual_starter": "00-0035710",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "MIA",
@@ -281,10 +281,10 @@
     "career_starts": 14,
     "usual_starter": "00-0038128",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
-   "report_as_of": "2026-11-12T19:59:34.173023+00:00",
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "report_as_of": "2026-11-13T20:44:31.931211+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": -0.0713,
    "frozen": false,
    "available": true,
@@ -305,7 +305,7 @@
     "career_starts": 61,
     "usual_starter": "00-0036264",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "MIN",
@@ -317,10 +317,10 @@
     "career_starts": 102,
     "usual_starter": "00-0035228",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
-   "report_as_of": "2026-11-12T19:59:34.173023+00:00",
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "report_as_of": "2026-11-13T20:44:31.931211+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": 0.2303,
    "frozen": false,
    "available": true,
@@ -341,7 +341,7 @@
     "career_starts": 49,
     "usual_starter": "00-0033119",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "LA",
@@ -353,10 +353,10 @@
     "career_starts": 261,
     "usual_starter": "00-0026498",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
-   "report_as_of": "2026-11-12T19:59:34.173023+00:00",
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "report_as_of": "2026-11-13T20:44:31.931211+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": -0.1754,
    "frozen": false,
    "available": true,
@@ -377,7 +377,7 @@
     "career_starts": 181,
     "usual_starter": "00-0029604",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "SEA",
@@ -389,10 +389,10 @@
     "career_starts": 31,
     "usual_starter": "00-0035704",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
-   "report_as_of": "2026-11-12T19:59:34.173023+00:00",
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "report_as_of": "2026-11-13T20:44:31.931211+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": 0.0275,
    "frozen": false,
    "available": true,
@@ -413,7 +413,7 @@
     "career_starts": 154,
     "usual_starter": "00-0033077",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "SF",
@@ -425,10 +425,10 @@
     "career_starts": 61,
     "usual_starter": "00-0037834",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
-   "report_as_of": "2026-11-12T19:59:34.173023+00:00",
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "report_as_of": "2026-11-13T20:44:31.931211+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": -0.0742,
    "frozen": false,
    "available": true,
@@ -449,7 +449,7 @@
     "career_starts": 92,
     "usual_starter": "00-0036442",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "PIT",
@@ -461,10 +461,10 @@
     "career_starts": 286,
     "usual_starter": "00-0023459",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
-   "report_as_of": "2026-11-12T19:59:34.173023+00:00",
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "report_as_of": "2026-11-13T20:44:31.931211+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": 0.1737,
    "frozen": false,
    "available": true,
@@ -485,7 +485,7 @@
     "career_starts": 1,
     "usual_starter": "00-0035993",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "LAC",
@@ -497,14 +497,14 @@
     "career_starts": 106,
     "usual_starter": "00-0036355",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
-   "report_as_of": "2026-11-12T19:59:34.173023+00:00",
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "report_as_of": "2026-11-13T20:44:31.931211+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": -0.0983,
    "frozen": false,
-   "available": false,
-   "reason": "injury report is more than 4 days older than kickoff",
+   "available": true,
+   "reason": null,
    "p_v1": 0.707137,
    "p_v2": 0.63057
   },
@@ -521,7 +521,7 @@
     "career_starts": 60,
     "usual_starter": "00-0039163",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "IND",
@@ -533,10 +533,10 @@
     "career_starts": 94,
     "usual_starter": "00-0035710",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": 0.0494,
    "frozen": false,
    "available": false,
@@ -557,7 +557,7 @@
     "career_starts": 156,
     "usual_starter": "00-0033873",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "ARI",
@@ -569,10 +569,10 @@
     "career_starts": 0,
     "usual_starter": "00-0035289",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": 0.1003,
    "frozen": false,
    "available": false,
@@ -593,7 +593,7 @@
     "career_starts": 51,
     "usual_starter": "00-0039150",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "BAL",
@@ -605,10 +605,10 @@
     "career_starts": 73,
     "usual_starter": "00-0035993",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": 0.0225,
    "frozen": false,
    "available": false,
@@ -624,12 +624,12 @@
     "qb_id": "00-0039923",
     "name": "J.J. McCarthy",
     "status": null,
-    "rating": -0.0589,
-    "plays_prior": 393,
+    "rating": -0.0431,
+    "plays_prior": 436,
     "career_starts": 13,
     "usual_starter": "00-0039923",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "JAX",
@@ -641,16 +641,16 @@
     "career_starts": 89,
     "usual_starter": "00-0036971",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
-   "qb_rating_diff": -0.1648,
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
+   "qb_rating_diff": -0.149,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
-   "p_v1": 0.416068,
-   "p_v2": 0.334923
+   "p_v1": 0.382967,
+   "p_v2": 0.319122
   },
   "2026_11_MIA_BUF": {
    "week": 11,
@@ -665,7 +665,7 @@
     "career_starts": 148,
     "usual_starter": "00-0034857",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "MIA",
@@ -677,10 +677,10 @@
     "career_starts": 0,
     "usual_starter": "00-0038128",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": 0.1959,
    "frozen": false,
    "available": false,
@@ -701,7 +701,7 @@
     "career_starts": 42,
     "usual_starter": "00-0039918",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "NO",
@@ -713,10 +713,10 @@
     "career_starts": 18,
     "usual_starter": "00-0040743",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": 0.0175,
    "frozen": false,
    "available": false,
@@ -737,7 +737,7 @@
     "career_starts": 169,
     "usual_starter": "00-0033106",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "TB",
@@ -749,10 +749,10 @@
     "career_starts": 131,
     "usual_starter": "00-0034855",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": 0.1002,
    "frozen": false,
    "available": false,
@@ -773,7 +773,7 @@
     "career_starts": 155,
     "usual_starter": "00-0033077",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "TEN",
@@ -785,10 +785,10 @@
     "career_starts": 26,
     "usual_starter": "00-0040676",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": 0.2026,
    "frozen": false,
    "available": false,
@@ -809,7 +809,7 @@
     "career_starts": 107,
     "usual_starter": "00-0036355",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "NYJ",
@@ -821,10 +821,10 @@
     "career_starts": 109,
     "usual_starter": "00-0030565",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": 0.0231,
    "frozen": false,
    "available": false,
@@ -845,7 +845,7 @@
     "career_starts": 45,
     "usual_starter": "00-0039732",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "LV",
@@ -857,10 +857,10 @@
     "career_starts": 1,
     "usual_starter": "00-0029604",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": 0.0454,
    "frozen": false,
    "available": false,
@@ -881,7 +881,7 @@
     "career_starts": 2,
     "usual_starter": "00-0038400",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "PIT",
@@ -893,10 +893,10 @@
     "career_starts": 287,
     "usual_starter": "00-0023459",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": 0.0031,
    "frozen": false,
    "available": false,
@@ -917,7 +917,7 @@
     "career_starts": 62,
     "usual_starter": "00-0037834",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "MIN",
@@ -929,10 +929,10 @@
     "career_starts": 181,
     "usual_starter": "00-0035228",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": 0.1437,
    "frozen": false,
    "available": false,
@@ -948,12 +948,12 @@
     "qb_id": "00-0039910",
     "name": "Jayden Daniels",
     "status": null,
-    "rating": 0.1147,
-    "plays_prior": 1319,
+    "rating": 0.1131,
+    "plays_prior": 1364,
     "career_starts": 31,
     "usual_starter": "00-0039910",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "CIN",
@@ -965,16 +965,16 @@
     "career_starts": 93,
     "usual_starter": "00-0036442",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
-   "qb_rating_diff": -0.0511,
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
+   "qb_rating_diff": -0.0527,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
-   "p_v1": 0.363111,
-   "p_v2": 0.383317
+   "p_v1": 0.401896,
+   "p_v2": 0.410077
   },
   "2026_12_GB_LA": {
    "week": 12,
@@ -989,7 +989,7 @@
     "career_starts": 262,
     "usual_starter": "00-0026498",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "GB",
@@ -1001,10 +1001,10 @@
     "career_starts": 62,
     "usual_starter": "00-0036264",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": -0.0734,
    "frozen": false,
    "available": false,
@@ -1025,7 +1025,7 @@
     "career_starts": 170,
     "usual_starter": "00-0033106",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "CHI",
@@ -1037,10 +1037,10 @@
     "career_starts": 43,
     "usual_starter": "00-0039918",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": 0.1342,
    "frozen": false,
    "available": false,
@@ -1061,7 +1061,7 @@
     "career_starts": 156,
     "usual_starter": "00-0033077",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "PHI",
@@ -1073,10 +1073,10 @@
     "career_starts": 3,
     "usual_starter": "00-0039398",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": 0.1143,
    "frozen": false,
    "available": false,
@@ -1097,7 +1097,7 @@
     "career_starts": 149,
     "usual_starter": "00-0034857",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "KC",
@@ -1109,10 +1109,10 @@
     "career_starts": 157,
     "usual_starter": "00-0033873",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": 0.0956,
    "frozen": false,
    "available": false,
@@ -1133,7 +1133,7 @@
     "career_starts": 288,
     "usual_starter": "00-0023459",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "DEN",
@@ -1145,10 +1145,10 @@
     "career_starts": 46,
     "usual_starter": "00-0039732",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": -0.0727,
    "frozen": false,
    "available": false,
@@ -1169,7 +1169,7 @@
     "career_starts": 182,
     "usual_starter": "00-0029604",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "ATL",
@@ -1181,10 +1181,10 @@
     "career_starts": 20,
     "usual_starter": "00-0039917",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": -0.0064,
    "frozen": false,
    "available": false,
@@ -1205,7 +1205,7 @@
     "career_starts": 61,
     "usual_starter": "00-0039163",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "BAL",
@@ -1217,10 +1217,10 @@
     "career_starts": 73,
     "usual_starter": "00-0035993",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": 0.0773,
    "frozen": false,
    "available": false,
@@ -1241,7 +1241,7 @@
     "career_starts": 84,
     "usual_starter": "00-0033537",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "LV",
@@ -1253,10 +1253,10 @@
     "career_starts": 2,
     "usual_starter": "00-0041562",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": -0.0929,
    "frozen": false,
    "available": false,
@@ -1277,7 +1277,7 @@
     "career_starts": 94,
     "usual_starter": "00-0036442",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "NO",
@@ -1289,10 +1289,10 @@
     "career_starts": 19,
     "usual_starter": "00-0040743",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": 0.1435,
    "frozen": false,
    "available": false,
@@ -1313,28 +1313,28 @@
     "career_starts": 95,
     "usual_starter": "00-0035710",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "NYG",
     "qb_id": "00-0039923",
     "name": "J.J. McCarthy",
     "status": null,
-    "rating": -0.0589,
-    "plays_prior": 393,
+    "rating": -0.0431,
+    "plays_prior": 436,
     "career_starts": 14,
     "usual_starter": "00-0039923",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
-   "qb_rating_diff": 0.0607,
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
+   "qb_rating_diff": 0.0449,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
-   "p_v1": 0.41452,
-   "p_v2": 0.474362
+   "p_v1": 0.448366,
+   "p_v2": 0.492293
   },
   "2026_12_NYJ_MIA": {
    "week": 12,
@@ -1349,7 +1349,7 @@
     "career_starts": 0,
     "usual_starter": "00-0038128",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "NYJ",
@@ -1361,10 +1361,10 @@
     "career_starts": 110,
     "usual_starter": "00-0030565",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": 0.0458,
    "frozen": false,
    "available": false,
@@ -1385,7 +1385,7 @@
     "career_starts": 90,
     "usual_starter": "00-0036971",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "TEN",
@@ -1397,10 +1397,10 @@
     "career_starts": 27,
     "usual_starter": "00-0040676",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": 0.199,
    "frozen": false,
    "available": false,
@@ -1421,7 +1421,7 @@
     "career_starts": 63,
     "usual_starter": "00-0037834",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "SEA",
@@ -1433,10 +1433,10 @@
     "career_starts": 99,
     "usual_starter": "00-0034869",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": 0.1275,
    "frozen": false,
    "available": false,
@@ -1457,28 +1457,28 @@
     "career_starts": 0,
     "usual_starter": "00-0035289",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "WAS",
     "qb_id": "00-0039910",
     "name": "Jayden Daniels",
     "status": null,
-    "rating": 0.1147,
-    "plays_prior": 1319,
+    "rating": 0.1131,
+    "plays_prior": 1364,
     "career_starts": 32,
     "usual_starter": "00-0039910",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
-   "qb_rating_diff": -0.086,
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
+   "qb_rating_diff": -0.0844,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
-   "p_v1": 0.542291,
-   "p_v2": 0.47954
+   "p_v1": 0.501313,
+   "p_v2": 0.451718
   },
   "2026_12_NE_LAC": {
    "week": 12,
@@ -1493,7 +1493,7 @@
     "career_starts": 108,
     "usual_starter": "00-0036355",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "NE",
@@ -1505,10 +1505,10 @@
     "career_starts": 42,
     "usual_starter": "00-0039851",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": -0.1112,
    "frozen": false,
    "available": false,
@@ -1529,7 +1529,7 @@
     "career_starts": 132,
     "usual_starter": "00-0034855",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "CAR",
@@ -1541,10 +1541,10 @@
     "career_starts": 52,
     "usual_starter": "00-0039150",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": 0.0774,
    "frozen": false,
    "available": false,
@@ -1565,7 +1565,7 @@
     "career_starts": 262,
     "usual_starter": "00-0026498",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "KC",
@@ -1577,10 +1577,10 @@
     "career_starts": 157,
     "usual_starter": "00-0033873",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": -0.0289,
    "frozen": false,
    "available": false,
@@ -1601,7 +1601,7 @@
     "career_starts": 84,
     "usual_starter": "00-0033537",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "CIN",
@@ -1613,10 +1613,10 @@
     "career_starts": 94,
     "usual_starter": "00-0036442",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": -0.2393,
    "frozen": false,
    "available": false,
@@ -1637,7 +1637,7 @@
     "career_starts": 20,
     "usual_starter": "00-0039917",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "DET",
@@ -1649,10 +1649,10 @@
     "career_starts": 170,
     "usual_starter": "00-0033106",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": -0.1276,
    "frozen": false,
    "available": false,
@@ -1673,7 +1673,7 @@
     "career_starts": 19,
     "usual_starter": "00-0040743",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "GB",
@@ -1685,10 +1685,10 @@
     "career_starts": 62,
     "usual_starter": "00-0036264",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": -0.1512,
    "frozen": false,
    "available": false,
@@ -1709,7 +1709,7 @@
     "career_starts": 43,
     "usual_starter": "00-0039918",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "JAX",
@@ -1721,10 +1721,10 @@
     "career_starts": 90,
     "usual_starter": "00-0036971",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": -0.0661,
    "frozen": false,
    "available": false,
@@ -1745,7 +1745,7 @@
     "career_starts": 132,
     "usual_starter": "00-0034855",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "LAC",
@@ -1757,10 +1757,10 @@
     "career_starts": 108,
     "usual_starter": "00-0036355",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": 0.0678,
    "frozen": false,
    "available": false,
@@ -1776,12 +1776,12 @@
     "qb_id": "00-0039923",
     "name": "J.J. McCarthy",
     "status": null,
-    "rating": -0.0589,
-    "plays_prior": 393,
+    "rating": -0.0431,
+    "plays_prior": 436,
     "career_starts": 14,
     "usual_starter": "00-0039923",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "SF",
@@ -1793,16 +1793,16 @@
     "career_starts": 63,
     "usual_starter": "00-0037834",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
-   "qb_rating_diff": -0.2426,
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
+   "qb_rating_diff": -0.2268,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
-   "p_v1": 0.424807,
-   "p_v2": 0.314593
+   "p_v1": 0.391478,
+   "p_v2": 0.299319
   },
   "2026_13_WAS_TEN": {
    "week": 13,
@@ -1817,28 +1817,28 @@
     "career_starts": 27,
     "usual_starter": "00-0040676",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "WAS",
     "qb_id": "00-0039910",
     "name": "Jayden Daniels",
     "status": null,
-    "rating": 0.1147,
-    "plays_prior": 1319,
+    "rating": 0.1131,
+    "plays_prior": 1364,
     "career_starts": 32,
     "usual_starter": "00-0039910",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
-   "qb_rating_diff": -0.2078,
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
+   "qb_rating_diff": -0.2062,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
-   "p_v1": 0.4559,
-   "p_v2": 0.356467
+   "p_v1": 0.415524,
+   "p_v2": 0.331241
   },
   "2026_13_MIA_DEN": {
    "week": 13,
@@ -1853,7 +1853,7 @@
     "career_starts": 46,
     "usual_starter": "00-0039732",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "MIA",
@@ -1865,10 +1865,10 @@
     "career_starts": 0,
     "usual_starter": "00-0038128",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": 0.0361,
    "frozen": false,
    "available": false,
@@ -1889,7 +1889,7 @@
     "career_starts": 0,
     "usual_starter": "00-0035289",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "PHI",
@@ -1901,10 +1901,10 @@
     "career_starts": 3,
     "usual_starter": "00-0039398",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": 0.0335,
    "frozen": false,
    "available": false,
@@ -1925,7 +1925,7 @@
     "career_starts": 42,
     "usual_starter": "00-0039851",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "BUF",
@@ -1937,10 +1937,10 @@
     "career_starts": 149,
     "usual_starter": "00-0034857",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": -0.1074,
    "frozen": false,
    "available": false,
@@ -1961,7 +1961,7 @@
     "career_starts": 182,
     "usual_starter": "00-0029604",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "CAR",
@@ -1973,10 +1973,10 @@
     "career_starts": 52,
     "usual_starter": "00-0039150",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": 0.0436,
    "frozen": false,
    "available": false,
@@ -1997,7 +1997,7 @@
     "career_starts": 288,
     "usual_starter": "00-0023459",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "HOU",
@@ -2009,10 +2009,10 @@
     "career_starts": 61,
     "usual_starter": "00-0039163",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": -0.0591,
    "frozen": false,
    "available": false,
@@ -2033,7 +2033,7 @@
     "career_starts": 99,
     "usual_starter": "00-0034869",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "DAL",
@@ -2045,10 +2045,10 @@
     "career_starts": 156,
     "usual_starter": "00-0033077",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": -0.0533,
    "frozen": false,
    "available": false,
@@ -2069,7 +2069,7 @@
     "career_starts": 42,
     "usual_starter": "00-0039851",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "MIN",
@@ -2081,10 +2081,10 @@
     "career_starts": 182,
     "usual_starter": "00-0029604",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": 0.0772,
    "frozen": false,
    "available": false,
@@ -2105,7 +2105,7 @@
     "career_starts": 84,
     "usual_starter": "00-0033537",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "ATL",
@@ -2117,10 +2117,10 @@
     "career_starts": 20,
     "usual_starter": "00-0039917",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": -0.1199,
    "frozen": false,
    "available": false,
@@ -2141,7 +2141,7 @@
     "career_starts": 0,
     "usual_starter": "00-0038128",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "CHI",
@@ -2153,10 +2153,10 @@
     "career_starts": 43,
     "usual_starter": "00-0039918",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": -0.0111,
    "frozen": false,
    "available": false,
@@ -2177,7 +2177,7 @@
     "career_starts": 110,
     "usual_starter": "00-0030565",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "DEN",
@@ -2189,10 +2189,10 @@
     "career_starts": 46,
     "usual_starter": "00-0039732",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": -0.0819,
    "frozen": false,
    "available": false,
@@ -2208,12 +2208,12 @@
     "qb_id": "00-0039910",
     "name": "Jayden Daniels",
     "status": null,
-    "rating": 0.1147,
-    "plays_prior": 1319,
+    "rating": 0.1131,
+    "plays_prior": 1364,
     "career_starts": 32,
     "usual_starter": "00-0039910",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "HOU",
@@ -2225,16 +2225,16 @@
     "career_starts": 61,
     "usual_starter": "00-0039163",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
-   "qb_rating_diff": 0.0635,
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
+   "qb_rating_diff": 0.0619,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
-   "p_v1": 0.418707,
-   "p_v2": 0.485553
+   "p_v1": 0.45915,
+   "p_v2": 0.513508
   },
   "2026_14_IND_PHI": {
    "week": 14,
@@ -2249,7 +2249,7 @@
     "career_starts": 3,
     "usual_starter": "00-0039398",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "IND",
@@ -2261,10 +2261,10 @@
     "career_starts": 95,
     "usual_starter": "00-0035710",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": -0.0066,
    "frozen": false,
    "available": false,
@@ -2285,7 +2285,7 @@
     "career_starts": 52,
     "usual_starter": "00-0039150",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "NO",
@@ -2297,10 +2297,10 @@
     "career_starts": 19,
     "usual_starter": "00-0040743",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": -0.0259,
    "frozen": false,
    "available": false,
@@ -2321,7 +2321,7 @@
     "career_starts": 73,
     "usual_starter": "00-0035993",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "TB",
@@ -2333,10 +2333,10 @@
     "career_starts": 132,
     "usual_starter": "00-0034855",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": -0.0999,
    "frozen": false,
    "available": false,
@@ -2357,7 +2357,7 @@
     "career_starts": 170,
     "usual_starter": "00-0033106",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "TEN",
@@ -2369,10 +2369,10 @@
     "career_starts": 27,
     "usual_starter": "00-0040676",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": 0.2671,
    "frozen": false,
    "available": false,
@@ -2393,7 +2393,7 @@
     "career_starts": 2,
     "usual_starter": "00-0041562",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "LAC",
@@ -2405,10 +2405,10 @@
     "career_starts": 108,
     "usual_starter": "00-0036355",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": 0.0134,
    "frozen": false,
    "available": false,
@@ -2429,7 +2429,7 @@
     "career_starts": 94,
     "usual_starter": "00-0036442",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "KC",
@@ -2441,10 +2441,10 @@
     "career_starts": 157,
     "usual_starter": "00-0033873",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": 0.0368,
    "frozen": false,
    "available": false,
@@ -2465,7 +2465,7 @@
     "career_starts": 63,
     "usual_starter": "00-0037834",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "LA",
@@ -2477,10 +2477,10 @@
     "career_starts": 262,
     "usual_starter": "00-0026498",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": 0.0836,
    "frozen": false,
    "available": false,
@@ -2501,28 +2501,28 @@
     "career_starts": 99,
     "usual_starter": "00-0034869",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "NYG",
     "qb_id": "00-0039923",
     "name": "J.J. McCarthy",
     "status": null,
-    "rating": -0.0589,
-    "plays_prior": 393,
+    "rating": -0.0431,
+    "plays_prior": 436,
     "career_starts": 14,
     "usual_starter": "00-0039923",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
-   "qb_rating_diff": 0.1151,
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
+   "qb_rating_diff": 0.0993,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
-   "p_v1": 0.717577,
-   "p_v2": 0.740331
+   "p_v1": 0.744694,
+   "p_v2": 0.753895
   },
   "2026_14_BUF_GB": {
    "week": 14,
@@ -2537,7 +2537,7 @@
     "career_starts": 62,
     "usual_starter": "00-0036264",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "BUF",
@@ -2549,10 +2549,10 @@
     "career_starts": 149,
     "usual_starter": "00-0034857",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": -0.0511,
    "frozen": false,
    "available": false,
@@ -2573,7 +2573,7 @@
     "career_starts": 90,
     "usual_starter": "00-0036971",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "PIT",
@@ -2585,10 +2585,10 @@
     "career_starts": 288,
     "usual_starter": "00-0023459",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": 0.1138,
    "frozen": false,
    "available": false,
@@ -2609,7 +2609,7 @@
     "career_starts": 108,
     "usual_starter": "00-0036355",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "SF",
@@ -2621,10 +2621,10 @@
     "career_starts": 63,
     "usual_starter": "00-0037834",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": -0.1777,
    "frozen": false,
    "available": false,
@@ -2645,7 +2645,7 @@
     "career_starts": 3,
     "usual_starter": "00-0039398",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "SEA",
@@ -2657,10 +2657,10 @@
     "career_starts": 99,
     "usual_starter": "00-0034869",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": -0.061,
    "frozen": false,
    "available": false,
@@ -2681,7 +2681,7 @@
     "career_starts": 149,
     "usual_starter": "00-0034857",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "CHI",
@@ -2693,10 +2693,10 @@
     "career_starts": 43,
     "usual_starter": "00-0039918",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": 0.1848,
    "frozen": false,
    "available": false,
@@ -2712,12 +2712,12 @@
     "qb_id": "00-0039910",
     "name": "Jayden Daniels",
     "status": null,
-    "rating": 0.1147,
-    "plays_prior": 1319,
+    "rating": 0.1131,
+    "plays_prior": 1364,
     "career_starts": 32,
     "usual_starter": "00-0039910",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "ATL",
@@ -2729,16 +2729,16 @@
     "career_starts": 20,
     "usual_starter": "00-0039917",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
-   "qb_rating_diff": 0.0683,
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
+   "qb_rating_diff": 0.0667,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
-   "p_v1": 0.567632,
-   "p_v2": 0.611463
+   "p_v1": 0.607428,
+   "p_v2": 0.637681
   },
   "2026_15_BAL_PIT": {
    "week": 15,
@@ -2753,7 +2753,7 @@
     "career_starts": 288,
     "usual_starter": "00-0023459",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "BAL",
@@ -2765,10 +2765,10 @@
     "career_starts": 73,
     "usual_starter": "00-0035993",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": 0.0182,
    "frozen": false,
    "available": false,
@@ -2789,7 +2789,7 @@
     "career_starts": 52,
     "usual_starter": "00-0039150",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "CIN",
@@ -2801,10 +2801,10 @@
     "career_starts": 94,
     "usual_starter": "00-0036442",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": -0.1694,
    "frozen": false,
    "available": false,
@@ -2820,12 +2820,12 @@
     "qb_id": "00-0039923",
     "name": "J.J. McCarthy",
     "status": null,
-    "rating": -0.0589,
-    "plays_prior": 393,
+    "rating": -0.0431,
+    "plays_prior": 436,
     "career_starts": 14,
     "usual_starter": "00-0039923",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "CLE",
@@ -2837,16 +2837,16 @@
     "career_starts": 84,
     "usual_starter": "00-0033537",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
-   "qb_rating_diff": 0.0146,
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
+   "qb_rating_diff": 0.0304,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
-   "p_v1": 0.684886,
-   "p_v2": 0.647424
+   "p_v1": 0.654365,
+   "p_v2": 0.630864
   },
   "2026_15_IND_TEN": {
    "week": 15,
@@ -2861,7 +2861,7 @@
     "career_starts": 27,
     "usual_starter": "00-0040676",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "IND",
@@ -2873,10 +2873,10 @@
     "career_starts": 95,
     "usual_starter": "00-0035710",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": -0.0949,
    "frozen": false,
    "available": false,
@@ -2897,7 +2897,7 @@
     "career_starts": 61,
     "usual_starter": "00-0039163",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "JAX",
@@ -2909,10 +2909,10 @@
     "career_starts": 90,
     "usual_starter": "00-0036971",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": -0.0547,
    "frozen": false,
    "available": false,
@@ -2933,7 +2933,7 @@
     "career_starts": 62,
     "usual_starter": "00-0036264",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "MIA",
@@ -2945,10 +2945,10 @@
     "career_starts": 0,
     "usual_starter": "00-0038128",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": 0.1448,
    "frozen": false,
    "available": false,
@@ -2969,7 +2969,7 @@
     "career_starts": 132,
     "usual_starter": "00-0034855",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "NO",
@@ -2981,10 +2981,10 @@
     "career_starts": 19,
     "usual_starter": "00-0040743",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": 0.0515,
    "frozen": false,
    "available": false,
@@ -3005,7 +3005,7 @@
     "career_starts": 0,
     "usual_starter": "00-0035289",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "NYJ",
@@ -3017,10 +3017,10 @@
     "career_starts": 110,
     "usual_starter": "00-0030565",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": 0.0458,
    "frozen": false,
    "available": false,
@@ -3041,7 +3041,7 @@
     "career_starts": 262,
     "usual_starter": "00-0026498",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "DAL",
@@ -3053,10 +3053,10 @@
     "career_starts": 156,
     "usual_starter": "00-0033077",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": -0.0094,
    "frozen": false,
    "available": false,
@@ -3077,7 +3077,7 @@
     "career_starts": 2,
     "usual_starter": "00-0041562",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "DEN",
@@ -3089,10 +3089,10 @@
     "career_starts": 46,
     "usual_starter": "00-0039732",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": -0.0454,
    "frozen": false,
    "available": false,
@@ -3113,7 +3113,7 @@
     "career_starts": 182,
     "usual_starter": "00-0029604",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "DET",
@@ -3125,10 +3125,10 @@
     "career_starts": 170,
     "usual_starter": "00-0033106",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": -0.134,
    "frozen": false,
    "available": false,
@@ -3149,7 +3149,7 @@
     "career_starts": 157,
     "usual_starter": "00-0033873",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "NE",
@@ -3161,10 +3161,10 @@
     "career_starts": 42,
     "usual_starter": "00-0039851",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": 0.0118,
    "frozen": false,
    "available": false,
@@ -3185,7 +3185,7 @@
     "career_starts": 3,
     "usual_starter": "00-0039398",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "HOU",
@@ -3197,10 +3197,10 @@
     "career_starts": 61,
     "usual_starter": "00-0039163",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": -0.056,
    "frozen": false,
    "available": false,
@@ -3221,7 +3221,7 @@
     "career_starts": 43,
     "usual_starter": "00-0039918",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "GB",
@@ -3233,10 +3233,10 @@
     "career_starts": 62,
     "usual_starter": "00-0036264",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": -0.1337,
    "frozen": false,
    "available": false,
@@ -3257,7 +3257,7 @@
     "career_starts": 46,
     "usual_starter": "00-0039732",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "BUF",
@@ -3269,10 +3269,10 @@
     "career_starts": 149,
     "usual_starter": "00-0034857",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": -0.1598,
    "frozen": false,
    "available": false,
@@ -3293,7 +3293,7 @@
     "career_starts": 99,
     "usual_starter": "00-0034869",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "LA",
@@ -3305,10 +3305,10 @@
     "career_starts": 262,
     "usual_starter": "00-0026498",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": -0.0439,
    "frozen": false,
    "available": false,
@@ -3329,7 +3329,7 @@
     "career_starts": 19,
     "usual_starter": "00-0040743",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "ARI",
@@ -3341,10 +3341,10 @@
     "career_starts": 0,
     "usual_starter": "00-0035289",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": -0.0064,
    "frozen": false,
    "available": false,
@@ -3365,7 +3365,7 @@
     "career_starts": 288,
     "usual_starter": "00-0023459",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "CAR",
@@ -3377,10 +3377,10 @@
     "career_starts": 52,
     "usual_starter": "00-0039150",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": -0.0043,
    "frozen": false,
    "available": false,
@@ -3401,7 +3401,7 @@
     "career_starts": 95,
     "usual_starter": "00-0035710",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "CIN",
@@ -3413,10 +3413,10 @@
     "career_starts": 94,
     "usual_starter": "00-0036442",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": -0.164,
    "frozen": false,
    "available": false,
@@ -3437,7 +3437,7 @@
     "career_starts": 73,
     "usual_starter": "00-0035993",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "CLE",
@@ -3449,10 +3449,10 @@
     "career_starts": 84,
     "usual_starter": "00-0033537",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": 0.0474,
    "frozen": false,
    "available": false,
@@ -3473,7 +3473,7 @@
     "career_starts": 0,
     "usual_starter": "00-0038128",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "LAC",
@@ -3485,10 +3485,10 @@
     "career_starts": 108,
     "usual_starter": "00-0036355",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": 0.0227,
    "frozen": false,
    "available": false,
@@ -3509,7 +3509,7 @@
     "career_starts": 110,
     "usual_starter": "00-0030565",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "NE",
@@ -3521,10 +3521,10 @@
     "career_starts": 42,
     "usual_starter": "00-0039851",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": -0.1343,
    "frozen": false,
    "available": false,
@@ -3545,7 +3545,7 @@
     "career_starts": 20,
     "usual_starter": "00-0039917",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "TB",
@@ -3557,10 +3557,10 @@
     "career_starts": 132,
     "usual_starter": "00-0034855",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": -0.0274,
    "frozen": false,
    "available": false,
@@ -3581,28 +3581,28 @@
     "career_starts": 182,
     "usual_starter": "00-0029604",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "WAS",
     "qb_id": "00-0039910",
     "name": "Jayden Daniels",
     "status": null,
-    "rating": 0.1147,
-    "plays_prior": 1319,
+    "rating": 0.1131,
+    "plays_prior": 1364,
     "career_starts": 32,
     "usual_starter": "00-0039910",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
-   "qb_rating_diff": -0.0747,
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
+   "qb_rating_diff": -0.0731,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
-   "p_v1": 0.762877,
-   "p_v2": 0.683922
+   "p_v1": 0.731884,
+   "p_v2": 0.659263
   },
   "2026_16_TEN_LV": {
    "week": 16,
@@ -3617,7 +3617,7 @@
     "career_starts": 2,
     "usual_starter": "00-0041562",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "TEN",
@@ -3629,10 +3629,10 @@
     "career_starts": 27,
     "usual_starter": "00-0040676",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": 0.1125,
    "frozen": false,
    "available": false,
@@ -3653,7 +3653,7 @@
     "career_starts": 157,
     "usual_starter": "00-0033873",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "SF",
@@ -3665,10 +3665,10 @@
     "career_starts": 63,
     "usual_starter": "00-0037834",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": -0.0547,
    "frozen": false,
    "available": false,
@@ -3689,7 +3689,7 @@
     "career_starts": 156,
     "usual_starter": "00-0033077",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "JAX",
@@ -3701,10 +3701,10 @@
     "career_starts": 90,
     "usual_starter": "00-0036971",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": 0.0036,
    "frozen": false,
    "available": false,
@@ -3725,28 +3725,28 @@
     "career_starts": 170,
     "usual_starter": "00-0033106",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "NYG",
     "qb_id": "00-0039923",
     "name": "J.J. McCarthy",
     "status": null,
-    "rating": -0.0589,
-    "plays_prior": 393,
+    "rating": -0.0431,
+    "plays_prior": 436,
     "career_starts": 14,
     "usual_starter": "00-0039923",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
-   "qb_rating_diff": 0.2329,
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
+   "qb_rating_diff": 0.2171,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
-   "p_v1": 0.680384,
-   "p_v2": 0.764475
+   "p_v1": 0.709627,
+   "p_v2": 0.777158
   },
   "2026_17_BAL_CIN": {
    "week": 17,
@@ -3761,7 +3761,7 @@
     "career_starts": 94,
     "usual_starter": "00-0036442",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "BAL",
@@ -3773,10 +3773,10 @@
     "career_starts": 73,
     "usual_starter": "00-0035993",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": 0.1919,
    "frozen": false,
    "available": false,
@@ -3797,7 +3797,7 @@
     "career_starts": 0,
     "usual_starter": "00-0038128",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "BUF",
@@ -3809,10 +3809,10 @@
     "career_starts": 149,
     "usual_starter": "00-0034857",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": -0.1959,
    "frozen": false,
    "available": false,
@@ -3833,7 +3833,7 @@
     "career_starts": 42,
     "usual_starter": "00-0039851",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "DEN",
@@ -3845,10 +3845,10 @@
     "career_starts": 46,
     "usual_starter": "00-0039732",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": 0.0524,
    "frozen": false,
    "available": false,
@@ -3869,7 +3869,7 @@
     "career_starts": 84,
     "usual_starter": "00-0033537",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "IND",
@@ -3881,10 +3881,10 @@
     "career_starts": 95,
     "usual_starter": "00-0035710",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": -0.0753,
    "frozen": false,
    "available": false,
@@ -3905,7 +3905,7 @@
     "career_starts": 108,
     "usual_starter": "00-0036355",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "KC",
@@ -3917,10 +3917,10 @@
     "career_starts": 157,
     "usual_starter": "00-0033873",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": -0.123,
    "frozen": false,
    "available": false,
@@ -3941,7 +3941,7 @@
     "career_starts": 132,
     "usual_starter": "00-0034855",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "LA",
@@ -3953,10 +3953,10 @@
     "career_starts": 262,
     "usual_starter": "00-0026498",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": -0.0263,
    "frozen": false,
    "available": false,
@@ -3977,7 +3977,7 @@
     "career_starts": 110,
     "usual_starter": "00-0030565",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "MIN",
@@ -3989,10 +3989,10 @@
     "career_starts": 182,
     "usual_starter": "00-0029604",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": -0.0571,
    "frozen": false,
    "available": false,
@@ -4013,7 +4013,7 @@
     "career_starts": 20,
     "usual_starter": "00-0039917",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "NO",
@@ -4025,10 +4025,10 @@
     "career_starts": 19,
     "usual_starter": "00-0040743",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": 0.0241,
    "frozen": false,
    "available": false,
@@ -4049,28 +4049,28 @@
     "career_starts": 156,
     "usual_starter": "00-0033077",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "NYG",
     "qb_id": "00-0039923",
     "name": "J.J. McCarthy",
     "status": null,
-    "rating": -0.0589,
-    "plays_prior": 393,
+    "rating": -0.0431,
+    "plays_prior": 436,
     "career_starts": 14,
     "usual_starter": "00-0039923",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
-   "qb_rating_diff": 0.1684,
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
+   "qb_rating_diff": 0.1526,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
-   "p_v1": 0.492326,
-   "p_v2": 0.607951
+   "p_v1": 0.526809,
+   "p_v2": 0.624927
   },
   "2026_17_PIT_TEN": {
    "week": 17,
@@ -4085,7 +4085,7 @@
     "career_starts": 27,
     "usual_starter": "00-0040676",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "PIT",
@@ -4097,10 +4097,10 @@
     "career_starts": 288,
     "usual_starter": "00-0023459",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": -0.0852,
    "frozen": false,
    "available": false,
@@ -4121,7 +4121,7 @@
     "career_starts": 52,
     "usual_starter": "00-0039150",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "SEA",
@@ -4133,10 +4133,10 @@
     "career_starts": 99,
     "usual_starter": "00-0034869",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": -0.0598,
    "frozen": false,
    "available": false,
@@ -4157,28 +4157,28 @@
     "career_starts": 90,
     "usual_starter": "00-0036971",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "WAS",
     "qb_id": "00-0039910",
     "name": "Jayden Daniels",
     "status": null,
-    "rating": 0.1147,
-    "plays_prior": 1319,
+    "rating": 0.1131,
+    "plays_prior": 1364,
     "career_starts": 32,
     "usual_starter": "00-0039910",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
-   "qb_rating_diff": -0.0088,
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
+   "qb_rating_diff": -0.0072,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
-   "p_v1": 0.834068,
-   "p_v2": 0.783358
+   "p_v1": 0.810063,
+   "p_v2": 0.763776
   },
   "2026_17_LV_ARI": {
    "week": 17,
@@ -4193,7 +4193,7 @@
     "career_starts": 0,
     "usual_starter": "00-0035289",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "LV",
@@ -4205,10 +4205,10 @@
     "career_starts": 2,
     "usual_starter": "00-0041562",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": 0.0093,
    "frozen": false,
    "available": false,
@@ -4229,7 +4229,7 @@
     "career_starts": 43,
     "usual_starter": "00-0039918",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "DET",
@@ -4241,10 +4241,10 @@
     "career_starts": 170,
     "usual_starter": "00-0033106",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": -0.1342,
    "frozen": false,
    "available": false,
@@ -4265,7 +4265,7 @@
     "career_starts": 63,
     "usual_starter": "00-0037834",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "PHI",
@@ -4277,10 +4277,10 @@
     "career_starts": 3,
     "usual_starter": "00-0039398",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": 0.1885,
    "frozen": false,
    "available": false,
@@ -4301,7 +4301,7 @@
     "career_starts": 62,
     "usual_starter": "00-0036264",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "HOU",
@@ -4313,10 +4313,10 @@
     "career_starts": 61,
     "usual_starter": "00-0039163",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": 0.1223,
    "frozen": false,
    "available": false,
@@ -4337,7 +4337,7 @@
     "career_starts": 52,
     "usual_starter": "00-0039150",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "ATL",
@@ -4349,10 +4349,10 @@
     "career_starts": 20,
     "usual_starter": "00-0039917",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": -0.05,
    "frozen": false,
    "available": false,
@@ -4373,7 +4373,7 @@
     "career_starts": 182,
     "usual_starter": "00-0029604",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "CHI",
@@ -4385,10 +4385,10 @@
     "career_starts": 43,
     "usual_starter": "00-0039918",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": 0.0002,
    "frozen": false,
    "available": false,
@@ -4409,7 +4409,7 @@
     "career_starts": 94,
     "usual_starter": "00-0036442",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "CLE",
@@ -4421,10 +4421,10 @@
     "career_starts": 84,
     "usual_starter": "00-0033537",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": 0.2393,
    "frozen": false,
    "available": false,
@@ -4440,12 +4440,12 @@
     "qb_id": "00-0039910",
     "name": "Jayden Daniels",
     "status": null,
-    "rating": 0.1147,
-    "plays_prior": 1319,
+    "rating": 0.1131,
+    "plays_prior": 1364,
     "career_starts": 32,
     "usual_starter": "00-0039910",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "DAL",
@@ -4457,16 +4457,16 @@
     "career_starts": 156,
     "usual_starter": "00-0033077",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
-   "qb_rating_diff": 0.0052,
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
+   "qb_rating_diff": 0.0036,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
-   "p_v1": 0.493561,
-   "p_v2": 0.529502
+   "p_v1": 0.534585,
+   "p_v2": 0.557246
   },
   "2026_18_DET_GB": {
    "week": 18,
@@ -4481,7 +4481,7 @@
     "career_starts": 62,
     "usual_starter": "00-0036264",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "DET",
@@ -4493,10 +4493,10 @@
     "career_starts": 170,
     "usual_starter": "00-0033106",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": -0.0005,
    "frozen": false,
    "available": false,
@@ -4517,7 +4517,7 @@
     "career_starts": 95,
     "usual_starter": "00-0035710",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "JAX",
@@ -4529,10 +4529,10 @@
     "career_starts": 90,
     "usual_starter": "00-0036971",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": -0.1041,
    "frozen": false,
    "available": false,
@@ -4553,7 +4553,7 @@
     "career_starts": 46,
     "usual_starter": "00-0039732",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "LAC",
@@ -4565,10 +4565,10 @@
     "career_starts": 108,
     "usual_starter": "00-0036355",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": 0.0588,
    "frozen": false,
    "available": false,
@@ -4589,7 +4589,7 @@
     "career_starts": 157,
     "usual_starter": "00-0033873",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "LV",
@@ -4601,10 +4601,10 @@
     "career_starts": 2,
     "usual_starter": "00-0041562",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": 0.1096,
    "frozen": false,
    "available": false,
@@ -4625,7 +4625,7 @@
     "career_starts": 42,
     "usual_starter": "00-0039851",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "MIA",
@@ -4637,10 +4637,10 @@
     "career_starts": 0,
     "usual_starter": "00-0038128",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": 0.0885,
    "frozen": false,
    "available": false,
@@ -4661,7 +4661,7 @@
     "career_starts": 149,
     "usual_starter": "00-0034857",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "NYJ",
@@ -4673,10 +4673,10 @@
     "career_starts": 110,
     "usual_starter": "00-0030565",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": 0.2417,
    "frozen": false,
    "available": false,
@@ -4692,12 +4692,12 @@
     "qb_id": "00-0039923",
     "name": "J.J. McCarthy",
     "status": null,
-    "rating": -0.0589,
-    "plays_prior": 393,
+    "rating": -0.0431,
+    "plays_prior": 436,
     "career_starts": 14,
     "usual_starter": "00-0039923",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "PHI",
@@ -4709,16 +4709,16 @@
     "career_starts": 3,
     "usual_starter": "00-0039398",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
-   "qb_rating_diff": -0.0541,
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
+   "qb_rating_diff": -0.0383,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
-   "p_v1": 0.732725,
-   "p_v2": 0.667568
+   "p_v1": 0.704841,
+   "p_v2": 0.651445
   },
   "2026_18_PIT_BAL": {
    "week": 18,
@@ -4733,7 +4733,7 @@
     "career_starts": 73,
     "usual_starter": "00-0035993",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "PIT",
@@ -4745,10 +4745,10 @@
     "career_starts": 288,
     "usual_starter": "00-0023459",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": -0.0182,
    "frozen": false,
    "available": false,
@@ -4769,7 +4769,7 @@
     "career_starts": 262,
     "usual_starter": "00-0026498",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "SEA",
@@ -4781,10 +4781,10 @@
     "career_starts": 99,
     "usual_starter": "00-0034869",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": 0.0439,
    "frozen": false,
    "available": false,
@@ -4805,7 +4805,7 @@
     "career_starts": 0,
     "usual_starter": "00-0035289",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "SF",
@@ -4817,10 +4817,10 @@
     "career_starts": 63,
     "usual_starter": "00-0037834",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": -0.155,
    "frozen": false,
    "available": false,
@@ -4841,7 +4841,7 @@
     "career_starts": 19,
     "usual_starter": "00-0040743",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "TB",
@@ -4853,10 +4853,10 @@
     "career_starts": 132,
     "usual_starter": "00-0034855",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": -0.0515,
    "frozen": false,
    "available": false,
@@ -4877,7 +4877,7 @@
     "career_starts": 61,
     "usual_starter": "00-0039163",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "away": {
     "team": "TEN",
@@ -4889,10 +4889,10 @@
     "career_starts": 27,
     "usual_starter": "00-0040676",
     "replaces": null,
-    "depth_as_of": "2026-11-12T15:57:12+00:00"
+    "depth_as_of": "2026-11-13T15:17:47+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-12T15:57:12+00:00",
+   "depth_as_of": "2026-11-13T15:17:47+00:00",
    "qb_rating_diff": 0.1443,
    "frozen": false,
    "available": false,

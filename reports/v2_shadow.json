@@ -1,7 +1,27 @@
 {
-  "generated_at": "2026-11-13T02:30:22.418010+00:00",
+  "generated_at": "2026-11-13T20:44:46.456068+00:00",
   "season": 2026,
   "status": "interim (watching only; the decision is made at the end of the season)",
-  "games_logged": 13,
-  "games_scored": 0
+  "games_logged": 14,
+  "games_scored": 1,
+  "log_likelihood": {
+    "v1": -1.1129323328274734,
+    "v2": -0.7795180354549294,
+    "v2_minus_v1": 0.333414297372544
+  },
+  "log_loss": {
+    "v1": 1.1129323328274734,
+    "v2": 0.7795180354549294
+  },
+  "brier": {
+    "v1": 0.45078601683599995,
+    "v2": 0.29308472512899997
+  },
+  "accuracy": {
+    "v1": 0.0,
+    "v2": 0.0
+  },
+  "v2_minus_v1_log_loss": null,
+  "first_kickoff": "2026-11-13T01:15:00+00:00",
+  "last_kickoff": "2026-11-13T01:15:00+00:00"
 }
