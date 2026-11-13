@@ -111,6 +111,11 @@ that actually happened:
 
 $$\text{LL} = \sum_{\text{home wins}} \log p_i \;+\; \sum_{\text{home losses}} \log(1-p_i)$$
 
+Every game is in exactly one of the two sums: for each game, take the log of the
+probability the curve gave to what actually happened. $1-p_i$ is the probability
+that the home team loses, which is the same as the away team winning (ties are
+dropped before scoring). Here and below, $\log$ is the natural log ($\ln$).
+
 The fit picks the coefficients with the highest log-likelihood. It does not
 rotate lines by trial and error: an iterative optimizer (scikit-learn's
 `lbfgs`) follows the slope of LL uphill until it stops improving. Strictly,
@@ -126,6 +131,11 @@ matters here.
 rate, $2591/4642 = 0.558$.
 
 $$\text{LL(null)} = 4642\,\big[\,0.558\log 0.558 + 0.442\log 0.442\,\big] = -3186.109$$
+
+This is the LL formula above with $p_i = 0.558$ for every game: the 2,591 home
+wins each add $\log 0.558 = -0.583$, and the 2,051 home losses each add
+$\log 0.442 = -0.817$. Per game that is $-0.686$, slightly better than a coin
+flip's $\log 0.5 = -0.693$, because home teams do win a bit more than half the time.
 
 **McFadden $R^2$** compares the two, the way linear-regression $R^2$ compares
 $SS(\text{mean})$ and $SS(\text{fit})$:
@@ -161,6 +171,14 @@ The results below score the model three ways: accuracy (right picks), Brier
 score (mean squared error of $p$) and log loss, which is the same
 log-likelihood, sign-flipped and averaged per game on the test season:
 $-\text{LL}/n = 177.278/284 = 0.624$.
+
+For one game, log loss is $-\log$(probability given to what happened). For LV @ DEN
+at $p = 0.844$, a Denver win costs $-\log 0.844 = 0.170$, and a Denver loss would
+have cost $-\log 0.156 = 1.858$. A 50% guess always costs 0.693, and a 99% pick
+that misses costs 4.605. Confident misses are punished hard, so log loss rewards
+honest probabilities, not only correct picks. On this scale, the gap between a coin
+flip (0.693) and Vegas (0.607) is under 0.09, so differences of a few thousandths
+between models matter.
 
 ## Results: 2025 test season (evaluated once)
 
