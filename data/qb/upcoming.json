@@ -1,5 +1,5 @@
 {
- "built_at": "2026-11-17T04:24:36.903869+00:00",
+ "built_at": "2026-11-17T21:59:15.401732+00:00",
  "season": 2026,
  "stale_days": 4,
  "model_v2": "v2-c1ea20c",
@@ -516,33 +516,33 @@
     "qb_id": "00-0039163",
     "name": "C.J. Stroud",
     "status": null,
-    "rating": 0.0501,
+    "rating": 0.0469,
     "plays_prior": 1662,
     "career_starts": 60,
     "usual_starter": "00-0039163",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "IND",
     "qb_id": "00-0035710",
     "name": "Daniel Jones",
     "status": null,
-    "rating": -0.0111,
+    "rating": -0.0007,
     "plays_prior": 1270,
     "career_starts": 94,
     "usual_starter": "00-0035710",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": 0.0612,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": 0.0476,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
    "p_v1": 0.720175,
-   "p_v2": 0.73278
+   "p_v2": 0.727078
   },
   "2026_11_ARI_KC": {
    "week": 11,
@@ -552,33 +552,33 @@
     "qb_id": "00-0033873",
     "name": "Patrick Mahomes",
     "status": null,
-    "rating": 0.1337,
+    "rating": 0.1311,
     "plays_prior": 1726,
     "career_starts": 156,
     "usual_starter": "00-0033873",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "ARI",
     "qb_id": "00-0041561",
     "name": "Carson Beck",
     "status": null,
-    "rating": -0.0633,
+    "rating": -0.0462,
     "plays_prior": 24,
     "career_starts": 0,
     "usual_starter": "00-0035289",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": 0.197,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": 0.1773,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
    "p_v1": 0.823247,
-   "p_v2": 0.844659
+   "p_v2": 0.839083
   },
   "2026_11_BAL_CAR": {
    "week": 11,
@@ -588,33 +588,33 @@
     "qb_id": "00-0039150",
     "name": "Bryce Young",
     "status": null,
-    "rating": -0.0081,
+    "rating": -0.0084,
     "plays_prior": 1439,
     "career_starts": 51,
     "usual_starter": "00-0039150",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "BAL",
     "qb_id": "00-0033119",
     "name": "Jacoby Brissett",
     "status": null,
-    "rating": -0.0261,
-    "plays_prior": 1113,
+    "rating": -0.0221,
+    "plays_prior": 1166,
     "career_starts": 73,
     "usual_starter": "00-0035993",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": 0.018,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": 0.0137,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
-   "p_v1": 0.587076,
-   "p_v2": 0.589633
+   "p_v1": 0.613906,
+   "p_v2": 0.612632
   },
   "2026_11_JAX_NYG": {
    "week": 11,
@@ -624,33 +624,33 @@
     "qb_id": "00-0039923",
     "name": "J.J. McCarthy",
     "status": null,
-    "rating": -0.0431,
+    "rating": -0.0484,
     "plays_prior": 436,
     "career_starts": 13,
     "usual_starter": "00-0039923",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "JAX",
     "qb_id": "00-0036971",
     "name": "Trevor Lawrence",
     "status": null,
-    "rating": 0.1191,
+    "rating": 0.1109,
     "plays_prior": 1346,
     "career_starts": 89,
     "usual_starter": "00-0036971",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": -0.1622,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": -0.1593,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
    "p_v1": 0.362963,
-   "p_v2": 0.303359
+   "p_v2": 0.304664
   },
   "2026_11_MIA_BUF": {
    "week": 11,
@@ -660,33 +660,33 @@
     "qb_id": "00-0034857",
     "name": "Josh Allen",
     "status": null,
-    "rating": 0.2269,
+    "rating": 0.2192,
     "plays_prior": 1769,
     "career_starts": 148,
     "usual_starter": "00-0034857",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "MIA",
     "qb_id": "00-0040014",
     "name": "Kyle McCord",
     "status": null,
-    "rating": -0.0337,
+    "rating": -0.0227,
     "plays_prior": 37,
     "career_starts": 1,
     "usual_starter": "00-0038128",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": 0.2606,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": 0.2419,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
    "p_v1": 0.887806,
-   "p_v2": 0.906387
+   "p_v2": 0.902957
   },
   "2026_11_NO_CHI": {
    "week": 11,
@@ -696,33 +696,33 @@
     "qb_id": "00-0039918",
     "name": "Caleb Williams",
     "status": null,
-    "rating": 0.0398,
+    "rating": 0.0365,
     "plays_prior": 1720,
     "career_starts": 42,
     "usual_starter": "00-0039918",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "NO",
     "qb_id": "00-0040743",
     "name": "Tyler Shough",
     "status": null,
-    "rating": 0.0103,
+    "rating": 0.0179,
     "plays_prior": 809,
     "career_starts": 18,
     "usual_starter": "00-0040743",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": 0.0295,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": 0.0186,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
    "p_v1": 0.841387,
-   "p_v2": 0.797372
+   "p_v2": 0.7936
   },
   "2026_11_TB_DET": {
    "week": 11,
@@ -732,33 +732,33 @@
     "qb_id": "00-0033106",
     "name": "Jared Goff",
     "status": null,
-    "rating": 0.1761,
+    "rating": 0.1714,
     "plays_prior": 1628,
     "career_starts": 169,
     "usual_starter": "00-0033106",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "TB",
     "qb_id": "00-0034855",
     "name": "Baker Mayfield",
     "status": null,
-    "rating": 0.0738,
+    "rating": 0.0794,
     "plays_prior": 1507,
     "career_starts": 131,
     "usual_starter": "00-0034855",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": 0.1023,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": 0.092,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
    "p_v1": 0.703053,
-   "p_v2": 0.70163
+   "p_v2": 0.697025
   },
   "2026_11_TEN_DAL": {
    "week": 11,
@@ -768,33 +768,33 @@
     "qb_id": "00-0033077",
     "name": "Dak Prescott",
     "status": null,
-    "rating": 0.1148,
+    "rating": 0.1078,
     "plays_prior": 1435,
     "career_starts": 155,
     "usual_starter": "00-0033077",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "TEN",
     "qb_id": "00-0040676",
     "name": "Cam Ward",
     "status": null,
-    "rating": -0.0913,
+    "rating": -0.0873,
     "plays_prior": 964,
     "career_starts": 26,
     "usual_starter": "00-0040676",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": 0.2061,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": 0.1951,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
    "p_v1": 0.753774,
-   "p_v2": 0.791741
+   "p_v2": 0.787857
   },
   "2026_11_NYJ_LAC": {
    "week": 11,
@@ -804,33 +804,33 @@
     "qb_id": "00-0036355",
     "name": "Justin Herbert",
     "status": null,
-    "rating": 0.006,
-    "plays_prior": 1646,
+    "rating": 0.0135,
+    "plays_prior": 1673,
     "career_starts": 107,
     "usual_starter": "00-0036355",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "NYJ",
     "qb_id": "00-0041056",
     "name": "Cade Klubnik",
     "status": null,
-    "rating": 0.0209,
+    "rating": 0.0203,
     "plays_prior": 26,
     "career_starts": 0,
     "usual_starter": "00-0030565",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": -0.0149,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": -0.0068,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
-   "p_v1": 0.62237,
-   "p_v2": 0.585842
+   "p_v1": 0.641496,
+   "p_v2": 0.61622
   },
   "2026_11_LV_DEN": {
    "week": 11,
@@ -840,33 +840,33 @@
     "qb_id": "00-0039732",
     "name": "Bo Nix",
     "status": null,
-    "rating": 0.0648,
+    "rating": 0.0664,
     "plays_prior": 1821,
     "career_starts": 45,
     "usual_starter": "00-0039732",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "LV",
     "qb_id": "00-0041562",
     "name": "Fernando Mendoza",
     "status": null,
-    "rating": -0.0108,
+    "rating": -0.0031,
     "plays_prior": 50,
     "career_starts": 1,
     "usual_starter": "00-0029604",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": 0.0756,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": 0.0695,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
    "p_v1": 0.849441,
-   "p_v2": 0.832946
+   "p_v2": 0.831133
   },
   "2026_11_PIT_PHI": {
    "week": 11,
@@ -876,33 +876,33 @@
     "qb_id": "00-0039398",
     "name": "Joe Milton III",
     "status": null,
-    "rating": -0.0048,
+    "rating": 0.0037,
     "plays_prior": 118,
     "career_starts": 2,
     "usual_starter": "00-0038400",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "PIT",
     "qb_id": "00-0023459",
     "name": "Aaron Rodgers",
     "status": null,
-    "rating": -0.0068,
+    "rating": -0.0011,
     "plays_prior": 1588,
     "career_starts": 287,
     "usual_starter": "00-0023459",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": 0.002,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": 0.0048,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
    "p_v1": 0.389104,
-   "p_v2": 0.407459
+   "p_v2": 0.408897
   },
   "2026_11_MIN_SF": {
    "week": 11,
@@ -912,33 +912,33 @@
     "qb_id": "00-0037834",
     "name": "Brock Purdy",
     "status": null,
-    "rating": 0.1983,
+    "rating": 0.1882,
     "plays_prior": 1273,
     "career_starts": 62,
     "usual_starter": "00-0037834",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "MIN",
     "qb_id": "00-0029604",
     "name": "Kirk Cousins",
     "status": null,
-    "rating": 0.0437,
+    "rating": 0.04,
     "plays_prior": 1185,
     "career_starts": 181,
     "usual_starter": "00-0035228",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": 0.1546,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": 0.1482,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
    "p_v1": 0.537791,
-   "p_v2": 0.607542
+   "p_v2": 0.604295
   },
   "2026_11_CIN_WAS": {
    "week": 11,
@@ -948,33 +948,33 @@
     "qb_id": "00-0039910",
     "name": "Jayden Daniels",
     "status": null,
-    "rating": 0.1131,
+    "rating": 0.1118,
     "plays_prior": 1364,
     "career_starts": 31,
     "usual_starter": "00-0039910",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "CIN",
     "qb_id": "00-0036442",
     "name": "Joe Burrow",
     "status": null,
-    "rating": 0.177,
+    "rating": 0.1686,
     "plays_prior": 1412,
     "career_starts": 93,
     "usual_starter": "00-0036442",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": -0.0639,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": -0.0568,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
    "p_v1": 0.351307,
-   "p_v2": 0.361131
+   "p_v2": 0.364622
   },
   "2026_12_GB_LA": {
    "week": 12,
@@ -984,33 +984,33 @@
     "qb_id": "00-0026498",
     "name": "Matthew Stafford",
     "status": null,
-    "rating": 0.1042,
+    "rating": 0.1048,
     "plays_prior": 1840,
     "career_starts": 262,
     "usual_starter": "00-0026498",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "GB",
     "qb_id": "00-0036264",
     "name": "Jordan Love",
     "status": null,
-    "rating": 0.1636,
+    "rating": 0.1588,
     "plays_prior": 1462,
     "career_starts": 62,
     "usual_starter": "00-0036264",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": -0.0594,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": -0.054,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
    "p_v1": 0.686761,
-   "p_v2": 0.622711
+   "p_v2": 0.625405
   },
   "2026_12_CHI_DET": {
    "week": 12,
@@ -1020,33 +1020,33 @@
     "qb_id": "00-0033106",
     "name": "Jared Goff",
     "status": null,
-    "rating": 0.1761,
+    "rating": 0.1714,
     "plays_prior": 1628,
     "career_starts": 170,
     "usual_starter": "00-0033106",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "CHI",
     "qb_id": "00-0039918",
     "name": "Caleb Williams",
     "status": null,
-    "rating": 0.0398,
+    "rating": 0.0365,
     "plays_prior": 1720,
     "career_starts": 43,
     "usual_starter": "00-0039918",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": 0.1363,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": 0.1349,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
    "p_v1": 0.5667,
-   "p_v2": 0.643082
+   "p_v2": 0.642398
   },
   "2026_12_PHI_DAL": {
    "week": 12,
@@ -1056,33 +1056,33 @@
     "qb_id": "00-0033077",
     "name": "Dak Prescott",
     "status": null,
-    "rating": 0.1148,
+    "rating": 0.1078,
     "plays_prior": 1435,
     "career_starts": 156,
     "usual_starter": "00-0033077",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "PHI",
     "qb_id": "00-0039398",
     "name": "Joe Milton III",
     "status": null,
-    "rating": -0.0048,
+    "rating": 0.0037,
     "plays_prior": 118,
     "career_starts": 3,
     "usual_starter": "00-0039398",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": 0.1196,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": 0.1041,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
    "p_v1": 0.665971,
-   "p_v2": 0.703468
+   "p_v2": 0.696546
   },
   "2026_12_KC_BUF": {
    "week": 12,
@@ -1092,33 +1092,33 @@
     "qb_id": "00-0034857",
     "name": "Josh Allen",
     "status": null,
-    "rating": 0.2269,
+    "rating": 0.2192,
     "plays_prior": 1769,
     "career_starts": 149,
     "usual_starter": "00-0034857",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "KC",
     "qb_id": "00-0033873",
     "name": "Patrick Mahomes",
     "status": null,
-    "rating": 0.1337,
+    "rating": 0.1311,
     "plays_prior": 1726,
     "career_starts": 157,
     "usual_starter": "00-0033873",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": 0.0932,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": 0.0881,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
    "p_v1": 0.720699,
-   "p_v2": 0.729655
+   "p_v2": 0.727511
   },
   "2026_12_DEN_PIT": {
    "week": 12,
@@ -1128,33 +1128,33 @@
     "qb_id": "00-0023459",
     "name": "Aaron Rodgers",
     "status": null,
-    "rating": -0.0068,
+    "rating": -0.0011,
     "plays_prior": 1588,
     "career_starts": 288,
     "usual_starter": "00-0023459",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "DEN",
     "qb_id": "00-0039732",
     "name": "Bo Nix",
     "status": null,
-    "rating": 0.0648,
+    "rating": 0.0664,
     "plays_prior": 1821,
     "career_starts": 46,
     "usual_starter": "00-0039732",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": -0.0716,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": -0.0675,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
    "p_v1": 0.476741,
-   "p_v2": 0.44519
+   "p_v2": 0.447345
   },
   "2026_12_ATL_MIN": {
    "week": 12,
@@ -1164,33 +1164,33 @@
     "qb_id": "00-0029604",
     "name": "Kirk Cousins",
     "status": null,
-    "rating": 0.0437,
+    "rating": 0.04,
     "plays_prior": 1185,
     "career_starts": 182,
     "usual_starter": "00-0029604",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "ATL",
     "qb_id": "00-0039917",
     "name": "Michael Penix Jr.",
     "status": null,
-    "rating": 0.026,
+    "rating": 0.0308,
     "plays_prior": 704,
     "career_starts": 20,
     "usual_starter": "00-0039917",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": 0.0177,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": 0.0092,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
    "p_v1": 0.765746,
-   "p_v2": 0.751268
+   "p_v2": 0.747875
   },
   "2026_12_BAL_HOU": {
    "week": 12,
@@ -1200,69 +1200,33 @@
     "qb_id": "00-0039163",
     "name": "C.J. Stroud",
     "status": null,
-    "rating": 0.0501,
+    "rating": 0.0469,
     "plays_prior": 1662,
     "career_starts": 61,
     "usual_starter": "00-0039163",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "BAL",
     "qb_id": "00-0033119",
     "name": "Jacoby Brissett",
     "status": null,
-    "rating": -0.0261,
-    "plays_prior": 1113,
+    "rating": -0.0221,
+    "plays_prior": 1166,
     "career_starts": 73,
     "usual_starter": "00-0035993",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": 0.0762,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": 0.069,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
-   "p_v1": 0.710518,
-   "p_v2": 0.718108
-  },
-  "2026_12_LV_CLE": {
-   "week": 12,
-   "kickoff": "2026-11-29T18:00:00+00:00",
-   "home": {
-    "team": "CLE",
-    "qb_id": "00-0033537",
-    "name": "Deshaun Watson",
-    "status": null,
-    "rating": -0.0724,
-    "plays_prior": 665,
-    "career_starts": 84,
-    "usual_starter": "00-0033537",
-    "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
-   },
-   "away": {
-    "team": "LV",
-    "qb_id": "00-0041562",
-    "name": "Fernando Mendoza",
-    "status": null,
-    "rating": -0.0108,
-    "plays_prior": 50,
-    "career_starts": 2,
-    "usual_starter": "00-0041562",
-    "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
-   },
-   "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": -0.0616,
-   "frozen": false,
-   "available": false,
-   "reason": "no injury report yet",
-   "p_v1": 0.709954,
-   "p_v2": 0.643115
+   "p_v1": 0.732976,
+   "p_v2": 0.73592
   },
   "2026_12_NO_CIN": {
    "week": 12,
@@ -1272,33 +1236,33 @@
     "qb_id": "00-0036442",
     "name": "Joe Burrow",
     "status": null,
-    "rating": 0.177,
+    "rating": 0.1686,
     "plays_prior": 1412,
     "career_starts": 94,
     "usual_starter": "00-0036442",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "NO",
     "qb_id": "00-0040743",
     "name": "Tyler Shough",
     "status": null,
-    "rating": 0.0103,
+    "rating": 0.0179,
     "plays_prior": 809,
     "career_starts": 19,
     "usual_starter": "00-0040743",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": 0.1667,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": 0.1507,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
    "p_v1": 0.815612,
-   "p_v2": 0.832768
+   "p_v2": 0.827976
   },
   "2026_12_NYG_IND": {
    "week": 12,
@@ -1308,33 +1272,33 @@
     "qb_id": "00-0035710",
     "name": "Daniel Jones",
     "status": null,
-    "rating": -0.0111,
+    "rating": -0.0007,
     "plays_prior": 1270,
     "career_starts": 95,
     "usual_starter": "00-0035710",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "NYG",
     "qb_id": "00-0039923",
     "name": "J.J. McCarthy",
     "status": null,
-    "rating": -0.0431,
+    "rating": -0.0484,
     "plays_prior": 436,
     "career_starts": 14,
     "usual_starter": "00-0039923",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": 0.032,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": 0.0477,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
    "p_v1": 0.475227,
-   "p_v2": 0.503504
+   "p_v2": 0.511849
   },
   "2026_12_NYJ_MIA": {
    "week": 12,
@@ -1344,69 +1308,105 @@
     "qb_id": "00-0040014",
     "name": "Kyle McCord",
     "status": null,
-    "rating": -0.0337,
+    "rating": -0.0227,
     "plays_prior": 37,
     "career_starts": 2,
     "usual_starter": "00-0040014",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "NYJ",
     "qb_id": "00-0030565",
     "name": "Geno Smith",
     "status": null,
-    "rating": -0.0188,
+    "rating": -0.0207,
     "plays_prior": 1570,
     "career_starts": 110,
     "usual_starter": "00-0030565",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": -0.0149,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": -0.002,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
    "p_v1": 0.603551,
-   "p_v2": 0.588868
+   "p_v2": 0.595493
   },
   "2026_12_TEN_JAX": {
    "week": 12,
-   "kickoff": "2026-11-29T21:05:00+00:00",
+   "kickoff": "2026-11-29T18:00:00+00:00",
    "home": {
     "team": "JAX",
     "qb_id": "00-0036971",
     "name": "Trevor Lawrence",
     "status": null,
-    "rating": 0.1191,
+    "rating": 0.1109,
     "plays_prior": 1346,
     "career_starts": 90,
     "usual_starter": "00-0036971",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "TEN",
     "qb_id": "00-0040676",
     "name": "Cam Ward",
     "status": null,
-    "rating": -0.0913,
+    "rating": -0.0873,
     "plays_prior": 964,
     "career_starts": 27,
     "usual_starter": "00-0040676",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": 0.2104,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": 0.1982,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
    "p_v1": 0.897334,
-   "p_v2": 0.902311
+   "p_v2": 0.9
+  },
+  "2026_12_NE_LAC": {
+   "week": 12,
+   "kickoff": "2026-11-29T21:05:00+00:00",
+   "home": {
+    "team": "LAC",
+    "qb_id": "00-0036355",
+    "name": "Justin Herbert",
+    "status": null,
+    "rating": 0.0135,
+    "plays_prior": 1673,
+    "career_starts": 108,
+    "usual_starter": "00-0036355",
+    "replaces": null,
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
+   },
+   "away": {
+    "team": "NE",
+    "qb_id": "00-0038476",
+    "name": "Tommy DeVito",
+    "status": null,
+    "rating": -0.0618,
+    "plays_prior": 99,
+    "career_starts": 11,
+    "usual_starter": "00-0039851",
+    "replaces": null,
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
+   },
+   "report_as_of": null,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": 0.0753,
+   "frozen": false,
+   "available": false,
+   "reason": "no injury report yet",
+   "p_v1": 0.343379,
+   "p_v2": 0.437506
   },
   "2026_12_SEA_SF": {
    "week": 12,
@@ -1416,33 +1416,33 @@
     "qb_id": "00-0037834",
     "name": "Brock Purdy",
     "status": null,
-    "rating": 0.1983,
+    "rating": 0.1882,
     "plays_prior": 1273,
     "career_starts": 63,
     "usual_starter": "00-0037834",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "SEA",
     "qb_id": "00-0035704",
     "name": "Drew Lock",
     "status": null,
-    "rating": 0.0292,
+    "rating": 0.0174,
     "plays_prior": 331,
     "career_starts": 31,
     "usual_starter": "00-0034869",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": 0.1691,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": 0.1708,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
    "p_v1": 0.481869,
-   "p_v2": 0.615918
+   "p_v2": 0.616773
   },
   "2026_12_WAS_ARI": {
    "week": 12,
@@ -1452,69 +1452,69 @@
     "qb_id": "00-0041561",
     "name": "Carson Beck",
     "status": null,
-    "rating": -0.0633,
+    "rating": -0.0462,
     "plays_prior": 24,
     "career_starts": 0,
     "usual_starter": "00-0035289",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "WAS",
     "qb_id": "00-0039910",
     "name": "Jayden Daniels",
     "status": null,
-    "rating": 0.1131,
+    "rating": 0.1118,
     "plays_prior": 1364,
     "career_starts": 32,
     "usual_starter": "00-0039910",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": -0.1764,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": -0.158,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
    "p_v1": 0.481411,
-   "p_v2": 0.388894
+   "p_v2": 0.398234
   },
-  "2026_12_NE_LAC": {
+  "2026_12_LV_CLE": {
    "week": 12,
    "kickoff": "2026-11-30T01:20:00+00:00",
    "home": {
-    "team": "LAC",
-    "qb_id": "00-0036355",
-    "name": "Justin Herbert",
+    "team": "CLE",
+    "qb_id": "00-0033537",
+    "name": "Deshaun Watson",
     "status": null,
-    "rating": 0.006,
-    "plays_prior": 1646,
-    "career_starts": 108,
-    "usual_starter": "00-0036355",
+    "rating": -0.0662,
+    "plays_prior": 665,
+    "career_starts": 84,
+    "usual_starter": "00-0033537",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
-    "team": "NE",
-    "qb_id": "00-0038476",
-    "name": "Tommy DeVito",
+    "team": "LV",
+    "qb_id": "00-0041562",
+    "name": "Fernando Mendoza",
     "status": null,
-    "rating": -0.0731,
-    "plays_prior": 99,
-    "career_starts": 11,
-    "usual_starter": "00-0039851",
+    "rating": -0.0031,
+    "plays_prior": 50,
+    "career_starts": 2,
+    "usual_starter": "00-0041562",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": 0.0791,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": -0.0631,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
-   "p_v1": 0.325083,
-   "p_v2": 0.412725
+   "p_v1": 0.709954,
+   "p_v2": 0.642382
   },
   "2026_12_CAR_TB": {
    "week": 12,
@@ -1524,33 +1524,33 @@
     "qb_id": "00-0034855",
     "name": "Baker Mayfield",
     "status": null,
-    "rating": 0.0738,
+    "rating": 0.0794,
     "plays_prior": 1507,
     "career_starts": 132,
     "usual_starter": "00-0034855",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "CAR",
     "qb_id": "00-0039150",
     "name": "Bryce Young",
     "status": null,
-    "rating": -0.0081,
+    "rating": -0.0084,
     "plays_prior": 1439,
     "career_starts": 52,
     "usual_starter": "00-0039150",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": 0.0819,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": 0.0878,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
    "p_v1": 0.635647,
-   "p_v2": 0.688411
+   "p_v2": 0.691096
   },
   "2026_13_KC_LA": {
    "week": 13,
@@ -1560,33 +1560,33 @@
     "qb_id": "00-0026498",
     "name": "Matthew Stafford",
     "status": null,
-    "rating": 0.1042,
+    "rating": 0.1048,
     "plays_prior": 1840,
     "career_starts": 262,
     "usual_starter": "00-0026498",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "KC",
     "qb_id": "00-0033873",
     "name": "Patrick Mahomes",
     "status": null,
-    "rating": 0.1337,
+    "rating": 0.1311,
     "plays_prior": 1726,
     "career_starts": 157,
     "usual_starter": "00-0033873",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": -0.0295,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": -0.0263,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
    "p_v1": 0.639067,
-   "p_v2": 0.600213
+   "p_v2": 0.601845
   },
   "2026_13_CIN_CLE": {
    "week": 13,
@@ -1596,33 +1596,33 @@
     "qb_id": "00-0033537",
     "name": "Deshaun Watson",
     "status": null,
-    "rating": -0.0724,
+    "rating": -0.0662,
     "plays_prior": 665,
     "career_starts": 84,
     "usual_starter": "00-0033537",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "CIN",
     "qb_id": "00-0036442",
     "name": "Joe Burrow",
     "status": null,
-    "rating": 0.177,
+    "rating": 0.1686,
     "plays_prior": 1412,
     "career_starts": 94,
     "usual_starter": "00-0036442",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": -0.2494,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": -0.2348,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
    "p_v1": 0.306773,
-   "p_v2": 0.25208
+   "p_v2": 0.257978
   },
   "2026_13_DET_ATL": {
    "week": 13,
@@ -1632,33 +1632,33 @@
     "qb_id": "00-0039917",
     "name": "Michael Penix Jr.",
     "status": null,
-    "rating": 0.026,
+    "rating": 0.0308,
     "plays_prior": 704,
     "career_starts": 20,
     "usual_starter": "00-0039917",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "DET",
     "qb_id": "00-0033106",
     "name": "Jared Goff",
     "status": null,
-    "rating": 0.1761,
+    "rating": 0.1714,
     "plays_prior": 1628,
     "career_starts": 170,
     "usual_starter": "00-0033106",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": -0.1501,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": -0.1406,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
    "p_v1": 0.265606,
-   "p_v2": 0.255476
+   "p_v2": 0.259338
   },
   "2026_13_GB_NO": {
    "week": 13,
@@ -1668,33 +1668,33 @@
     "qb_id": "00-0040743",
     "name": "Tyler Shough",
     "status": null,
-    "rating": 0.0103,
+    "rating": 0.0179,
     "plays_prior": 809,
     "career_starts": 19,
     "usual_starter": "00-0040743",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "GB",
     "qb_id": "00-0036264",
     "name": "Jordan Love",
     "status": null,
-    "rating": 0.1636,
+    "rating": 0.1588,
     "plays_prior": 1462,
     "career_starts": 62,
     "usual_starter": "00-0036264",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": -0.1533,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": -0.1409,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
    "p_v1": 0.39088,
-   "p_v2": 0.339813
+   "p_v2": 0.345754
   },
   "2026_13_JAX_CHI": {
    "week": 13,
@@ -1704,33 +1704,33 @@
     "qb_id": "00-0039918",
     "name": "Caleb Williams",
     "status": null,
-    "rating": 0.0398,
+    "rating": 0.0365,
     "plays_prior": 1720,
     "career_starts": 43,
     "usual_starter": "00-0039918",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "JAX",
     "qb_id": "00-0036971",
     "name": "Trevor Lawrence",
     "status": null,
-    "rating": 0.1191,
+    "rating": 0.1109,
     "plays_prior": 1346,
     "career_starts": 90,
     "usual_starter": "00-0036971",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": -0.0793,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": -0.0744,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
    "p_v1": 0.550371,
-   "p_v2": 0.489501
+   "p_v2": 0.492105
   },
   "2026_13_LAC_TB": {
    "week": 13,
@@ -1740,33 +1740,33 @@
     "qb_id": "00-0034855",
     "name": "Baker Mayfield",
     "status": null,
-    "rating": 0.0738,
+    "rating": 0.0794,
     "plays_prior": 1507,
     "career_starts": 132,
     "usual_starter": "00-0034855",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "LAC",
     "qb_id": "00-0036355",
     "name": "Justin Herbert",
     "status": null,
-    "rating": 0.006,
-    "plays_prior": 1646,
+    "rating": 0.0135,
+    "plays_prior": 1673,
     "career_starts": 108,
     "usual_starter": "00-0036355",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": 0.0678,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": 0.0659,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
-   "p_v1": 0.746994,
-   "p_v2": 0.767069
+   "p_v1": 0.731138,
+   "p_v2": 0.746171
   },
   "2026_13_SF_NYG": {
    "week": 13,
@@ -1776,33 +1776,33 @@
     "qb_id": "00-0039923",
     "name": "J.J. McCarthy",
     "status": null,
-    "rating": -0.0431,
+    "rating": -0.0484,
     "plays_prior": 436,
     "career_starts": 14,
     "usual_starter": "00-0039923",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "SF",
     "qb_id": "00-0037834",
     "name": "Brock Purdy",
     "status": null,
-    "rating": 0.1983,
+    "rating": 0.1882,
     "plays_prior": 1273,
     "career_starts": 63,
     "usual_starter": "00-0037834",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": -0.2414,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": -0.2366,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
    "p_v1": 0.386628,
-   "p_v2": 0.287217
+   "p_v2": 0.289311
   },
   "2026_13_WAS_TEN": {
    "week": 13,
@@ -1812,33 +1812,33 @@
     "qb_id": "00-0040676",
     "name": "Cam Ward",
     "status": null,
-    "rating": -0.0913,
+    "rating": -0.0873,
     "plays_prior": 964,
     "career_starts": 27,
     "usual_starter": "00-0040676",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "WAS",
     "qb_id": "00-0039910",
     "name": "Jayden Daniels",
     "status": null,
-    "rating": 0.1131,
+    "rating": 0.1118,
     "plays_prior": 1364,
     "career_starts": 32,
     "usual_starter": "00-0039910",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": -0.2044,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": -0.1991,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
    "p_v1": 0.395692,
-   "p_v2": 0.322576
+   "p_v2": 0.325044
   },
   "2026_13_MIA_DEN": {
    "week": 13,
@@ -1848,33 +1848,33 @@
     "qb_id": "00-0039732",
     "name": "Bo Nix",
     "status": null,
-    "rating": 0.0648,
+    "rating": 0.0664,
     "plays_prior": 1821,
     "career_starts": 46,
     "usual_starter": "00-0039732",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "MIA",
     "qb_id": "00-0040014",
     "name": "Kyle McCord",
     "status": null,
-    "rating": -0.0337,
+    "rating": -0.0227,
     "plays_prior": 37,
     "career_starts": 2,
     "usual_starter": "00-0040014",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": 0.0985,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": 0.0891,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
    "p_v1": 0.867121,
-   "p_v2": 0.855259
+   "p_v2": 0.852766
   },
   "2026_13_PHI_ARI": {
    "week": 13,
@@ -1884,33 +1884,33 @@
     "qb_id": "00-0041561",
     "name": "Carson Beck",
     "status": null,
-    "rating": -0.0633,
+    "rating": -0.0462,
     "plays_prior": 24,
     "career_starts": 0,
     "usual_starter": "00-0035289",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "PHI",
     "qb_id": "00-0039398",
     "name": "Joe Milton III",
     "status": null,
-    "rating": -0.0048,
+    "rating": 0.0037,
     "plays_prior": 118,
     "career_starts": 3,
     "usual_starter": "00-0039398",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": -0.0585,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": -0.0499,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
    "p_v1": 0.563092,
-   "p_v2": 0.527555
+   "p_v2": 0.532111
   },
   "2026_13_BUF_NE": {
    "week": 13,
@@ -1920,33 +1920,33 @@
     "qb_id": "00-0039851",
     "name": "Drake Maye",
     "status": null,
-    "rating": 0.1184,
+    "rating": 0.1139,
     "plays_prior": 1583,
     "career_starts": 42,
     "usual_starter": "00-0039851",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "BUF",
     "qb_id": "00-0034857",
     "name": "Josh Allen",
     "status": null,
-    "rating": 0.2269,
+    "rating": 0.2192,
     "plays_prior": 1769,
     "career_starts": 149,
     "usual_starter": "00-0034857",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": -0.1085,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": -0.1053,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
    "p_v1": 0.283745,
-   "p_v2": 0.28539
+   "p_v2": 0.28678
   },
   "2026_13_CAR_MIN": {
    "week": 13,
@@ -1956,33 +1956,33 @@
     "qb_id": "00-0029604",
     "name": "Kirk Cousins",
     "status": null,
-    "rating": 0.0437,
+    "rating": 0.04,
     "plays_prior": 1185,
     "career_starts": 182,
     "usual_starter": "00-0029604",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "CAR",
     "qb_id": "00-0039150",
     "name": "Bryce Young",
     "status": null,
-    "rating": -0.0081,
+    "rating": -0.0084,
     "plays_prior": 1439,
     "career_starts": 52,
     "usual_starter": "00-0039150",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": 0.0518,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": 0.0484,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
    "p_v1": 0.784287,
-   "p_v2": 0.769666
+   "p_v2": 0.768381
   },
   "2026_13_HOU_PIT": {
    "week": 13,
@@ -1992,33 +1992,33 @@
     "qb_id": "00-0023459",
     "name": "Aaron Rodgers",
     "status": null,
-    "rating": -0.0068,
+    "rating": -0.0011,
     "plays_prior": 1588,
     "career_starts": 288,
     "usual_starter": "00-0023459",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "HOU",
     "qb_id": "00-0039163",
     "name": "C.J. Stroud",
     "status": null,
-    "rating": 0.0501,
+    "rating": 0.0469,
     "plays_prior": 1662,
     "career_starts": 61,
     "usual_starter": "00-0039163",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": -0.0569,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": -0.048,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
    "p_v1": 0.634182,
-   "p_v2": 0.586074
+   "p_v2": 0.590658
   },
   "2026_13_DAL_SEA": {
    "week": 13,
@@ -2028,33 +2028,33 @@
     "qb_id": "00-0034869",
     "name": "Sam Darnold",
     "status": null,
-    "rating": 0.0562,
+    "rating": 0.0587,
     "plays_prior": 1593,
     "career_starts": 99,
     "usual_starter": "00-0034869",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "DAL",
     "qb_id": "00-0033077",
     "name": "Dak Prescott",
     "status": null,
-    "rating": 0.1148,
+    "rating": 0.1078,
     "plays_prior": 1435,
     "career_starts": 156,
     "usual_starter": "00-0033077",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": -0.0586,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": -0.0491,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
    "p_v1": 0.780708,
-   "p_v2": 0.709826
+   "p_v2": 0.71397
   },
   "2026_14_MIN_NE": {
    "week": 14,
@@ -2064,33 +2064,33 @@
     "qb_id": "00-0039851",
     "name": "Drake Maye",
     "status": null,
-    "rating": 0.1184,
+    "rating": 0.1139,
     "plays_prior": 1583,
     "career_starts": 42,
     "usual_starter": "00-0039851",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "MIN",
     "qb_id": "00-0029604",
     "name": "Kirk Cousins",
     "status": null,
-    "rating": 0.0437,
+    "rating": 0.04,
     "plays_prior": 1185,
     "career_starts": 182,
     "usual_starter": "00-0029604",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": 0.0747,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": 0.0739,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
    "p_v1": 0.455516,
-   "p_v2": 0.498156
+   "p_v2": 0.497731
   },
   "2026_14_ATL_CLE": {
    "week": 14,
@@ -2100,33 +2100,33 @@
     "qb_id": "00-0033537",
     "name": "Deshaun Watson",
     "status": null,
-    "rating": -0.0724,
+    "rating": -0.0662,
     "plays_prior": 665,
     "career_starts": 84,
     "usual_starter": "00-0033537",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "ATL",
     "qb_id": "00-0039917",
     "name": "Michael Penix Jr.",
     "status": null,
-    "rating": 0.026,
+    "rating": 0.0308,
     "plays_prior": 704,
     "career_starts": 20,
     "usual_starter": "00-0039917",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": -0.0984,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": -0.097,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
    "p_v1": 0.642572,
-   "p_v2": 0.583415
+   "p_v2": 0.584138
   },
   "2026_14_CHI_MIA": {
    "week": 14,
@@ -2136,33 +2136,33 @@
     "qb_id": "00-0040014",
     "name": "Kyle McCord",
     "status": null,
-    "rating": -0.0337,
+    "rating": -0.0227,
     "plays_prior": 37,
     "career_starts": 2,
     "usual_starter": "00-0040014",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "CHI",
     "qb_id": "00-0039918",
     "name": "Caleb Williams",
     "status": null,
-    "rating": 0.0398,
+    "rating": 0.0365,
     "plays_prior": 1720,
     "career_starts": 43,
     "usual_starter": "00-0039918",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": -0.0735,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": -0.0592,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
    "p_v1": 0.24582,
-   "p_v2": 0.27558
+   "p_v2": 0.281693
   },
   "2026_14_DEN_NYJ": {
    "week": 14,
@@ -2172,33 +2172,33 @@
     "qb_id": "00-0030565",
     "name": "Geno Smith",
     "status": null,
-    "rating": -0.0188,
+    "rating": -0.0207,
     "plays_prior": 1570,
     "career_starts": 110,
     "usual_starter": "00-0030565",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "DEN",
     "qb_id": "00-0039732",
     "name": "Bo Nix",
     "status": null,
-    "rating": 0.0648,
+    "rating": 0.0664,
     "plays_prior": 1821,
     "career_starts": 46,
     "usual_starter": "00-0039732",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": -0.0836,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": -0.0871,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
    "p_v1": 0.245548,
-   "p_v2": 0.247386
+   "p_v2": 0.246003
   },
   "2026_14_HOU_WAS": {
    "week": 14,
@@ -2208,33 +2208,33 @@
     "qb_id": "00-0039910",
     "name": "Jayden Daniels",
     "status": null,
-    "rating": 0.1131,
+    "rating": 0.1118,
     "plays_prior": 1364,
     "career_starts": 32,
     "usual_starter": "00-0039910",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "HOU",
     "qb_id": "00-0039163",
     "name": "C.J. Stroud",
     "status": null,
-    "rating": 0.0501,
+    "rating": 0.0469,
     "plays_prior": 1662,
     "career_starts": 61,
     "usual_starter": "00-0039163",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": 0.063,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": 0.0649,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
    "p_v1": 0.482122,
-   "p_v2": 0.532696
+   "p_v2": 0.533701
   },
   "2026_14_IND_PHI": {
    "week": 14,
@@ -2244,33 +2244,33 @@
     "qb_id": "00-0039398",
     "name": "Joe Milton III",
     "status": null,
-    "rating": -0.0048,
+    "rating": 0.0037,
     "plays_prior": 118,
     "career_starts": 3,
     "usual_starter": "00-0039398",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "IND",
     "qb_id": "00-0035710",
     "name": "Daniel Jones",
     "status": null,
-    "rating": -0.0111,
+    "rating": -0.0007,
     "plays_prior": 1270,
     "career_starts": 95,
     "usual_starter": "00-0035710",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": 0.0063,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": 0.0044,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
    "p_v1": 0.49481,
-   "p_v2": 0.530171
+   "p_v2": 0.529164
   },
   "2026_14_NO_CAR": {
    "week": 14,
@@ -2280,33 +2280,33 @@
     "qb_id": "00-0039150",
     "name": "Bryce Young",
     "status": null,
-    "rating": -0.0081,
+    "rating": -0.0084,
     "plays_prior": 1439,
     "career_starts": 52,
     "usual_starter": "00-0039150",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "NO",
     "qb_id": "00-0040743",
     "name": "Tyler Shough",
     "status": null,
-    "rating": 0.0103,
+    "rating": 0.0179,
     "plays_prior": 809,
     "career_starts": 19,
     "usual_starter": "00-0040743",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": -0.0184,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": -0.0263,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
    "p_v1": 0.567478,
-   "p_v2": 0.565124
+   "p_v2": 0.56099
   },
   "2026_14_TB_BAL": {
    "week": 14,
@@ -2316,33 +2316,33 @@
     "qb_id": "00-0033119",
     "name": "Jacoby Brissett",
     "status": null,
-    "rating": -0.0261,
-    "plays_prior": 1113,
+    "rating": -0.0221,
+    "plays_prior": 1166,
     "career_starts": 73,
     "usual_starter": "00-0035993",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "TB",
     "qb_id": "00-0034855",
     "name": "Baker Mayfield",
     "status": null,
-    "rating": 0.0738,
+    "rating": 0.0794,
     "plays_prior": 1507,
     "career_starts": 132,
     "usual_starter": "00-0034855",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": -0.0999,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": -0.1015,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
-   "p_v1": 0.557882,
-   "p_v2": 0.462015
+   "p_v1": 0.530138,
+   "p_v2": 0.435187
   },
   "2026_14_TEN_DET": {
    "week": 14,
@@ -2352,33 +2352,33 @@
     "qb_id": "00-0033106",
     "name": "Jared Goff",
     "status": null,
-    "rating": 0.1761,
+    "rating": 0.1714,
     "plays_prior": 1628,
     "career_starts": 170,
     "usual_starter": "00-0033106",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "TEN",
     "qb_id": "00-0040676",
     "name": "Cam Ward",
     "status": null,
-    "rating": -0.0913,
+    "rating": -0.0873,
     "plays_prior": 964,
     "career_starts": 27,
     "usual_starter": "00-0040676",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": 0.2674,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": 0.2587,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
    "p_v1": 0.893201,
-   "p_v2": 0.903865
+   "p_v2": 0.902245
   },
   "2026_14_LAC_LV": {
    "week": 14,
@@ -2388,33 +2388,33 @@
     "qb_id": "00-0041562",
     "name": "Fernando Mendoza",
     "status": null,
-    "rating": -0.0108,
+    "rating": -0.0031,
     "plays_prior": 50,
     "career_starts": 2,
     "usual_starter": "00-0041562",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "LAC",
     "qb_id": "00-0036355",
     "name": "Justin Herbert",
     "status": null,
-    "rating": 0.006,
-    "plays_prior": 1646,
+    "rating": 0.0135,
+    "plays_prior": 1673,
     "career_starts": 108,
     "usual_starter": "00-0036355",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": -0.0168,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": -0.0166,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
-   "p_v1": 0.653082,
-   "p_v2": 0.635175
+   "p_v1": 0.634222,
+   "p_v2": 0.609546
   },
   "2026_14_KC_CIN": {
    "week": 14,
@@ -2424,33 +2424,33 @@
     "qb_id": "00-0036442",
     "name": "Joe Burrow",
     "status": null,
-    "rating": 0.177,
+    "rating": 0.1686,
     "plays_prior": 1412,
     "career_starts": 94,
     "usual_starter": "00-0036442",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "KC",
     "qb_id": "00-0033873",
     "name": "Patrick Mahomes",
     "status": null,
-    "rating": 0.1337,
+    "rating": 0.1311,
     "plays_prior": 1726,
     "career_starts": 157,
     "usual_starter": "00-0033873",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": 0.0433,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": 0.0375,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
    "p_v1": 0.628559,
-   "p_v2": 0.637208
+   "p_v2": 0.634352
   },
   "2026_14_LA_SF": {
    "week": 14,
@@ -2460,33 +2460,33 @@
     "qb_id": "00-0037834",
     "name": "Brock Purdy",
     "status": null,
-    "rating": 0.1983,
+    "rating": 0.1882,
     "plays_prior": 1273,
     "career_starts": 63,
     "usual_starter": "00-0037834",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "LA",
     "qb_id": "00-0026498",
     "name": "Matthew Stafford",
     "status": null,
-    "rating": 0.1042,
+    "rating": 0.1048,
     "plays_prior": 1840,
     "career_starts": 262,
     "usual_starter": "00-0026498",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": 0.0941,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": 0.0834,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
    "p_v1": 0.537443,
-   "p_v2": 0.607584
+   "p_v2": 0.602146
   },
   "2026_14_NYG_SEA": {
    "week": 14,
@@ -2496,33 +2496,33 @@
     "qb_id": "00-0034869",
     "name": "Sam Darnold",
     "status": null,
-    "rating": 0.0562,
+    "rating": 0.0587,
     "plays_prior": 1593,
     "career_starts": 99,
     "usual_starter": "00-0034869",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "NYG",
     "qb_id": "00-0039923",
     "name": "J.J. McCarthy",
     "status": null,
-    "rating": -0.0431,
+    "rating": -0.0484,
     "plays_prior": 436,
     "career_starts": 14,
     "usual_starter": "00-0039923",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": 0.0993,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": 0.1071,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
    "p_v1": 0.76032,
-   "p_v2": 0.763769
+   "p_v2": 0.766749
   },
   "2026_14_BUF_GB": {
    "week": 14,
@@ -2532,33 +2532,33 @@
     "qb_id": "00-0036264",
     "name": "Jordan Love",
     "status": null,
-    "rating": 0.1636,
+    "rating": 0.1588,
     "plays_prior": 1462,
     "career_starts": 62,
     "usual_starter": "00-0036264",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "BUF",
     "qb_id": "00-0034857",
     "name": "Josh Allen",
     "status": null,
-    "rating": 0.2269,
+    "rating": 0.2192,
     "plays_prior": 1769,
     "career_starts": 149,
     "usual_starter": "00-0034857",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": -0.0633,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": -0.0604,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
    "p_v1": 0.372381,
-   "p_v2": 0.377342
+   "p_v2": 0.378792
   },
   "2026_14_PIT_JAX": {
    "week": 14,
@@ -2568,33 +2568,33 @@
     "qb_id": "00-0036971",
     "name": "Trevor Lawrence",
     "status": null,
-    "rating": 0.1191,
+    "rating": 0.1109,
     "plays_prior": 1346,
     "career_starts": 90,
     "usual_starter": "00-0036971",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "PIT",
     "qb_id": "00-0023459",
     "name": "Aaron Rodgers",
     "status": null,
-    "rating": -0.0068,
+    "rating": -0.0011,
     "plays_prior": 1588,
     "career_starts": 288,
     "usual_starter": "00-0023459",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": 0.1259,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": 0.112,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
    "p_v1": 0.726972,
-   "p_v2": 0.74473
+   "p_v2": 0.739069
   },
   "2026_15_SF_LAC": {
    "week": 15,
@@ -2604,33 +2604,33 @@
     "qb_id": "00-0036355",
     "name": "Justin Herbert",
     "status": null,
-    "rating": 0.006,
-    "plays_prior": 1646,
+    "rating": 0.0135,
+    "plays_prior": 1673,
     "career_starts": 108,
     "usual_starter": "00-0036355",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "SF",
     "qb_id": "00-0037834",
     "name": "Brock Purdy",
     "status": null,
-    "rating": 0.1983,
+    "rating": 0.1882,
     "plays_prior": 1273,
     "career_starts": 63,
     "usual_starter": "00-0037834",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": -0.1923,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": -0.1747,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
-   "p_v1": 0.236927,
-   "p_v2": 0.203151
+   "p_v1": 0.252115,
+   "p_v2": 0.227975
   },
   "2026_15_SEA_PHI": {
    "week": 15,
@@ -2640,33 +2640,33 @@
     "qb_id": "00-0039398",
     "name": "Joe Milton III",
     "status": null,
-    "rating": -0.0048,
+    "rating": 0.0037,
     "plays_prior": 118,
     "career_starts": 3,
     "usual_starter": "00-0039398",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "SEA",
     "qb_id": "00-0034869",
     "name": "Sam Darnold",
     "status": null,
-    "rating": 0.0562,
+    "rating": 0.0587,
     "plays_prior": 1593,
     "career_starts": 99,
     "usual_starter": "00-0034869",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": -0.061,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": -0.055,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
    "p_v1": 0.235636,
-   "p_v2": 0.2733
+   "p_v2": 0.275842
   },
   "2026_15_CHI_BUF": {
    "week": 15,
@@ -2676,33 +2676,33 @@
     "qb_id": "00-0034857",
     "name": "Josh Allen",
     "status": null,
-    "rating": 0.2269,
+    "rating": 0.2192,
     "plays_prior": 1769,
     "career_starts": 149,
     "usual_starter": "00-0034857",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "CHI",
     "qb_id": "00-0039918",
     "name": "Caleb Williams",
     "status": null,
-    "rating": 0.0398,
+    "rating": 0.0365,
     "plays_prior": 1720,
     "career_starts": 43,
     "usual_starter": "00-0039918",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": 0.1871,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": 0.1827,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
    "p_v1": 0.676772,
-   "p_v2": 0.744527
+   "p_v2": 0.742743
   },
   "2026_15_ATL_WAS": {
    "week": 15,
@@ -2712,33 +2712,33 @@
     "qb_id": "00-0039910",
     "name": "Jayden Daniels",
     "status": null,
-    "rating": 0.1131,
+    "rating": 0.1118,
     "plays_prior": 1364,
     "career_starts": 32,
     "usual_starter": "00-0039910",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "ATL",
     "qb_id": "00-0039917",
     "name": "Michael Penix Jr.",
     "status": null,
-    "rating": 0.026,
+    "rating": 0.0308,
     "plays_prior": 704,
     "career_starts": 20,
     "usual_starter": "00-0039917",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": 0.0871,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": 0.081,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
    "p_v1": 0.637221,
-   "p_v2": 0.673468
+   "p_v2": 0.670609
   },
   "2026_15_BAL_PIT": {
    "week": 15,
@@ -2748,33 +2748,33 @@
     "qb_id": "00-0023459",
     "name": "Aaron Rodgers",
     "status": null,
-    "rating": -0.0068,
+    "rating": -0.0011,
     "plays_prior": 1588,
     "career_starts": 288,
     "usual_starter": "00-0023459",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "BAL",
     "qb_id": "00-0033119",
     "name": "Jacoby Brissett",
     "status": null,
-    "rating": -0.0261,
-    "plays_prior": 1113,
+    "rating": -0.0221,
+    "plays_prior": 1166,
     "career_starts": 73,
     "usual_starter": "00-0035993",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": 0.0193,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": 0.021,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
-   "p_v1": 0.687667,
-   "p_v2": 0.687555
+   "p_v1": 0.711177,
+   "p_v2": 0.710418
   },
   "2026_15_CIN_CAR": {
    "week": 15,
@@ -2784,33 +2784,33 @@
     "qb_id": "00-0039150",
     "name": "Bryce Young",
     "status": null,
-    "rating": -0.0081,
+    "rating": -0.0084,
     "plays_prior": 1439,
     "career_starts": 52,
     "usual_starter": "00-0039150",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "CIN",
     "qb_id": "00-0036442",
     "name": "Joe Burrow",
     "status": null,
-    "rating": 0.177,
+    "rating": 0.1686,
     "plays_prior": 1412,
     "career_starts": 94,
     "usual_starter": "00-0036442",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": -0.1851,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": -0.177,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
    "p_v1": 0.313409,
-   "p_v2": 0.270752
+   "p_v2": 0.274166
   },
   "2026_15_CLE_NYG": {
    "week": 15,
@@ -2820,33 +2820,33 @@
     "qb_id": "00-0039923",
     "name": "J.J. McCarthy",
     "status": null,
-    "rating": -0.0431,
+    "rating": -0.0484,
     "plays_prior": 436,
     "career_starts": 14,
     "usual_starter": "00-0039923",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "CLE",
     "qb_id": "00-0033537",
     "name": "Deshaun Watson",
     "status": null,
-    "rating": -0.0724,
+    "rating": -0.0662,
     "plays_prior": 665,
     "career_starts": 84,
     "usual_starter": "00-0033537",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": 0.0293,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": 0.0178,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
    "p_v1": 0.626337,
-   "p_v2": 0.607935
+   "p_v2": 0.60209
   },
   "2026_15_IND_TEN": {
    "week": 15,
@@ -2856,33 +2856,33 @@
     "qb_id": "00-0040676",
     "name": "Cam Ward",
     "status": null,
-    "rating": -0.0913,
+    "rating": -0.0873,
     "plays_prior": 964,
     "career_starts": 27,
     "usual_starter": "00-0040676",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "IND",
     "qb_id": "00-0035710",
     "name": "Daniel Jones",
     "status": null,
-    "rating": -0.0111,
+    "rating": -0.0007,
     "plays_prior": 1270,
     "career_starts": 95,
     "usual_starter": "00-0035710",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": -0.0802,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": -0.0866,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
    "p_v1": 0.444771,
-   "p_v2": 0.447893
+   "p_v2": 0.444529
   },
   "2026_15_JAX_HOU": {
    "week": 15,
@@ -2892,33 +2892,33 @@
     "qb_id": "00-0039163",
     "name": "C.J. Stroud",
     "status": null,
-    "rating": 0.0501,
+    "rating": 0.0469,
     "plays_prior": 1662,
     "career_starts": 61,
     "usual_starter": "00-0039163",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "JAX",
     "qb_id": "00-0036971",
     "name": "Trevor Lawrence",
     "status": null,
-    "rating": 0.1191,
+    "rating": 0.1109,
     "plays_prior": 1346,
     "career_starts": 90,
     "usual_starter": "00-0036971",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": -0.069,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": -0.064,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
    "p_v1": 0.365581,
-   "p_v2": 0.373635
+   "p_v2": 0.376127
   },
   "2026_15_MIA_GB": {
    "week": 15,
@@ -2928,33 +2928,33 @@
     "qb_id": "00-0036264",
     "name": "Jordan Love",
     "status": null,
-    "rating": 0.1636,
+    "rating": 0.1588,
     "plays_prior": 1462,
     "career_starts": 62,
     "usual_starter": "00-0036264",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "MIA",
     "qb_id": "00-0040014",
     "name": "Kyle McCord",
     "status": null,
-    "rating": -0.0337,
+    "rating": -0.0227,
     "plays_prior": 37,
     "career_starts": 2,
     "usual_starter": "00-0040014",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": 0.1973,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": 0.1815,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
    "p_v1": 0.792159,
-   "p_v2": 0.822777
+   "p_v2": 0.817824
   },
   "2026_15_NO_TB": {
    "week": 15,
@@ -2964,33 +2964,33 @@
     "qb_id": "00-0034855",
     "name": "Baker Mayfield",
     "status": null,
-    "rating": 0.0738,
+    "rating": 0.0794,
     "plays_prior": 1507,
     "career_starts": 132,
     "usual_starter": "00-0034855",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "NO",
     "qb_id": "00-0040743",
     "name": "Tyler Shough",
     "status": null,
-    "rating": 0.0103,
+    "rating": 0.0179,
     "plays_prior": 809,
     "career_starts": 19,
     "usual_starter": "00-0040743",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": 0.0635,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": 0.0615,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
    "p_v1": 0.650121,
-   "p_v2": 0.694346
+   "p_v2": 0.693443
   },
   "2026_15_NYJ_ARI": {
    "week": 15,
@@ -3000,33 +3000,33 @@
     "qb_id": "00-0041561",
     "name": "Carson Beck",
     "status": null,
-    "rating": -0.0633,
+    "rating": -0.0462,
     "plays_prior": 24,
     "career_starts": 0,
     "usual_starter": "00-0035289",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "NYJ",
     "qb_id": "00-0030565",
     "name": "Geno Smith",
     "status": null,
-    "rating": -0.0188,
+    "rating": -0.0207,
     "plays_prior": 1570,
     "career_starts": 110,
     "usual_starter": "00-0030565",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": -0.0445,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": -0.0255,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
    "p_v1": 0.69452,
-   "p_v2": 0.6288
+   "p_v2": 0.638181
   },
   "2026_15_DAL_LA": {
    "week": 15,
@@ -3036,33 +3036,33 @@
     "qb_id": "00-0026498",
     "name": "Matthew Stafford",
     "status": null,
-    "rating": 0.1042,
+    "rating": 0.1048,
     "plays_prior": 1840,
     "career_starts": 262,
     "usual_starter": "00-0026498",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "DAL",
     "qb_id": "00-0033077",
     "name": "Dak Prescott",
     "status": null,
-    "rating": 0.1148,
+    "rating": 0.1078,
     "plays_prior": 1435,
     "career_starts": 156,
     "usual_starter": "00-0033077",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": -0.0106,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": -0.003,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
    "p_v1": 0.746442,
-   "p_v2": 0.709392
+   "p_v2": 0.712712
   },
   "2026_15_DEN_LV": {
    "week": 15,
@@ -3072,33 +3072,33 @@
     "qb_id": "00-0041562",
     "name": "Fernando Mendoza",
     "status": null,
-    "rating": -0.0108,
+    "rating": -0.0031,
     "plays_prior": 50,
     "career_starts": 2,
     "usual_starter": "00-0041562",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "DEN",
     "qb_id": "00-0039732",
     "name": "Bo Nix",
     "status": null,
-    "rating": 0.0648,
+    "rating": 0.0664,
     "plays_prior": 1821,
     "career_starts": 46,
     "usual_starter": "00-0039732",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": -0.0756,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": -0.0695,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
    "p_v1": 0.252482,
-   "p_v2": 0.26958
+   "p_v2": 0.272142
   },
   "2026_15_DET_MIN": {
    "week": 15,
@@ -3108,33 +3108,33 @@
     "qb_id": "00-0029604",
     "name": "Kirk Cousins",
     "status": null,
-    "rating": 0.0437,
+    "rating": 0.04,
     "plays_prior": 1185,
     "career_starts": 182,
     "usual_starter": "00-0029604",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "DET",
     "qb_id": "00-0033106",
     "name": "Jared Goff",
     "status": null,
-    "rating": 0.1761,
+    "rating": 0.1714,
     "plays_prior": 1628,
     "career_starts": 170,
     "usual_starter": "00-0033106",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": -0.1324,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": -0.1314,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
    "p_v1": 0.531651,
-   "p_v2": 0.481475
+   "p_v2": 0.482006
   },
   "2026_15_NE_KC": {
    "week": 15,
@@ -3144,33 +3144,33 @@
     "qb_id": "00-0033873",
     "name": "Patrick Mahomes",
     "status": null,
-    "rating": 0.1337,
+    "rating": 0.1311,
     "plays_prior": 1726,
     "career_starts": 157,
     "usual_starter": "00-0033873",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "NE",
     "qb_id": "00-0039851",
     "name": "Drake Maye",
     "status": null,
-    "rating": 0.1184,
+    "rating": 0.1139,
     "plays_prior": 1583,
     "career_starts": 42,
     "usual_starter": "00-0039851",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": 0.0153,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": 0.0172,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
    "p_v1": 0.66004,
-   "p_v2": 0.655839
+   "p_v2": 0.65675
   },
   "2026_16_HOU_PHI": {
    "week": 16,
@@ -3180,33 +3180,33 @@
     "qb_id": "00-0039398",
     "name": "Joe Milton III",
     "status": null,
-    "rating": -0.0048,
+    "rating": 0.0037,
     "plays_prior": 118,
     "career_starts": 3,
     "usual_starter": "00-0039398",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "HOU",
     "qb_id": "00-0039163",
     "name": "C.J. Stroud",
     "status": null,
-    "rating": 0.0501,
+    "rating": 0.0469,
     "plays_prior": 1662,
     "career_starts": 61,
     "usual_starter": "00-0039163",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": -0.0549,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": -0.0432,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
    "p_v1": 0.378183,
-   "p_v2": 0.379425
+   "p_v2": 0.385301
   },
   "2026_16_GB_CHI": {
    "week": 16,
@@ -3216,33 +3216,33 @@
     "qb_id": "00-0039918",
     "name": "Caleb Williams",
     "status": null,
-    "rating": 0.0398,
+    "rating": 0.0365,
     "plays_prior": 1720,
     "career_starts": 43,
     "usual_starter": "00-0039918",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "GB",
     "qb_id": "00-0036264",
     "name": "Jordan Love",
     "status": null,
-    "rating": 0.1636,
+    "rating": 0.1588,
     "plays_prior": 1462,
     "career_starts": 62,
     "usual_starter": "00-0036264",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": -0.1238,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": -0.1223,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
    "p_v1": 0.667357,
-   "p_v2": 0.572626
+   "p_v2": 0.573406
   },
   "2026_16_BUF_DEN": {
    "week": 16,
@@ -3252,33 +3252,33 @@
     "qb_id": "00-0039732",
     "name": "Bo Nix",
     "status": null,
-    "rating": 0.0648,
+    "rating": 0.0664,
     "plays_prior": 1821,
     "career_starts": 46,
     "usual_starter": "00-0039732",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "BUF",
     "qb_id": "00-0034857",
     "name": "Josh Allen",
     "status": null,
-    "rating": 0.2269,
+    "rating": 0.2192,
     "plays_prior": 1769,
     "career_starts": 149,
     "usual_starter": "00-0034857",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": -0.1621,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": -0.1528,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
    "p_v1": 0.479541,
-   "p_v2": 0.420594
+   "p_v2": 0.425421
   },
   "2026_16_LA_SEA": {
    "week": 16,
@@ -3288,33 +3288,33 @@
     "qb_id": "00-0034869",
     "name": "Sam Darnold",
     "status": null,
-    "rating": 0.0562,
+    "rating": 0.0587,
     "plays_prior": 1593,
     "career_starts": 99,
     "usual_starter": "00-0034869",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "LA",
     "qb_id": "00-0026498",
     "name": "Matthew Stafford",
     "status": null,
-    "rating": 0.1042,
+    "rating": 0.1048,
     "plays_prior": 1840,
     "career_starts": 262,
     "usual_starter": "00-0026498",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": -0.048,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": -0.0461,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
    "p_v1": 0.582614,
-   "p_v2": 0.548801
+   "p_v2": 0.549802
   },
   "2026_16_ARI_NO": {
    "week": 16,
@@ -3324,33 +3324,33 @@
     "qb_id": "00-0040743",
     "name": "Tyler Shough",
     "status": null,
-    "rating": 0.0103,
+    "rating": 0.0179,
     "plays_prior": 809,
     "career_starts": 19,
     "usual_starter": "00-0040743",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "ARI",
     "qb_id": "00-0041561",
     "name": "Carson Beck",
     "status": null,
-    "rating": -0.0633,
+    "rating": -0.0462,
     "plays_prior": 24,
     "career_starts": 0,
     "usual_starter": "00-0035289",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": 0.0736,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": 0.0641,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
    "p_v1": 0.655368,
-   "p_v2": 0.666334
+   "p_v2": 0.661828
   },
   "2026_16_CAR_PIT": {
    "week": 16,
@@ -3360,33 +3360,33 @@
     "qb_id": "00-0023459",
     "name": "Aaron Rodgers",
     "status": null,
-    "rating": -0.0068,
+    "rating": -0.0011,
     "plays_prior": 1588,
     "career_starts": 288,
     "usual_starter": "00-0023459",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "CAR",
     "qb_id": "00-0039150",
     "name": "Bryce Young",
     "status": null,
-    "rating": -0.0081,
+    "rating": -0.0084,
     "plays_prior": 1439,
     "career_starts": 52,
     "usual_starter": "00-0039150",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": 0.0013,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": 0.0073,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
    "p_v1": 0.724334,
-   "p_v2": 0.698362
+   "p_v2": 0.701044
   },
   "2026_16_CIN_IND": {
    "week": 16,
@@ -3396,33 +3396,33 @@
     "qb_id": "00-0035710",
     "name": "Daniel Jones",
     "status": null,
-    "rating": -0.0111,
+    "rating": -0.0007,
     "plays_prior": 1270,
     "career_starts": 95,
     "usual_starter": "00-0035710",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "CIN",
     "qb_id": "00-0036442",
     "name": "Joe Burrow",
     "status": null,
-    "rating": 0.177,
+    "rating": 0.1686,
     "plays_prior": 1412,
     "career_starts": 94,
     "usual_starter": "00-0036442",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": -0.1881,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": -0.1693,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
    "p_v1": 0.26113,
-   "p_v2": 0.225619
+   "p_v2": 0.232681
   },
   "2026_16_CLE_BAL": {
    "week": 16,
@@ -3432,33 +3432,33 @@
     "qb_id": "00-0033119",
     "name": "Jacoby Brissett",
     "status": null,
-    "rating": -0.0261,
-    "plays_prior": 1113,
+    "rating": -0.0221,
+    "plays_prior": 1166,
     "career_starts": 73,
     "usual_starter": "00-0035993",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "CLE",
     "qb_id": "00-0033537",
     "name": "Deshaun Watson",
     "status": null,
-    "rating": -0.0724,
+    "rating": -0.0662,
     "plays_prior": 665,
     "career_starts": 84,
     "usual_starter": "00-0033537",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": 0.0463,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": 0.0441,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
-   "p_v1": 0.532132,
-   "p_v2": 0.555482
+   "p_v1": 0.504209,
+   "p_v2": 0.52824
   },
   "2026_16_LAC_MIA": {
    "week": 16,
@@ -3468,33 +3468,33 @@
     "qb_id": "00-0040014",
     "name": "Kyle McCord",
     "status": null,
-    "rating": -0.0337,
+    "rating": -0.0227,
     "plays_prior": 37,
     "career_starts": 2,
     "usual_starter": "00-0040014",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "LAC",
     "qb_id": "00-0036355",
     "name": "Justin Herbert",
     "status": null,
-    "rating": 0.006,
-    "plays_prior": 1646,
+    "rating": 0.0135,
+    "plays_prior": 1673,
     "career_starts": 108,
     "usual_starter": "00-0036355",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": -0.0397,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": -0.0362,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
-   "p_v1": 0.563196,
-   "p_v2": 0.554771
+   "p_v1": 0.542871,
+   "p_v2": 0.529442
   },
   "2026_16_NE_NYJ": {
    "week": 16,
@@ -3504,33 +3504,33 @@
     "qb_id": "00-0030565",
     "name": "Geno Smith",
     "status": null,
-    "rating": -0.0188,
+    "rating": -0.0207,
     "plays_prior": 1570,
     "career_starts": 110,
     "usual_starter": "00-0030565",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "NE",
     "qb_id": "00-0039851",
     "name": "Drake Maye",
     "status": null,
-    "rating": 0.1184,
+    "rating": 0.1139,
     "plays_prior": 1583,
     "career_starts": 42,
     "usual_starter": "00-0039851",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": -0.1372,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": -0.1346,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
    "p_v1": 0.311344,
-   "p_v2": 0.306724
+   "p_v2": 0.307902
   },
   "2026_16_TB_ATL": {
    "week": 16,
@@ -3540,33 +3540,33 @@
     "qb_id": "00-0039917",
     "name": "Michael Penix Jr.",
     "status": null,
-    "rating": 0.026,
+    "rating": 0.0308,
     "plays_prior": 704,
     "career_starts": 20,
     "usual_starter": "00-0039917",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "TB",
     "qb_id": "00-0034855",
     "name": "Baker Mayfield",
     "status": null,
-    "rating": 0.0738,
+    "rating": 0.0794,
     "plays_prior": 1507,
     "career_starts": 132,
     "usual_starter": "00-0034855",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": -0.0478,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": -0.0486,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
    "p_v1": 0.427169,
-   "p_v2": 0.404894
+   "p_v2": 0.404484
   },
   "2026_16_WAS_MIN": {
    "week": 16,
@@ -3576,33 +3576,33 @@
     "qb_id": "00-0029604",
     "name": "Kirk Cousins",
     "status": null,
-    "rating": 0.0437,
+    "rating": 0.04,
     "plays_prior": 1185,
     "career_starts": 182,
     "usual_starter": "00-0029604",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "WAS",
     "qb_id": "00-0039910",
     "name": "Jayden Daniels",
     "status": null,
-    "rating": 0.1131,
+    "rating": 0.1118,
     "plays_prior": 1364,
     "career_starts": 32,
     "usual_starter": "00-0039910",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": -0.0694,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": -0.0718,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
    "p_v1": 0.76584,
-   "p_v2": 0.695618
+   "p_v2": 0.694536
   },
   "2026_16_TEN_LV": {
    "week": 16,
@@ -3612,33 +3612,33 @@
     "qb_id": "00-0041562",
     "name": "Fernando Mendoza",
     "status": null,
-    "rating": -0.0108,
+    "rating": -0.0031,
     "plays_prior": 50,
     "career_starts": 2,
     "usual_starter": "00-0041562",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "TEN",
     "qb_id": "00-0040676",
     "name": "Cam Ward",
     "status": null,
-    "rating": -0.0913,
+    "rating": -0.0873,
     "plays_prior": 964,
     "career_starts": 27,
     "usual_starter": "00-0040676",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": 0.0805,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": 0.0842,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
    "p_v1": 0.687298,
-   "p_v2": 0.693803
+   "p_v2": 0.695472
   },
   "2026_16_SF_KC": {
    "week": 16,
@@ -3648,33 +3648,33 @@
     "qb_id": "00-0033873",
     "name": "Patrick Mahomes",
     "status": null,
-    "rating": 0.1337,
+    "rating": 0.1311,
     "plays_prior": 1726,
     "career_starts": 157,
     "usual_starter": "00-0033873",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "SF",
     "qb_id": "00-0037834",
     "name": "Brock Purdy",
     "status": null,
-    "rating": 0.1983,
+    "rating": 0.1882,
     "plays_prior": 1273,
     "career_starts": 63,
     "usual_starter": "00-0037834",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": -0.0646,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": -0.0571,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
    "p_v1": 0.49102,
-   "p_v2": 0.469109
+   "p_v2": 0.473083
   },
   "2026_16_JAX_DAL": {
    "week": 16,
@@ -3684,33 +3684,33 @@
     "qb_id": "00-0033077",
     "name": "Dak Prescott",
     "status": null,
-    "rating": 0.1148,
+    "rating": 0.1078,
     "plays_prior": 1435,
     "career_starts": 156,
     "usual_starter": "00-0033077",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "JAX",
     "qb_id": "00-0036971",
     "name": "Trevor Lawrence",
     "status": null,
-    "rating": 0.1191,
+    "rating": 0.1109,
     "plays_prior": 1346,
     "career_starts": 90,
     "usual_starter": "00-0036971",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": -0.0043,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": -0.0031,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
    "p_v1": 0.301412,
-   "p_v2": 0.342189
+   "p_v2": 0.342764
   },
   "2026_16_NYG_DET": {
    "week": 16,
@@ -3720,33 +3720,33 @@
     "qb_id": "00-0033106",
     "name": "Jared Goff",
     "status": null,
-    "rating": 0.1761,
+    "rating": 0.1714,
     "plays_prior": 1628,
     "career_starts": 170,
     "usual_starter": "00-0033106",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "NYG",
     "qb_id": "00-0039923",
     "name": "J.J. McCarthy",
     "status": null,
-    "rating": -0.0431,
+    "rating": -0.0484,
     "plays_prior": 436,
     "career_starts": 14,
     "usual_starter": "00-0039923",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": 0.2192,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": 0.2198,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
    "p_v1": 0.761452,
-   "p_v2": 0.809603
+   "p_v2": 0.8098
   },
   "2026_17_BAL_CIN": {
    "week": 17,
@@ -3756,33 +3756,33 @@
     "qb_id": "00-0036442",
     "name": "Joe Burrow",
     "status": null,
-    "rating": 0.177,
+    "rating": 0.1686,
     "plays_prior": 1412,
     "career_starts": 94,
     "usual_starter": "00-0036442",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "BAL",
     "qb_id": "00-0033119",
     "name": "Jacoby Brissett",
     "status": null,
-    "rating": -0.0261,
-    "plays_prior": 1113,
+    "rating": -0.0221,
+    "plays_prior": 1166,
     "career_starts": 73,
     "usual_starter": "00-0035993",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": 0.2031,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": 0.1907,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
-   "p_v1": 0.787864,
-   "p_v2": 0.827385
+   "p_v1": 0.80596,
+   "p_v2": 0.838339
   },
   "2026_17_BUF_MIA": {
    "week": 17,
@@ -3792,33 +3792,33 @@
     "qb_id": "00-0040014",
     "name": "Kyle McCord",
     "status": null,
-    "rating": -0.0337,
+    "rating": -0.0227,
     "plays_prior": 37,
     "career_starts": 2,
     "usual_starter": "00-0040014",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "BUF",
     "qb_id": "00-0034857",
     "name": "Josh Allen",
     "status": null,
-    "rating": 0.2269,
+    "rating": 0.2192,
     "plays_prior": 1769,
     "career_starts": 149,
     "usual_starter": "00-0034857",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": -0.2606,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": -0.2419,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
    "p_v1": 0.152315,
-   "p_v2": 0.136767
+   "p_v2": 0.141531
   },
   "2026_17_DEN_NE": {
    "week": 17,
@@ -3828,33 +3828,33 @@
     "qb_id": "00-0039851",
     "name": "Drake Maye",
     "status": null,
-    "rating": 0.1184,
+    "rating": 0.1139,
     "plays_prior": 1583,
     "career_starts": 42,
     "usual_starter": "00-0039851",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "DEN",
     "qb_id": "00-0039732",
     "name": "Bo Nix",
     "status": null,
-    "rating": 0.0648,
+    "rating": 0.0664,
     "plays_prior": 1821,
     "career_starts": 46,
     "usual_starter": "00-0039732",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": 0.0536,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": 0.0475,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
    "p_v1": 0.406021,
-   "p_v2": 0.44405
+   "p_v2": 0.44085
   },
   "2026_17_IND_CLE": {
    "week": 17,
@@ -3864,33 +3864,33 @@
     "qb_id": "00-0033537",
     "name": "Deshaun Watson",
     "status": null,
-    "rating": -0.0724,
+    "rating": -0.0662,
     "plays_prior": 665,
     "career_starts": 84,
     "usual_starter": "00-0033537",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "IND",
     "qb_id": "00-0035710",
     "name": "Daniel Jones",
     "status": null,
-    "rating": -0.0111,
+    "rating": -0.0007,
     "plays_prior": 1270,
     "career_starts": 95,
     "usual_starter": "00-0035710",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": -0.0613,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": -0.0655,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
    "p_v1": 0.665631,
-   "p_v2": 0.626789
+   "p_v2": 0.624697
   },
   "2026_17_KC_LAC": {
    "week": 17,
@@ -3900,33 +3900,33 @@
     "qb_id": "00-0036355",
     "name": "Justin Herbert",
     "status": null,
-    "rating": 0.006,
-    "plays_prior": 1646,
+    "rating": 0.0135,
+    "plays_prior": 1673,
     "career_starts": 108,
     "usual_starter": "00-0036355",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "KC",
     "qb_id": "00-0033873",
     "name": "Patrick Mahomes",
     "status": null,
-    "rating": 0.1337,
+    "rating": 0.1311,
     "plays_prior": 1726,
     "career_starts": 157,
     "usual_starter": "00-0033873",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": -0.1277,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": -0.1176,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
-   "p_v1": 0.258206,
-   "p_v2": 0.251671
+   "p_v1": 0.274269,
+   "p_v2": 0.277131
   },
   "2026_17_LA_TB": {
    "week": 17,
@@ -3936,33 +3936,33 @@
     "qb_id": "00-0034855",
     "name": "Baker Mayfield",
     "status": null,
-    "rating": 0.0738,
+    "rating": 0.0794,
     "plays_prior": 1507,
     "career_starts": 132,
     "usual_starter": "00-0034855",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "LA",
     "qb_id": "00-0026498",
     "name": "Matthew Stafford",
     "status": null,
-    "rating": 0.1042,
+    "rating": 0.1048,
     "plays_prior": 1840,
     "career_starts": 262,
     "usual_starter": "00-0026498",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": -0.0304,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": -0.0254,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
    "p_v1": 0.397372,
-   "p_v2": 0.44154
+   "p_v2": 0.444164
   },
   "2026_17_MIN_NYJ": {
    "week": 17,
@@ -3972,33 +3972,33 @@
     "qb_id": "00-0030565",
     "name": "Geno Smith",
     "status": null,
-    "rating": -0.0188,
+    "rating": -0.0207,
     "plays_prior": 1570,
     "career_starts": 110,
     "usual_starter": "00-0030565",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "MIN",
     "qb_id": "00-0029604",
     "name": "Kirk Cousins",
     "status": null,
-    "rating": 0.0437,
+    "rating": 0.04,
     "plays_prior": 1185,
     "career_starts": 182,
     "usual_starter": "00-0029604",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": -0.0625,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": -0.0607,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
    "p_v1": 0.229116,
-   "p_v2": 0.254028
+   "p_v2": 0.254754
   },
   "2026_17_NO_ATL": {
    "week": 17,
@@ -4008,33 +4008,33 @@
     "qb_id": "00-0039917",
     "name": "Michael Penix Jr.",
     "status": null,
-    "rating": 0.026,
+    "rating": 0.0308,
     "plays_prior": 704,
     "career_starts": 20,
     "usual_starter": "00-0039917",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "NO",
     "qb_id": "00-0040743",
     "name": "Tyler Shough",
     "status": null,
-    "rating": 0.0103,
+    "rating": 0.0179,
     "plays_prior": 809,
     "career_starts": 19,
     "usual_starter": "00-0040743",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": 0.0157,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": 0.0129,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
    "p_v1": 0.529377,
-   "p_v2": 0.55014
+   "p_v2": 0.548666
   },
   "2026_17_NYG_DAL": {
    "week": 17,
@@ -4044,33 +4044,33 @@
     "qb_id": "00-0033077",
     "name": "Dak Prescott",
     "status": null,
-    "rating": 0.1148,
+    "rating": 0.1078,
     "plays_prior": 1435,
     "career_starts": 156,
     "usual_starter": "00-0033077",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "NYG",
     "qb_id": "00-0039923",
     "name": "J.J. McCarthy",
     "status": null,
-    "rating": -0.0431,
+    "rating": -0.0484,
     "plays_prior": 436,
     "career_starts": 14,
     "usual_starter": "00-0039923",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": 0.1579,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": 0.1562,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
    "p_v1": 0.51515,
-   "p_v2": 0.62078
+   "p_v2": 0.619929
   },
   "2026_17_PIT_TEN": {
    "week": 17,
@@ -4080,33 +4080,33 @@
     "qb_id": "00-0040676",
     "name": "Cam Ward",
     "status": null,
-    "rating": -0.0913,
+    "rating": -0.0873,
     "plays_prior": 964,
     "career_starts": 27,
     "usual_starter": "00-0040676",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "PIT",
     "qb_id": "00-0023459",
     "name": "Aaron Rodgers",
     "status": null,
-    "rating": -0.0068,
+    "rating": -0.0011,
     "plays_prior": 1588,
     "career_starts": 288,
     "usual_starter": "00-0023459",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": -0.0845,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": -0.0862,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
    "p_v1": 0.272869,
-   "p_v2": 0.285304
+   "p_v2": 0.284567
   },
   "2026_17_SEA_CAR": {
    "week": 17,
@@ -4116,33 +4116,33 @@
     "qb_id": "00-0039150",
     "name": "Bryce Young",
     "status": null,
-    "rating": -0.0081,
+    "rating": -0.0084,
     "plays_prior": 1439,
     "career_starts": 52,
     "usual_starter": "00-0039150",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "SEA",
     "qb_id": "00-0034869",
     "name": "Sam Darnold",
     "status": null,
-    "rating": 0.0562,
+    "rating": 0.0587,
     "plays_prior": 1593,
     "career_starts": 99,
     "usual_starter": "00-0034869",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": -0.0643,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": -0.0671,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
    "p_v1": 0.29799,
-   "p_v2": 0.324123
+   "p_v2": 0.32282
   },
   "2026_17_WAS_JAX": {
    "week": 17,
@@ -4152,33 +4152,33 @@
     "qb_id": "00-0036971",
     "name": "Trevor Lawrence",
     "status": null,
-    "rating": 0.1191,
+    "rating": 0.1109,
     "plays_prior": 1346,
     "career_starts": 90,
     "usual_starter": "00-0036971",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "WAS",
     "qb_id": "00-0039910",
     "name": "Jayden Daniels",
     "status": null,
-    "rating": 0.1131,
+    "rating": 0.1118,
     "plays_prior": 1364,
     "career_starts": 32,
     "usual_starter": "00-0039910",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": 0.006,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": -0.0009,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
    "p_v1": 0.822879,
-   "p_v2": 0.776787
+   "p_v2": 0.774233
   },
   "2026_17_LV_ARI": {
    "week": 17,
@@ -4188,33 +4188,33 @@
     "qb_id": "00-0041561",
     "name": "Carson Beck",
     "status": null,
-    "rating": -0.0633,
+    "rating": -0.0462,
     "plays_prior": 24,
     "career_starts": 0,
     "usual_starter": "00-0035289",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "LV",
     "qb_id": "00-0041562",
     "name": "Fernando Mendoza",
     "status": null,
-    "rating": -0.0108,
+    "rating": -0.0031,
     "plays_prior": 50,
     "career_starts": 2,
     "usual_starter": "00-0041562",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": -0.0525,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": -0.0431,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
    "p_v1": 0.550122,
-   "p_v2": 0.514692
+   "p_v2": 0.519684
   },
   "2026_17_DET_CHI": {
    "week": 17,
@@ -4224,33 +4224,33 @@
     "qb_id": "00-0039918",
     "name": "Caleb Williams",
     "status": null,
-    "rating": 0.0398,
+    "rating": 0.0365,
     "plays_prior": 1720,
     "career_starts": 43,
     "usual_starter": "00-0039918",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "DET",
     "qb_id": "00-0033106",
     "name": "Jared Goff",
     "status": null,
-    "rating": 0.1761,
+    "rating": 0.1714,
     "plays_prior": 1628,
     "career_starts": 170,
     "usual_starter": "00-0033106",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": -0.1363,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": -0.1349,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
    "p_v1": 0.561254,
-   "p_v2": 0.485063
+   "p_v2": 0.485807
   },
   "2026_17_PHI_SF": {
    "week": 17,
@@ -4260,33 +4260,33 @@
     "qb_id": "00-0037834",
     "name": "Brock Purdy",
     "status": null,
-    "rating": 0.1983,
+    "rating": 0.1882,
     "plays_prior": 1273,
     "career_starts": 63,
     "usual_starter": "00-0037834",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "PHI",
     "qb_id": "00-0039398",
     "name": "Joe Milton III",
     "status": null,
-    "rating": -0.0048,
+    "rating": 0.0037,
     "plays_prior": 118,
     "career_starts": 3,
     "usual_starter": "00-0039398",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": 0.2031,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": 0.1845,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
    "p_v1": 0.845272,
-   "p_v2": 0.863713
+   "p_v2": 0.858989
   },
   "2026_17_HOU_GB": {
    "week": 17,
@@ -4296,33 +4296,33 @@
     "qb_id": "00-0036264",
     "name": "Jordan Love",
     "status": null,
-    "rating": 0.1636,
+    "rating": 0.1588,
     "plays_prior": 1462,
     "career_starts": 62,
     "usual_starter": "00-0036264",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "HOU",
     "qb_id": "00-0039163",
     "name": "C.J. Stroud",
     "status": null,
-    "rating": 0.0501,
+    "rating": 0.0469,
     "plays_prior": 1662,
     "career_starts": 61,
     "usual_starter": "00-0039163",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": 0.1135,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": 0.1119,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
    "p_v1": 0.600871,
-   "p_v2": 0.647933
+   "p_v2": 0.647156
   },
   "2026_18_ATL_CAR": {
    "week": 18,
@@ -4332,33 +4332,33 @@
     "qb_id": "00-0039150",
     "name": "Bryce Young",
     "status": null,
-    "rating": -0.0081,
+    "rating": -0.0084,
     "plays_prior": 1439,
     "career_starts": 52,
     "usual_starter": "00-0039150",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "ATL",
     "qb_id": "00-0039917",
     "name": "Michael Penix Jr.",
     "status": null,
-    "rating": 0.026,
+    "rating": 0.0308,
     "plays_prior": 704,
     "career_starts": 20,
     "usual_starter": "00-0039917",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": -0.0341,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": -0.0392,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
    "p_v1": 0.589633,
-   "p_v2": 0.573198
+   "p_v2": 0.570543
   },
   "2026_18_CHI_MIN": {
    "week": 18,
@@ -4368,33 +4368,33 @@
     "qb_id": "00-0029604",
     "name": "Kirk Cousins",
     "status": null,
-    "rating": 0.0437,
+    "rating": 0.04,
     "plays_prior": 1185,
     "career_starts": 182,
     "usual_starter": "00-0029604",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "CHI",
     "qb_id": "00-0039918",
     "name": "Caleb Williams",
     "status": null,
-    "rating": 0.0398,
+    "rating": 0.0365,
     "plays_prior": 1720,
     "career_starts": 43,
     "usual_starter": "00-0039918",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": 0.0039,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": 0.0035,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
    "p_v1": 0.522245,
-   "p_v2": 0.554729
+   "p_v2": 0.554519
   },
   "2026_18_CLE_CIN": {
    "week": 18,
@@ -4404,33 +4404,33 @@
     "qb_id": "00-0036442",
     "name": "Joe Burrow",
     "status": null,
-    "rating": 0.177,
+    "rating": 0.1686,
     "plays_prior": 1412,
     "career_starts": 94,
     "usual_starter": "00-0036442",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "CLE",
     "qb_id": "00-0033537",
     "name": "Deshaun Watson",
     "status": null,
-    "rating": -0.0724,
+    "rating": -0.0662,
     "plays_prior": 665,
     "career_starts": 84,
     "usual_starter": "00-0033537",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": 0.2494,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": 0.2348,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
    "p_v1": 0.790825,
-   "p_v2": 0.834319
+   "p_v2": 0.829983
   },
   "2026_18_DAL_WAS": {
    "week": 18,
@@ -4440,33 +4440,33 @@
     "qb_id": "00-0039910",
     "name": "Jayden Daniels",
     "status": null,
-    "rating": 0.1131,
+    "rating": 0.1118,
     "plays_prior": 1364,
     "career_starts": 32,
     "usual_starter": "00-0039910",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "DAL",
     "qb_id": "00-0033077",
     "name": "Dak Prescott",
     "status": null,
-    "rating": 0.1148,
+    "rating": 0.1078,
     "plays_prior": 1435,
     "career_starts": 156,
     "usual_starter": "00-0033077",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": -0.0017,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": 0.004,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
    "p_v1": 0.546188,
-   "p_v2": 0.561597
+   "p_v2": 0.564579
   },
   "2026_18_DET_GB": {
    "week": 18,
@@ -4476,33 +4476,33 @@
     "qb_id": "00-0036264",
     "name": "Jordan Love",
     "status": null,
-    "rating": 0.1636,
+    "rating": 0.1588,
     "plays_prior": 1462,
     "career_starts": 62,
     "usual_starter": "00-0036264",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "DET",
     "qb_id": "00-0033106",
     "name": "Jared Goff",
     "status": null,
-    "rating": 0.1761,
+    "rating": 0.1714,
     "plays_prior": 1628,
     "career_starts": 170,
     "usual_starter": "00-0033106",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": -0.0125,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": -0.0126,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
    "p_v1": 0.416028,
-   "p_v2": 0.455409
+   "p_v2": 0.455357
   },
   "2026_18_JAX_IND": {
    "week": 18,
@@ -4512,33 +4512,33 @@
     "qb_id": "00-0035710",
     "name": "Daniel Jones",
     "status": null,
-    "rating": -0.0111,
+    "rating": -0.0007,
     "plays_prior": 1270,
     "career_starts": 95,
     "usual_starter": "00-0035710",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "JAX",
     "qb_id": "00-0036971",
     "name": "Trevor Lawrence",
     "status": null,
-    "rating": 0.1191,
+    "rating": 0.1109,
     "plays_prior": 1346,
     "career_starts": 90,
     "usual_starter": "00-0036971",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": -0.1302,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": -0.1116,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
    "p_v1": 0.210724,
-   "p_v2": 0.212239
+   "p_v2": 0.218928
   },
   "2026_18_LAC_DEN": {
    "week": 18,
@@ -4548,33 +4548,33 @@
     "qb_id": "00-0039732",
     "name": "Bo Nix",
     "status": null,
-    "rating": 0.0648,
+    "rating": 0.0664,
     "plays_prior": 1821,
     "career_starts": 46,
     "usual_starter": "00-0039732",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "LAC",
     "qb_id": "00-0036355",
     "name": "Justin Herbert",
     "status": null,
-    "rating": 0.006,
-    "plays_prior": 1646,
+    "rating": 0.0135,
+    "plays_prior": 1673,
     "career_starts": 108,
     "usual_starter": "00-0036355",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": 0.0588,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": 0.0529,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
-   "p_v1": 0.845376,
-   "p_v2": 0.838057
+   "p_v1": 0.834318,
+   "p_v2": 0.820802
   },
   "2026_18_LV_KC": {
    "week": 18,
@@ -4584,33 +4584,33 @@
     "qb_id": "00-0033873",
     "name": "Patrick Mahomes",
     "status": null,
-    "rating": 0.1337,
+    "rating": 0.1311,
     "plays_prior": 1726,
     "career_starts": 157,
     "usual_starter": "00-0033873",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "LV",
     "qb_id": "00-0041562",
     "name": "Fernando Mendoza",
     "status": null,
-    "rating": -0.0108,
+    "rating": -0.0031,
     "plays_prior": 50,
     "career_starts": 2,
     "usual_starter": "00-0041562",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": 0.1445,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": 0.1342,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
    "p_v1": 0.781772,
-   "p_v2": 0.798878
+   "p_v2": 0.795335
   },
   "2026_18_MIA_NE": {
    "week": 18,
@@ -4620,33 +4620,33 @@
     "qb_id": "00-0039851",
     "name": "Drake Maye",
     "status": null,
-    "rating": 0.1184,
+    "rating": 0.1139,
     "plays_prior": 1583,
     "career_starts": 42,
     "usual_starter": "00-0039851",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "MIA",
     "qb_id": "00-0040014",
     "name": "Kyle McCord",
     "status": null,
-    "rating": -0.0337,
+    "rating": -0.0227,
     "plays_prior": 37,
     "career_starts": 2,
     "usual_starter": "00-0040014",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": 0.1521,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": 0.1366,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
    "p_v1": 0.737238,
-   "p_v2": 0.764752
+   "p_v2": 0.75877
   },
   "2026_18_NYJ_BUF": {
    "week": 18,
@@ -4656,33 +4656,33 @@
     "qb_id": "00-0034857",
     "name": "Josh Allen",
     "status": null,
-    "rating": 0.2269,
+    "rating": 0.2192,
     "plays_prior": 1769,
     "career_starts": 149,
     "usual_starter": "00-0034857",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "NYJ",
     "qb_id": "00-0030565",
     "name": "Geno Smith",
     "status": null,
-    "rating": -0.0188,
+    "rating": -0.0207,
     "plays_prior": 1570,
     "career_starts": 110,
     "usual_starter": "00-0030565",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": 0.2457,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": 0.2399,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
    "p_v1": 0.907231,
-   "p_v2": 0.916477
+   "p_v2": 0.915528
   },
   "2026_18_PHI_NYG": {
    "week": 18,
@@ -4692,33 +4692,33 @@
     "qb_id": "00-0039923",
     "name": "J.J. McCarthy",
     "status": null,
-    "rating": -0.0431,
+    "rating": -0.0484,
     "plays_prior": 436,
     "career_starts": 14,
     "usual_starter": "00-0039923",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "PHI",
     "qb_id": "00-0039398",
     "name": "Joe Milton III",
     "status": null,
-    "rating": -0.0048,
+    "rating": 0.0037,
     "plays_prior": 118,
     "career_starts": 3,
     "usual_starter": "00-0039398",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": -0.0383,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": -0.0521,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
    "p_v1": 0.704841,
-   "p_v2": 0.651445
+   "p_v2": 0.644752
   },
   "2026_18_PIT_BAL": {
    "week": 18,
@@ -4728,33 +4728,33 @@
     "qb_id": "00-0033119",
     "name": "Jacoby Brissett",
     "status": null,
-    "rating": -0.0261,
-    "plays_prior": 1113,
+    "rating": -0.0221,
+    "plays_prior": 1166,
     "career_starts": 73,
     "usual_starter": "00-0035993",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "PIT",
     "qb_id": "00-0023459",
     "name": "Aaron Rodgers",
     "status": null,
-    "rating": -0.0068,
+    "rating": -0.0011,
     "plays_prior": 1588,
     "career_starts": 288,
     "usual_starter": "00-0023459",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": -0.0193,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": -0.021,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
-   "p_v1": 0.423818,
-   "p_v2": 0.43047
+   "p_v1": 0.396758,
+   "p_v2": 0.404046
   },
   "2026_18_SEA_LA": {
    "week": 18,
@@ -4764,33 +4764,33 @@
     "qb_id": "00-0026498",
     "name": "Matthew Stafford",
     "status": null,
-    "rating": 0.1042,
+    "rating": 0.1048,
     "plays_prior": 1840,
     "career_starts": 262,
     "usual_starter": "00-0026498",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "SEA",
     "qb_id": "00-0034869",
     "name": "Sam Darnold",
     "status": null,
-    "rating": 0.0562,
+    "rating": 0.0587,
     "plays_prior": 1593,
     "career_starts": 99,
     "usual_starter": "00-0034869",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": 0.048,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": 0.0461,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
    "p_v1": 0.528983,
-   "p_v2": 0.572664
+   "p_v2": 0.571675
   },
   "2026_18_SF_ARI": {
    "week": 18,
@@ -4800,33 +4800,33 @@
     "qb_id": "00-0041561",
     "name": "Carson Beck",
     "status": null,
-    "rating": -0.0633,
+    "rating": -0.0462,
     "plays_prior": 24,
     "career_starts": 0,
     "usual_starter": "00-0035289",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "SF",
     "qb_id": "00-0037834",
     "name": "Brock Purdy",
     "status": null,
-    "rating": 0.1983,
+    "rating": 0.1882,
     "plays_prior": 1273,
     "career_starts": 63,
     "usual_starter": "00-0037834",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": -0.2616,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": -0.2344,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
    "p_v1": 0.225176,
-   "p_v2": 0.182131
+   "p_v2": 0.190906
   },
   "2026_18_TB_NO": {
    "week": 18,
@@ -4836,33 +4836,33 @@
     "qb_id": "00-0040743",
     "name": "Tyler Shough",
     "status": null,
-    "rating": 0.0103,
+    "rating": 0.0179,
     "plays_prior": 809,
     "career_starts": 19,
     "usual_starter": "00-0040743",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "TB",
     "qb_id": "00-0034855",
     "name": "Baker Mayfield",
     "status": null,
-    "rating": 0.0738,
+    "rating": 0.0794,
     "plays_prior": 1507,
     "career_starts": 132,
     "usual_starter": "00-0034855",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": -0.0635,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": -0.0615,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
    "p_v1": 0.449539,
-   "p_v2": 0.412853
+   "p_v2": 0.413884
   },
   "2026_18_TEN_HOU": {
    "week": 18,
@@ -4872,33 +4872,33 @@
     "qb_id": "00-0039163",
     "name": "C.J. Stroud",
     "status": null,
-    "rating": 0.0501,
+    "rating": 0.0469,
     "plays_prior": 1662,
     "career_starts": 61,
     "usual_starter": "00-0039163",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "away": {
     "team": "TEN",
     "qb_id": "00-0040676",
     "name": "Cam Ward",
     "status": null,
-    "rating": -0.0913,
+    "rating": -0.0873,
     "plays_prior": 964,
     "career_starts": 27,
     "usual_starter": "00-0040676",
     "replaces": null,
-    "depth_as_of": "2026-11-16T16:58:52+00:00"
+    "depth_as_of": "2026-11-17T16:52:03+00:00"
    },
    "report_as_of": null,
-   "depth_as_of": "2026-11-16T16:58:52+00:00",
-   "qb_rating_diff": 0.1414,
+   "depth_as_of": "2026-11-17T16:52:03+00:00",
+   "qb_rating_diff": 0.1342,
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
    "p_v1": 0.793004,
-   "p_v2": 0.807198
+   "p_v2": 0.804804
   }
  }
 }
