@@ -69,6 +69,7 @@ p { margin: 0 0 12px; }
 }
 .section::before { left: 0; }
 .section::after { right: 0; }
+.section-head { margin-bottom: 32px; }
 .split { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: start; }
 .split p { color: var(--muted); font-size: 12px; }
 @media (max-width: 760px) { .split { grid-template-columns: 1fr; gap: 20px; } }
