@@ -1,5 +1,5 @@
 {
- "built_at": "2026-11-26T22:44:47.138099+00:00",
+ "built_at": "2026-11-27T04:00:41.667941+00:00",
  "season": 2026,
  "stale_days": 4,
  "model_v2": "v2-c1ea20c",
@@ -1114,7 +1114,7 @@
    "report_as_of": "2026-11-26T22:44:46.077825+00:00",
    "depth_as_of": "2026-11-26T17:41:02+00:00",
    "qb_rating_diff": 0.0759,
-   "frozen": false,
+   "frozen": true,
    "available": true,
    "reason": null,
    "p_v1": 0.712481,
@@ -1909,8 +1909,8 @@
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
-   "p_v1": 0.485153,
-   "p_v2": 0.48586
+   "p_v1": 0.46692,
+   "p_v2": 0.469963
   },
   "2026_13_BUF_NE": {
    "week": 13,
@@ -2053,8 +2053,8 @@
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
-   "p_v1": 0.750205,
-   "p_v2": 0.6786
+   "p_v1": 0.765773,
+   "p_v2": 0.695469
   },
   "2026_14_MIN_NE": {
    "week": 14,
@@ -2269,8 +2269,8 @@
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
-   "p_v1": 0.575946,
-   "p_v2": 0.591462
+   "p_v1": 0.593695,
+   "p_v2": 0.606764
   },
   "2026_14_NO_CAR": {
    "week": 14,
@@ -2665,8 +2665,8 @@
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
-   "p_v1": 0.264323,
-   "p_v2": 0.290471
+   "p_v1": 0.278782,
+   "p_v2": 0.303776
   },
   "2026_15_CHI_BUF": {
    "week": 15,
@@ -3061,8 +3061,8 @@
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
-   "p_v1": 0.739981,
-   "p_v2": 0.703362
+   "p_v1": 0.755979,
+   "p_v2": 0.719469
   },
   "2026_15_DEN_LV": {
    "week": 15,
@@ -3205,8 +3205,8 @@
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
-   "p_v1": 0.38648,
-   "p_v2": 0.384498
+   "p_v1": 0.403952,
+   "p_v2": 0.399684
   },
   "2026_16_GB_CHI": {
    "week": 16,
@@ -3709,8 +3709,8 @@
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
-   "p_v1": 0.379348,
-   "p_v2": 0.419869
+   "p_v1": 0.359576,
+   "p_v2": 0.400885
   },
   "2026_16_NYG_DET": {
    "week": 16,
@@ -4069,8 +4069,8 @@
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
-   "p_v1": 0.522168,
-   "p_v2": 0.626964
+   "p_v1": 0.50096,
+   "p_v2": 0.608436
   },
   "2026_17_PIT_TEN": {
    "week": 17,
@@ -4285,8 +4285,8 @@
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
-   "p_v1": 0.853232,
-   "p_v2": 0.872808
+   "p_v1": 0.843839,
+   "p_v2": 0.865565
   },
   "2026_17_HOU_GB": {
    "week": 17,
@@ -4465,8 +4465,8 @@
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
-   "p_v1": 0.533741,
-   "p_v2": 0.541013
+   "p_v1": 0.554794,
+   "p_v2": 0.560427
   },
   "2026_18_DET_GB": {
    "week": 18,
@@ -4717,8 +4717,8 @@
    "frozen": false,
    "available": false,
    "reason": "no injury report yet",
-   "p_v1": 0.702514,
-   "p_v2": 0.659574
+   "p_v1": 0.687013,
+   "p_v2": 0.645125
   },
   "2026_18_PIT_BAL": {
    "week": 18,
